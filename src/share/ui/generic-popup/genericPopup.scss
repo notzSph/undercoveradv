@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.generic-popup {
+  height: 70%;
+  min-height: 70%;
+  max-height: 70%;
+  border-radius: $largeRadius;
+  box-shadow: $popupShadow;
+  border: 8px $popupBorder;
+}
+
+.topbar-wrapper {
+  height: 15%;
+  max-height: 15%;
+  min-height: 15%;
+  padding-right: $veryLargeMargin;
+  border-bottom: 9px $popupBorder;
+}
+
+.content-wrapper {
+  height: 85%;
+  max-height: 85%;
+  min-height: 85%;
+}
+
+.topbar-contact-btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 30%;
+  min-height: 100%;
+  min-width: 25%;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+
+.sidebar-generic {
+  padding: $smallMargin 0 $largeMargin;
+  border-right: 4px $popupBorder;
+}
