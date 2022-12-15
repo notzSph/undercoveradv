@@ -1,0 +1,258 @@
+@import "./variables.scss";
+
+/**
+* MARGINS & PADDINGS
+* 
+*/
+
+
+// All side
+.m-1 {
+    margin: $microMargin;
+}
+
+.m-2 {
+    margin: $tinyMargin;
+}
+
+.m-3 {
+    margin: $smallMargin;
+}
+
+.m-4 {
+    margin: $mediumMargin;
+}
+
+.m-5 {
+    margin: $largeMargin;
+}
+
+// Top
+.my-1,
+.mt-1 {
+    margin-top: $microMargin;
+}
+
+.my-2,
+.mt-2 {
+    margin-top: $tinyMargin;
+}
+
+.my-3,
+.mt-3 {
+    margin-top: $smallMargin;
+}
+
+.my-4,
+.mt-4 {
+    margin-top: $mediumMargin;
+}
+
+.my-5,
+.mt-5 {
+    margin-top: $largeMargin;
+}
+
+// Right
+.mx-1,
+.mr-1 {
+    margin-right: $microMargin;
+}
+
+.mx-2,
+.mr-2 {
+    margin-right: $tinyMargin;
+}
+
+.mx-3,
+.mr-3 {
+    margin-right: $smallMargin;
+}
+
+.mx-4,
+.mr-4 {
+    margin-right: $mediumMargin;
+}
+
+.mx-5,
+.mr-5 {
+    margin-right: $largeMargin;
+}
+
+// Bottom
+.my-1,
+.mb-1 {
+    margin-bottom: $microMargin;
+}
+
+.my-2,
+.mb-2 {
+    margin-bottom: $tinyMargin;
+}
+
+.my-3,
+.mb-3 {
+    margin-bottom: $smallMargin;
+}
+
+.my-4,
+.mb-4 {
+    margin-bottom: $mediumMargin;
+}
+
+.my-5,
+.mb-5 {
+    margin-bottom: $largeMargin;
+}
+
+// Left
+.mx-1,
+.ml-1 {
+    margin-left: $microMargin;
+}
+
+.mx-2,
+.ml-2 {
+    margin-left: $tinyMargin;
+}
+
+.mx-3,
+.ml-3 {
+    margin-left: $smallMargin;
+}
+
+.mx-4,
+.ml-4 {
+    margin-left: $mediumMargin;
+}
+
+.mx-5,
+.ml-5 {
+    margin-left: $largeMargin;
+}
+
+// PADDING
+
+// All side
+.p-1 {
+    padding: $microMargin;
+}
+
+.p-2 {
+    padding: $tinyMargin;
+}
+
+.p-3 {
+    padding: $smallMargin;
+}
+
+.p-4 {
+    padding: $mediumMargin;
+}
+
+.p-5 {
+    padding: $largeMargin;
+}
+
+// Top
+.py-1,
+.pt-1 {
+    padding-top: $microMargin;
+}
+
+.py-2,
+.pt-2 {
+    padding-top: $tinyMargin;
+}
+
+.py-3,
+.pt-3 {
+    padding-top: $smallMargin;
+}
+
+.py-4,
+.pt-4 {
+    padding-top: $mediumMargin;
+}
+
+.py-5,
+.pt-5 {
+    padding-top: $largeMargin;
+}
+
+// Right
+.px-1,
+.pr-1 {
+    padding-right: $microMargin;
+}
+
+.px-2,
+.pr-2 {
+    padding-right: $tinyMargin;
+}
+
+.px-3,
+.pr-3 {
+    padding-right: $smallMargin;
+}
+
+.px-4,
+.pr-4 {
+    padding-right: $mediumMargin;
+}
+
+.px-5,
+.pr-5 {
+    padding-right: $largeMargin;
+}
+
+// Bottom
+.py-1,
+.pb-1 {
+    padding-bottom: $microMargin;
+}
+.py-2,
+.pb-2 {
+    padding-bottom: $tinyMargin;
+}
+
+.py-3,
+.pb-3 {
+    padding-bottom: $smallMargin;
+}
+
+.py-4,
+.pb-4 {
+    padding-bottom: $mediumMargin;
+}
+
+.py-5,
+.pb-5 {
+    padding-bottom: $largeMargin;
+}
+
+// Left
+.px-1,
+.pl-1 {
+    padding-left: $microMargin;
+}
+
+.px-2,
+.pl-2 {
+    padding-left: $tinyMargin;
+}
+
+.px-3,
+.pl-3 {
+    padding-left: $smallMargin;
+}
+
+.px-4,
+.pl-4 {
+    padding-left: $mediumMargin;
+}
+
+.px-5,
+.pl-5 {
+    padding-left: $largeMargin;
+}

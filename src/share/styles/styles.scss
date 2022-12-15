@@ -1,0 +1,60 @@
+.h-100 {
+    height: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+// Displays & Overflows
+.d-none {
+    display: none; 
+}
+.o-hidden {
+    overflow: hidden; 
+}
+.o-scroll {
+    overflow: scroll; 
+}
+
+// Cursors
+.c-pointer {
+    cursor: pointer
+ }
+
+// Positions
+ .relative {
+     position: relative;
+    }
+    
+    .absolute {
+        position: absolute;
+    }
+    
+    .fixed {
+        position: fixed;
+    }
+
+    
+// Unselect & Undrag
+.unselect-undrag {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    outline: 0;
+  }
