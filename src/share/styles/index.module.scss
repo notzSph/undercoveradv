@@ -1,3 +1,5 @@
+@import './breakpoints.scss';
+
 .main {
   display: flex;
   flex-direction: column;
@@ -251,7 +253,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: $mqTablet) and (max-width: $mqTabletMax) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
