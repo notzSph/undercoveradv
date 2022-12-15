@@ -1,20 +1,20 @@
-@import "../../styles/variables.scss";
+@use "../../styles/variables.scss" as var;
 
 .generic-popup {
   height: 70%;
   min-height: 70%;
   max-height: 70%;
-  border-radius: $largeRadius;
-  box-shadow: $popupShadow;
-  border: 8px $popupBorder;
+  border-radius: var.$largeRadius;
+  box-shadow: var.$popupShadow;
+  border: 8px var.$popupBorder;
 }
 
 .topbar-wrapper {
   height: 15%;
   max-height: 15%;
   min-height: 15%;
-  padding-right: $veryLargeMargin;
-  border-bottom: 9px $popupBorder;
+  padding-right: var.$veryLargeMargin;
+  border-bottom: 9px var.$popupBorder;
 }
 
 .content-wrapper {
@@ -42,6 +42,6 @@
 
 
 .sidebar-generic {
-  padding: $smallMargin 0 $largeMargin;
-  border-right: 4px $popupBorder;
+  padding: var.$smallMargin 0 var.$largeMargin;
+  border-right: 4px var.$popupBorder;
 }

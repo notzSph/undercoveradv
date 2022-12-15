@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@use "./variables.scss" as var;
 
 /**
 * MARGINS & PADDINGS
@@ -8,251 +8,251 @@
 
 // All side
 .m-1 {
-    margin: $microMargin;
+    margin: var.$microMargin;
 }
 
 .m-2 {
-    margin: $tinyMargin;
+    margin: var.$tinyMargin;
 }
 
 .m-3 {
-    margin: $smallMargin;
+    margin: var.$smallMargin;
 }
 
 .m-4 {
-    margin: $mediumMargin;
+    margin: var.$mediumMargin;
 }
 
 .m-5 {
-    margin: $largeMargin;
+    margin: var.$largeMargin;
 }
 
 // Top
 .my-1,
 .mt-1 {
-    margin-top: $microMargin;
+    margin-top: var.$microMargin;
 }
 
 .my-2,
 .mt-2 {
-    margin-top: $tinyMargin;
+    margin-top: var.$tinyMargin;
 }
 
 .my-3,
 .mt-3 {
-    margin-top: $smallMargin;
+    margin-top: var.$smallMargin;
 }
 
 .my-4,
 .mt-4 {
-    margin-top: $mediumMargin;
+    margin-top: var.$mediumMargin;
 }
 
 .my-5,
 .mt-5 {
-    margin-top: $largeMargin;
+    margin-top: var.$largeMargin;
 }
 
 // Right
 .mx-1,
 .mr-1 {
-    margin-right: $microMargin;
+    margin-right: var.$microMargin;
 }
 
 .mx-2,
 .mr-2 {
-    margin-right: $tinyMargin;
+    margin-right: var.$tinyMargin;
 }
 
 .mx-3,
 .mr-3 {
-    margin-right: $smallMargin;
+    margin-right: var.$smallMargin;
 }
 
 .mx-4,
 .mr-4 {
-    margin-right: $mediumMargin;
+    margin-right: var.$mediumMargin;
 }
 
 .mx-5,
 .mr-5 {
-    margin-right: $largeMargin;
+    margin-right: var.$largeMargin;
 }
 
 // Bottom
 .my-1,
 .mb-1 {
-    margin-bottom: $microMargin;
+    margin-bottom: var.$microMargin;
 }
 
 .my-2,
 .mb-2 {
-    margin-bottom: $tinyMargin;
+    margin-bottom: var.$tinyMargin;
 }
 
 .my-3,
 .mb-3 {
-    margin-bottom: $smallMargin;
+    margin-bottom: var.$smallMargin;
 }
 
 .my-4,
 .mb-4 {
-    margin-bottom: $mediumMargin;
+    margin-bottom: var.$mediumMargin;
 }
 
 .my-5,
 .mb-5 {
-    margin-bottom: $largeMargin;
+    margin-bottom: var.$largeMargin;
 }
 
 // Left
 .mx-1,
 .ml-1 {
-    margin-left: $microMargin;
+    margin-left: var.$microMargin;
 }
 
 .mx-2,
 .ml-2 {
-    margin-left: $tinyMargin;
+    margin-left: var.$tinyMargin;
 }
 
 .mx-3,
 .ml-3 {
-    margin-left: $smallMargin;
+    margin-left: var.$smallMargin;
 }
 
 .mx-4,
 .ml-4 {
-    margin-left: $mediumMargin;
+    margin-left: var.$mediumMargin;
 }
 
 .mx-5,
 .ml-5 {
-    margin-left: $largeMargin;
+    margin-left: var.$largeMargin;
 }
 
 // PADDING
 
 // All side
 .p-1 {
-    padding: $microMargin;
+    padding: var.$microMargin;
 }
 
 .p-2 {
-    padding: $tinyMargin;
+    padding: var.$tinyMargin;
 }
 
 .p-3 {
-    padding: $smallMargin;
+    padding: var.$smallMargin;
 }
 
 .p-4 {
-    padding: $mediumMargin;
+    padding: var.$mediumMargin;
 }
 
 .p-5 {
-    padding: $largeMargin;
+    padding: var.$largeMargin;
 }
 
 // Top
 .py-1,
 .pt-1 {
-    padding-top: $microMargin;
+    padding-top: var.$microMargin;
 }
 
 .py-2,
 .pt-2 {
-    padding-top: $tinyMargin;
+    padding-top: var.$tinyMargin;
 }
 
 .py-3,
 .pt-3 {
-    padding-top: $smallMargin;
+    padding-top: var.$smallMargin;
 }
 
 .py-4,
 .pt-4 {
-    padding-top: $mediumMargin;
+    padding-top: var.$mediumMargin;
 }
 
 .py-5,
 .pt-5 {
-    padding-top: $largeMargin;
+    padding-top: var.$largeMargin;
 }
 
 // Right
 .px-1,
 .pr-1 {
-    padding-right: $microMargin;
+    padding-right: var.$microMargin;
 }
 
 .px-2,
 .pr-2 {
-    padding-right: $tinyMargin;
+    padding-right: var.$tinyMargin;
 }
 
 .px-3,
 .pr-3 {
-    padding-right: $smallMargin;
+    padding-right: var.$smallMargin;
 }
 
 .px-4,
 .pr-4 {
-    padding-right: $mediumMargin;
+    padding-right: var.$mediumMargin;
 }
 
 .px-5,
 .pr-5 {
-    padding-right: $largeMargin;
+    padding-right: var.$largeMargin;
 }
 
 // Bottom
 .py-1,
 .pb-1 {
-    padding-bottom: $microMargin;
+    padding-bottom: var.$microMargin;
 }
 .py-2,
 .pb-2 {
-    padding-bottom: $tinyMargin;
+    padding-bottom: var.$tinyMargin;
 }
 
 .py-3,
 .pb-3 {
-    padding-bottom: $smallMargin;
+    padding-bottom: var.$smallMargin;
 }
 
 .py-4,
 .pb-4 {
-    padding-bottom: $mediumMargin;
+    padding-bottom: var.$mediumMargin;
 }
 
 .py-5,
 .pb-5 {
-    padding-bottom: $largeMargin;
+    padding-bottom: var.$largeMargin;
 }
 
 // Left
 .px-1,
 .pl-1 {
-    padding-left: $microMargin;
+    padding-left: var.$microMargin;
 }
 
 .px-2,
 .pl-2 {
-    padding-left: $tinyMargin;
+    padding-left: var.$tinyMargin;
 }
 
 .px-3,
 .pl-3 {
-    padding-left: $smallMargin;
+    padding-left: var.$smallMargin;
 }
 
 .px-4,
 .pl-4 {
-    padding-left: $mediumMargin;
+    padding-left: var.$mediumMargin;
 }
 
 .px-5,
 .pl-5 {
-    padding-left: $largeMargin;
+    padding-left: var.$largeMargin;
 }

@@ -4,8 +4,9 @@
 *
 *   Each device has a defined range in px to be used as min-width & max-width inside media queries.
 *   All variabiles have $mq as prefix.
-*   The ones delimiting the min threshold are labeled: $mq{DEVICE_TYPE}.
-*   The ones used for the max threshold are labeled: $mq{DEVICE_TYPE}Max.
+*
+*   - $mq{DEVICE_TYPE} ---> Min Device Threshold.
+*   - $mq{DEVICE_TYPE}Max ---> Max Device Threshold.
 */
 
 // Phone Micro 

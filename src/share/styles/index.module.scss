@@ -1,12 +1,17 @@
-@import './breakpoints.scss';
+@use './breakpoints.scss' as brk;
+@use './variables.scss' as var;
 
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: var.$veryLargeMargin;
   min-height: 100vh;
+}
+
+.clean {
+  display: none !important;
 }
 
 .description {
@@ -21,7 +26,6 @@
 }
 
 .description a {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
@@ -253,7 +257,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: $mqTablet) and (max-width: $mqTabletMax) {
+@media (min-width: brk.$mqTablet) and (max-width: brk.$mqTabletMax) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
