@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import { GenericPopup } from '../share/ui/generic-popup/genericPopup'
 import styles from '../share/styles/index.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home(isActive: boolean) {
+  isActive = false
   return (
     <>
       <Head>
@@ -39,6 +41,7 @@ export default function Home() {
           </div>
         </div>
 
+
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -66,7 +69,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={isActive ? inter.className : 'd-none'}>
               Docs <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
@@ -117,6 +120,10 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+
+
+
       </main>
     </>
   )
