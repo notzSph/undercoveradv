@@ -1,23 +1,18 @@
 import type { AppProps } from 'next/app'
 
-/**
- * GLOBAL STYLES IMPORT
- * 
- * Core Style --> app.scss
- * Global Classes --> styles.scss
- * Width --> width.scss
- * Flex --> flex.scss
- * Margins & Paddings --> margin-padding.scss
- * Colors --> colors.scss
- * 
- */
-
+/* Core Style */
 import '../share/styles/app.scss'
+/* Global Classes */
 import '../share/styles/styles.scss'
+/* Width */
 import '../share/styles/width.scss'
+/* Flex */
 import '../share/styles/flex.scss'
+/* Margins & Paddings */
 import '../share/styles/margin-padding.scss'
+/* Colors */
 import '../share/styles/colors.scss'
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />

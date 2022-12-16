@@ -1,10 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import { GenericPopup } from '../share/ui/generic-popup/genericPopup'
 import styles from '../share/styles/index.module.scss'
+import { GenericButton } from '../share/ui/generic-button/genericButton'
 
 const inter = Inter({ subsets: ['latin'] })
+
+function goToBlank(url: string) {
+  window.open(url, '_blank');
+}
 
 export default function Home(isActive: boolean) {
   isActive = false
