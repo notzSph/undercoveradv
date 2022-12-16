@@ -8,7 +8,6 @@ export interface GenericSectionProps { id: string, topBar: any, hasSidebar: bool
 
 export class GenericPopup extends React.Component<GenericSectionProps, { isPopupActive: boolean }> {
 
-
     title: HTMLElement | null = null;
     subtitle: HTMLElement | null = null;
     content: HTMLElement | null = null;
@@ -17,12 +16,12 @@ export class GenericPopup extends React.Component<GenericSectionProps, { isPopup
     constructor(props: GenericSectionProps) {
         super(props);
         this.state = {
-            isPopupActive: false,
+            isPopupActive: true,
         }
     }
 
     render() {
-        const popupClass = 'generic-popup w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag '
+        const popupClass = "generic-popup w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag"
             + (this.state.isPopupActive ? '' : 'd-none ')
         const topBarClass = 'topbar-wrapper w-100 j-between a-center py-3 '
         const contentWrapperClass = 'content-wrapper f-row w-100 '
@@ -40,6 +39,7 @@ export class GenericPopup extends React.Component<GenericSectionProps, { isPopup
                         {this.props.topBar}
                     </div>
                 }
+
                 <div id={(this.props.id + 'contentWrapper')} className={contentWrapperClass}>
                     {
                         this.props.hasSidebar &&

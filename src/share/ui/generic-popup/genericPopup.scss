@@ -6,7 +6,7 @@
   max-height: 70%;
   border-radius: var.$largeRadius;
   box-shadow: var.$popupShadow;
-  border: 8px var.$popupBorder;
+  border: 8px var.$genericBorder;
 }
 
 .topbar-wrapper {
@@ -14,7 +14,7 @@
   max-height: 15%;
   min-height: 15%;
   padding-right: var.$veryLargeMargin;
-  border-bottom: 9px var.$popupBorder;
+  border-bottom: 9px var.$genericBorder;
 }
 
 .content-wrapper {
@@ -43,5 +43,5 @@
 
 .sidebar-generic {
   padding: var.$smallMargin 0 var.$largeMargin;
-  border-right: 4px var.$popupBorder;
+  border-right: 4px var.$genericBorder;
 }
