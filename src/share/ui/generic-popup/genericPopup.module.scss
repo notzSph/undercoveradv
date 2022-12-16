@@ -1,23 +1,23 @@
 @use "../../styles/variables.scss" as var;
 
-.generic-popup {
+.genericPopup {
   height: 70%;
   min-height: 70%;
   max-height: 70%;
   border-radius: var.$largeRadius;
   box-shadow: var.$popupShadow;
-  border: 8px var.$genericBorder;
+  border: var.$popupBorder;
 }
 
-.topbar-wrapper {
+.topbarWrapper {
   height: 15%;
   max-height: 15%;
   min-height: 15%;
   padding-right: var.$veryLargeMargin;
-  border-bottom: 9px var.$genericBorder;
+  border-bottom: var.$popupBorder;
 }
 
-.content-wrapper {
+.contentWrapper {
   height: 85%;
   max-height: 85%;
   min-height: 85%;

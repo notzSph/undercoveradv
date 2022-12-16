@@ -11,7 +11,7 @@
 */
 
 /* Generic Button */
-.generic-btn {
+.genericBtn {
     width: fit-content;
     min-width: (50px + (25px * 2));
     height: 40px;
@@ -26,43 +26,43 @@
     transition: 0.2s;
 }
 
-.generic-btn:active {
+.genericBtn:active {
     transform: scale(0.9);
   }
 
 /* Primary Button */
-.primary-btn {
-    @extend .generic-btn;
+.primaryBtn {
+    @extend .genericBtn;
     background-color: var.$cyan;
 }
 
-.primary-btn:hover {
+.primaryBtn:hover {
     color: var.$cyan;
     border-color: var.$cyan;
     background-color: var.$notBlack;
     box-shadow: var.$buttonShadow var.$cyan;
 }
 
-.primary-btn:active {
+.primaryBtn:active {
     color: var.$activeCyan;
     border-color: var.$activeCyan;
     box-shadow: var.$buttonShadow var.$activeCyan;
 }
 
 /* Secondary Button */
-.secondary-btn {
-    @extend .generic-btn;
+.secondaryBtn {
+    @extend .genericBtn;
     background-color: var.$magenta;
 }
 
-.secondary-btn:hover {
+.secondaryBtn:hover {
     color: var.$magenta;
     border-color: var.$magenta;
     background-color: var.$notBlack;
     box-shadow: var.$buttonShadow var.$magenta;
 }
 
-.secondary-btn:active {
+.secondaryBtn:active {
     color: var.$activeMagenta;
     border-color: var.$activeMagenta;
     box-shadow: var.$buttonShadow var.$activeMagenta;

@@ -1,23 +1,27 @@
-import { GenericButton } from '../generic-button/genericButton'
-import './popupTopbar.module.scss'
+import { GenericButton } from '../generic-button/genericButton';
+
+const pino = '/assets/images/undrcover-logo.png'
 
 export default function PopupTopbar() {
 
     return (
         <>
-            <div className='w-100 f-row j-between a-center'>
-                <div className='w-30 h-100 j-start a-center o-hidden px-5 bg-notWhite'>
-                    <img width='35' alt='close_window' className='a-center c-pointer' />
-                    <img width='35' alt='white_button' className='a-center c-pointer' />
-                    <img width='35' alt='white_button' className='a-center c-pointer' />
+            <div className='w-100 f-row j-between a-center bg-notWhite px-5'>
+                <div className='w-30 h-100 j-start a-center o-hidden  px-5 '>
+                    <i style={{ fontSize: '20px' }} className='undr-btn-black a-center c-pointer '></i>
+                    <i style={{ fontSize: '20px' }} className='undr-btn-white a-center c-pointer '></i>
+                    <i style={{ fontSize: '20px' }} className='undr-btn-white a-center c-pointer '></i>
                 </div>
-                    <div className='w-30 f-row j-end a-center py-3'>
-                        <div className='pr-5'>logo</div>
-                        <div>undercoveradv@gmail.com</div>
-                        <GenericButton 
-                        label='Contact Us'
-                        />
+                <div className='w-30 f-row j-end a-center p-3'>
+                    <div className='f-row a-center pr-4'>
+                        <img src={pino} alt='yo' style={{ width: '50px' }} />
+                    <div className='ml-4'>undercoveradv@gmail.com</div>
                     </div>
+                    <GenericButton
+                        label='Contact Us'
+                        isPrimary={true}
+                    />
+                </div>
             </div>
         </>
     )
