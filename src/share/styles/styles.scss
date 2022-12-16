@@ -6,7 +6,7 @@
 
 // Displays & Overflows
 .d-none {
-    display: none; 
+    display: none !important; 
 }
 .o-hidden {
     overflow: hidden; 

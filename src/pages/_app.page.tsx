@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import type { AppProps } from 'next/app'
 
 /* Core Style */
@@ -15,5 +16,15 @@ import '../share/styles/colors.scss'
 
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <link href="/assets/undrcover/css/undrcover-codes.css" rel="stylesheet" />
+        <link href="/assets/undrcover/css/undrcover-embedded.css" rel="stylesheet" />
+        <link href="/assets/undrcover/css/undrcover.css" rel="stylesheet" />
+      </Head>
+
+      <Component {...pageProps} />
+    </>
+  )
 }

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../share/styles/index.module.scss'
 import PopupTopbar from '../share/ui/popup-topbar/popupTopbar'
+import { GenericPopup } from '../share/ui/generic-popup/genericPopup'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ export default function Home(isActive: boolean) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} f-column j-between a-center`}>
-        <PopupTopbar />
+        <GenericPopup id='popup' hasScroll={false} hasSidebar={true} />
       </main>
     </>
   )
