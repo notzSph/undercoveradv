@@ -23,7 +23,7 @@ export class GenericPopup extends React.Component<GenericSectionProps, { isPopup
     render() {
         const popupClass = "generic-popup w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag"
             + (this.state.isPopupActive ? '' : 'd-none ')
-        const topBarClass = 'topbar-wrapper w-100 j-between a-center py-3 '
+        const topBarClass = 'topbar-wrapper w-100 '
         const contentWrapperClass = 'content-wrapper f-row w-100 '
         const contentClass = 'f-column h-100 j-start a-start '
             + (this.props.hasSidebar ? 'w-70 ' : 'w-100 ')

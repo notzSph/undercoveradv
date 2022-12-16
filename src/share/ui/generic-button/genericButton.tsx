@@ -1,5 +1,5 @@
 import React from 'react';
-import './genericButton.module.scss';
+import './genericButton.scss';
 
 export function GenericButton(props: {
     buttonPosition?: ('LEFT' | 'CENTER' | 'RIGHT'),
@@ -9,7 +9,7 @@ export function GenericButton(props: {
     fontSize?: string,
     isPrimary?: boolean,
     style?: React.CSSProperties | undefined
-    onClick: () => void,
+    onClick?: () => void,
 }) {
 
     // Main Container Class
