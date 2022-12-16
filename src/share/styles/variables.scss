@@ -29,8 +29,14 @@ $white75: rgba(255, 255, 255, 0.75);
 $white: white;
 $notWhite: rgb(240, 240, 240);
 
+$cyan: #07edca;
+$activeCyan: #00dbb9;
+$magenta: #f505f2;
+$activeMagenta: #f505f2;
+
 $popupShadow: 12px 12px 0 1px $notBlack;
-$popupBorder: solid $notBlack;
+$buttonShadow: 3px 3px 0 0;
+$genericBorder: solid $notBlack;
 
 
 // Font Weights
