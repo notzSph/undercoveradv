@@ -91,6 +91,26 @@ body {
   color: black;
   background: white;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: var.$fsXL;
+}
+
+h4 {
+  font-size: var.$fsMid;
+}
+
+h4 {
+  font-size: var.$fsXS;
+}
 
 a {
   color: inherit;

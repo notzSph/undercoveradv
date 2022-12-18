@@ -19,11 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link href="/assets/undrcover/css/undrcover-codes.css" rel="stylesheet" />
-        <link href="/assets/undrcover/css/undrcover-embedded.css" rel="stylesheet" />
-        <link href="/assets/undrcover/css/undrcover.css" rel="stylesheet" />
       </Head>
-
       <Component {...pageProps} />
     </>
   )
