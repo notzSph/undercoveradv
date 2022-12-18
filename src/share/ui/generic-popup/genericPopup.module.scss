@@ -23,25 +23,6 @@
   min-height: 85%;
 }
 
-.topbar-contact-btn-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 25%;
-  height: 100%;
-  max-height: 100%;
-  max-width: 30%;
-  min-height: 100%;
-  min-width: 25%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-
-.sidebar-generic {
-  padding: var.$smallMargin 0 var.$largeMargin;
-  border-right: 4px var.$genericBorder;
+.contentClass {
+  border-left: 8px var.$genericBorder;
 }

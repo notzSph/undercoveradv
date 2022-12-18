@@ -19,18 +19,18 @@ export class GenericPopup extends React.Component<GenericSectionProps, { isPopup
     }
 
     render() {
-        const popupClass =`${styles.genericPopup} ${(this.state.isPopupActive ? '' : 'd-none ')} w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag `
-        const topBarClass = `${styles.topbarWrapper} w-100 `
+        const popupWrapperClass =`${styles.genericPopup} ${(this.state.isPopupActive ? '' : 'd-none ')} w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag `
+        const topbarWrapperClass = `${styles.topbarWrapper} w-100 `
         const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
-        const contentClass = 'f-column h-100 j-start a-start '
+        const contentClass = `${styles.contentClass} f-column h-100 j-start a-start `
             + (this.props.hasSidebar ? 'w-70 ' : 'w-100 ')
             + (this.props.hasScroll ? 'o-scroll ' : '')
-        const sidebarClass = 'w-30 h-100 f-column f-wrap j-start a-start '
+        const sidebarClass = 'w-30 h-100 flex-center-all f-column f-wrap pt-3 pb-5 '
 
         return (
 
-            <section id={this.props.id} className={popupClass}>
-                <div id={(this.props.id + 'topBar')} className={topBarClass} >
+            <section id={this.props.id} className={popupWrapperClass}>
+                <div id={(this.props.id + 'topBar')} className={topbarWrapperClass} >
                     <PopupTopbar />
                 </div>
 
