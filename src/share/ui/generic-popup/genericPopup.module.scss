@@ -1,9 +1,11 @@
 @use "../../styles/variables.scss" as var;
 
+$popupHeight: 600px;
+
 .genericPopup {
-  height: 70%;
-  min-height: 70%;
-  max-height: 70%;
+  height: $popupHeight;
+  min-height: $popupHeight;
+  max-height: $popupHeight;
   border-radius: var.$largeRadius;
   box-shadow: var.$popupShadow;
   border: var.$popupBorder;
