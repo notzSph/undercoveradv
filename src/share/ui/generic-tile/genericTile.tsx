@@ -2,7 +2,6 @@ import styles from './genericTile.module.scss';
 
 export default function GenericTile(props: {
     id: string;
-    title?: string;
     subhead?: string;
     category?: string;
     description?: string;
@@ -15,12 +14,7 @@ export default function GenericTile(props: {
     return (
         <>
             <div id={props.id} className={genericTileWrapper}>
-                {
-                    props.title &&
-                    <h2 id={props.id + 'title'}>
-                        {props.title}
-                    </h2>
-                }
+          
                 {
                     props.subhead &&
                     <h4 id={props.id + 'subhead'}>{props.subhead}</h4>
