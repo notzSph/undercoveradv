@@ -1,6 +1,6 @@
 import { GenericButton } from '../generic-button/genericButton';
+import { undercoverLogo } from '../../utils/const.utils';
 
-const undercoverLogo = '/assets/images/undrcover-logo.png'
 
 export default function PopupTopbar() {
 
