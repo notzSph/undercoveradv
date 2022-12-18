@@ -1,6 +1,6 @@
 import { GenericButton } from '../generic-button/genericButton';
 
-const pino = '/assets/images/undrcover-logo.png'
+const undercoverLogo = '/assets/images/undrcover-logo.png'
 
 export default function PopupTopbar() {
 
@@ -12,9 +12,10 @@ export default function PopupTopbar() {
                     <i style={{ fontSize: '20px' }} className='undr-btn-white a-center c-pointer '></i>
                     <i style={{ fontSize: '20px' }} className='undr-btn-white a-center c-pointer '></i>
                 </div>
+                <div className='w-40 flex-center-all'></div>
                 <div className='w-30 f-row j-end a-center p-3'>
                     <div className='f-row a-center pr-4'>
-                        <img src={pino} alt='yo' style={{ width: '50px' }} />
+                        <img src={undercoverLogo} alt='yo' style={{ width: '50px' }} />
                     <div className='ml-4'>undercoveradv@gmail.com</div>
                     </div>
                     <GenericButton
