@@ -5,6 +5,8 @@ import styles from '../share/styles/index.module.scss'
 import PopupTopbar from '../share/ui/popup-topbar/popupTopbar'
 import { GenericPopup } from '../share/ui/generic-popup/genericPopup'
 import SystemPopup from '../components/system/system'
+import AboutPopup from '../components/about/about'
+import BinPopup from '../components/bin/bin'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +24,8 @@ export default function Home(isActive: boolean) {
       <main className={`${styles.main} f-column j-between a-center`}>
         <GenericPopup id='popup' hasScroll={false} hasSidebar={false} />
         <SystemPopup />
+        <AboutPopup />
+        <BinPopup />
       </main>
     </>
   )
