@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../share/styles/index.module.scss'
-import PopupTopbar from '../share/ui/popup-topbar/popupTopbar'
-import { GenericPopup } from '../share/ui/generic-popup/genericPopup'
 import SystemPopup from '../components/system/system'
 import AboutPopup from '../components/about/about'
 import BinPopup from '../components/bin/bin'
+import PortfolioPopup from '../components/portfolio/portfolio'
+import ServicesPopup from '../components/services/services'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,10 +22,11 @@ export default function Home(isActive: boolean) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} f-column j-between a-center`}>
-        <GenericPopup id='popup' hasScroll={false} hasSidebar={false} />
         <SystemPopup />
         <AboutPopup />
         <BinPopup />
+        <PortfolioPopup />
+        <ServicesPopup />
       </main>
     </>
   )
