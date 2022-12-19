@@ -1,3 +1,5 @@
+import { GetStaticPropsContext } from 'next'
+import { useTranslations } from 'use-intl'
 import { GenericPopup } from '../../share/ui/generic-popup/genericPopup';
 import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTile from '../../share/ui/generic-tile/genericTile';
@@ -5,22 +7,27 @@ import { servicesTiles } from '../../share/utils/const.utils';
 import styles from './services.module.scss';
 
 
+
+
 export default function ServicesPopup() {
+
+    const i18n = useTranslations('Services');
+    
     return (
         <>
             <GenericPopup id='services' hasSidebar={true} hasScroll={true}
                 sidebar={
-                    <div>ginni ginni</div>
+                    <div>{i18n('gianni')}</div>
                 }
                 content={
                     servicesTiles.map((section, is) => {
                         return (
-                            <GenericSection key={is} title={section.title}>
+                            <GenericSection key={is} title={i18n('merio')}>
                                 {
                                     section.children.map((tile, it) => {
                                         return (
                                             <GenericTile key={it} id='services' isPortfolio={false}
-                                                subhead={tile.subhead}
+                                               subhead={tile.subhead}
                                                 description={tile.description}
                                             />
                                         )
@@ -32,4 +39,13 @@ export default function ServicesPopup() {
             />
         </>
     )
+}
+
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+    return {
+        props: {
+            messages: (await import(`../../share/lang/${locale}.json`)).default,
+        }
+    };
 }

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { NextIntlProvider } from 'next-intl'
 import type { AppProps } from 'next/app'
 
 /* Core Style */
@@ -18,9 +19,11 @@ import '../share/styles/colors.scss'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
+    <NextIntlProvider messages={pageProps.messages}>
       <Head>
       </Head>
       <Component {...pageProps} />
+    </NextIntlProvider>
     </>
   )
 }

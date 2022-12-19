@@ -4,7 +4,6 @@ export const undercoverBinLogo = '/assets/images/bin-logo.png';
 // TODO Create Generic Section Component
 export const servicesTiles = [
     {
-        title: 'Minchia pino',
         children: [
             {
                 subhead: 'Minchia pino',
@@ -22,7 +21,6 @@ export const servicesTiles = [
             
     },
     {
-        title: 'Minchia pino',
         children: [
             {
                 subhead: 'Minchia pino',
@@ -40,7 +38,6 @@ export const servicesTiles = [
             
     },
     {
-        title: 'Minchia pino',
         children: [
             {
                 subhead: 'Minchia pino',

@@ -7,12 +7,16 @@ import AboutPopup from '../components/about/about'
 import BinPopup from '../components/bin/bin'
 import PortfolioPopup from '../components/portfolio/portfolio'
 import ServicesPopup from '../components/services/services'
+import { GetStaticPropsContext } from 'next';
+import { useTranslations } from 'next-intl';
 
 const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home(isActive: boolean) {
-  isActive = false
+
+  const i18n = useTranslations('Index')
+
   return (
     <>
       <Head>
@@ -22,6 +26,8 @@ export default function Home(isActive: boolean) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} f-column j-between a-center`}>
+        
+        
         <SystemPopup />
         <AboutPopup />
         <BinPopup />
@@ -30,4 +36,12 @@ export default function Home(isActive: boolean) {
       </main>
     </>
   )
+}
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: (await import(`../share/lang/${locale}.json`)).default
+    }
+  }
 }
