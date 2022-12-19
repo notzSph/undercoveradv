@@ -77,6 +77,14 @@
         "sub5": "5. Si basa tutto su una comunicazione trasparente",
         "desc5": "Il nostro lavoro è costruito su un rapporto onesto e sincero con il cliente. Altrimenti che partner in crime saremmo?"
     },
+    "System": {
+        "brand": "UndercoverADV",
+        "version": "4.2.1",
+        "release": "<b>Anno di Rilascio</b>: 2023",
+        "location": "<b>Location</b>: Italia (IT)",
+        "expertise": "<b>Esperienza</b>:14 Anni",
+        "coreValue": "<b>Valore Core</b>: Design Human-Centered"
+    },
     "Bin": {
         "claim": "Il Cestino è vuoto.",
         "quote": "Siamo onesti, sceglieresti davvero un partner che casca nel vecchio trucco del cestino?"

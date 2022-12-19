@@ -17,7 +17,7 @@ export default function ServicesPopup() {
         <>
             <GenericPopup id='services' hasSidebar={true} hasScroll={true}
                 sidebar={
-                    <div>{i18n('gianni')}</div>
+                    <div>WEWE</div>
                 }
                 content={
                     servicesTiles.map((section, is) => {

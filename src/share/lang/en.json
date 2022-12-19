@@ -77,6 +77,14 @@
         "sub5": "5. It's All About Honest Communication",
         "desc5": "If you work with us you know what it means to open transparent discussions. Otherwise what kind of partner in crime would we be?"
     },
+    "System": {
+        "brand": "UndercoverADV",
+        "version": "4.2.1",
+        "release": "<b>Release Year</b>: 2023",
+        "location": "<b>Location</b>: Italy (IT)",
+        "expertise": "<b>Expertise</b>: 14 Years",
+        "coreValue": "<b>Core Value</b>: Human Centered Design"
+    },
     "Bin": {
         "claim": "Trash Bin is empty.",
         "quote": "Be honest, would you choose a partner that falls for the old bin trick?"

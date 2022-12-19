@@ -13,7 +13,7 @@ export default function BinPopup() {
             <GenericPopup id='bin' hasSidebar={false} hasScroll={false}
                 content={
                     <div className='w-100 h-100 f-column flex-center-all '>
-                        <img src={undercoverBinLogo} className='pb-5' style={{width: '250px'}} />
+                        <img src={undercoverBinLogo} className='pb-5' style={{ width: '250px' }} />
                         <h2 className='pb-4'>{i18n('claim')}</h2>
                         <p>{i18n('quote')}</p>
                     </div>
