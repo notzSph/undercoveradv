@@ -10,7 +10,8 @@ import styles from './services.module.scss';
 
 
 export default function ServicesPopup() {
-
+    
+    // Internationalization
     const i18n = useTranslations('Services');
     
     return (
@@ -41,7 +42,7 @@ export default function ServicesPopup() {
     )
 }
 
-
+// Internationalization
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
     return {
         props: {

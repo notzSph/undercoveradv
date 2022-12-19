@@ -18,7 +18,7 @@ export default function GenericTile(props: GenericTileProps) {
                     <h4 id={props.id + 'subhead'}>{props.subhead}</h4>
                 }
 
-                {/* Category (only for portfolioPopup) */}
+                {/* Category */}
                 {
                     props.category &&
                     <h5 id={props.id + 'category'}>{props.category}</h5>

@@ -14,7 +14,7 @@ export function GenericButton(props: GenericButtonProps) {
             className={mainClass}
             aria-label={props.label}
             style={{
-                ...props.style
+                ...props.styles
             }}>
 
             {/* Label */}

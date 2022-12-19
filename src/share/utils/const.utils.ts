@@ -1,8 +1,22 @@
+
+/**
+ * Assets Import (Images & SVG)
+ */
 export const undercoverLogo = '/assets/images/undrcover-logo.png';
 export const undercoverBinLogo = '/assets/images/bin-logo.png';
 export const windowBtnBlack = '/assets/svg/btn-black.svg';
 export const windowBtnWhite = '/assets/svg/btn-white.svg';
 
+/**
+ *  Services Tiles
+ *  
+ *  Tiles with Content's Subheads and Descriptions
+ *  @param title ---> Service Title (e.g. Website & WebApp Design )
+ *  @param children ---> List of Subheads & Descriptions
+ *  @param subhead ---> FAQ ( e.g. Why Do I Need a Website? )
+ *  @param descritpion ---> Answer ( e.g. You need a website because it's cool )
+ *  
+ */
 export const servicesTiles = [
     {
         title: 'webDev.title1',
@@ -20,7 +34,7 @@ export const servicesTiles = [
                 description: 'webDev.desc3',
             }
         ]
-        
+
     },
     {
         title: 'webDev.title2',
@@ -33,9 +47,9 @@ export const servicesTiles = [
                 subhead: 'webDev.sub5',
                 description: 'webDev.desc5',
             }
-          
+
         ]
-        
+
     },
     {
         title: 'webDev.title3',
@@ -49,9 +63,18 @@ export const servicesTiles = [
                 description: 'webDev.desc7',
             }
         ]
-            
+
     }
 ];
+
+/**
+ *  About Tiles
+ *  
+ *  Tiles with About Content's Subheads and Descriptions
+ *  @param subhead ---> Core Value (e.g. We Believe in Human Centered Design )
+ *  @param descritpion ---> Core Value Explanation (e.g. We all humans so makes sense )
+ * 
+ */
 
 export const aboutTiles = [
     {
@@ -77,6 +100,6 @@ export const aboutTiles = [
                 description: 'desc5',
             }
         ]
-            
+
     },
 ]

@@ -6,7 +6,9 @@ import styles from './system.module.scss';
 
 export default function SystemPopup() {
 
-const i18n = useTranslations('System')
+
+    // Internationalization
+    const i18n = useTranslations('System')
 
     return (
         <>
@@ -24,19 +26,20 @@ const i18n = useTranslations('System')
                         <h1>{i18n('brand')}</h1>
                         <h3>{i18n('version')}</h3>
                         <ul>
-                            <li dangerouslySetInnerHTML={{__html: i18n.raw('release')}} />
-                            <li dangerouslySetInnerHTML={{__html: i18n.raw('location')}} />
-                            <li dangerouslySetInnerHTML={{__html: i18n.raw('expertise')}} />
-                            <li dangerouslySetInnerHTML={{__html: i18n.raw('coreValue')}} />
+                            <li dangerouslySetInnerHTML={{ __html: i18n.raw('release') }} />
+                            <li dangerouslySetInnerHTML={{ __html: i18n.raw('location') }} />
+                            <li dangerouslySetInnerHTML={{ __html: i18n.raw('expertise') }} />
+                            <li dangerouslySetInnerHTML={{ __html: i18n.raw('coreValue') }} />
                         </ul>
                     </>
                 }
-                
+
             />
         </>
     )
 }
 
+// Internationalization
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
     return {
         props: {

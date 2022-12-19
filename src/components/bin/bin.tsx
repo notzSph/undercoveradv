@@ -1,11 +1,12 @@
 import { GetStaticPropsContext } from 'next'
 import { useTranslations } from 'next-intl'
-import GenericPopup  from '../../share/ui/generic-popup/genericPopup'
+import GenericPopup from '../../share/ui/generic-popup/genericPopup'
 import { undercoverBinLogo } from '../../share/utils/const.utils'
 import styles from './bin.module.scss'
 
 export default function BinPopup() {
 
+    // Internationalization
     const i18n = useTranslations('Bin')
 
     return (
@@ -22,6 +23,7 @@ export default function BinPopup() {
     )
 }
 
+// Internationalization
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
     return {
         props: {
