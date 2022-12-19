@@ -76,5 +76,9 @@
         "desc4": "The only thing we know is that in future the number of connections between different digital touch points will exponentially grow. We are here to help you to be ready for the future.",
         "sub5": "5. It's All About Honest Communication",
         "desc5": "If you work with us you know what it means to open transparent discussions. Otherwise what kind of partner in crime would we be?"
+    },
+    "Bin": {
+        "claim": "Trash Bin is empty.",
+        "quote": "Be honest, would you choose a partner that falls for the old bin trick?"
     }
 }

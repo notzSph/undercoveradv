@@ -63,7 +63,6 @@
             "sub8": "Cos'è incluso in un Corporate Design Kit??",
             "desc8": "Not all the E-commerce are created equal, a perfect e-commerce for a B2B company won't fit the same for a B2C or a D2C company. That's the reason why we always analyse in depth our customers' business, so we make sure to give you a tailor made product that will fit perfectly with your brand and your service."
         }
-      
     },
     "About": {
         "title": "Your Partner In Crime Since 2008",
@@ -77,5 +76,9 @@
         "desc4": "L'unica cosa che sappiamo è che in futuro il numero di connessioni tra diversi punti di contatto digitali crescerà esponenzialmente. Progettare sistemi che possano interagire con diverse tecnologie assicura una libertà di sviluppo maggiore sul lungo periodo.",
         "sub5": "5. Si basa tutto su una comunicazione trasparente",
         "desc5": "Il nostro lavoro è costruito su un rapporto onesto e sincero con il cliente. Altrimenti che partner in crime saremmo?"
+    },
+    "Bin": {
+        "claim": "Il Cestino è vuoto.",
+        "quote": "Siamo onesti, sceglieresti davvero un partner che casca nel vecchio trucco del cestino?"
     }
 }
