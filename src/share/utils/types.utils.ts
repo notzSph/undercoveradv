@@ -54,14 +54,15 @@ export interface GenericButtonProps {
  */
 export interface GenericSectionProps  {
     title?: string;
-    styles?: React.CSSProperties;
     children: ReactNode | ReactNode[];
+    styles?: React.CSSProperties;
 }
 
  
  /**  Generic Tile Props
  *  
  *  Tiles with Content's Subheads and Descriptions
+ *  @param id ---> id ( e.g. Services )
  *  @param subhead ---> FAQ (e.g. Why Do I Need a Website? )
  *  @param descritpion ---> Answer (e.g. You need a website because it's cool )
  *  @param isPortfolio ---> Flag for portfolioPopup layout management
@@ -71,9 +72,9 @@ export interface GenericSectionProps  {
  */
 export interface GenericTileProps {
     id: string;
-    category?: string;
     subhead?: string;
     description?: string;
     isPortfolio: boolean;
+    category?: string;
     styles?: React.CSSProperties | undefined
 }
