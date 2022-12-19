@@ -1,17 +1,14 @@
-import React from 'react';
+import { GenericButtonProps } from '../../utils/types.utils';
 import styles from './genericButton.module.scss';
 
-export function GenericButton(props: {
-    label: string,
-    isPrimary?: boolean,
-    style?: React.CSSProperties | undefined
-    onClick?: () => void,
-}) {
+export function GenericButton(props: GenericButtonProps) {
 
-    // Main Container Class
-    const mainClass = `${styles.genericBtn} ${(props.isPrimary? styles.primaryBtn : styles.secondaryBtn)} flex-center-all relative unselect-undrag c-pointer `;
+    // Styles
+    const mainClass = `${styles.genericBtn} ${(props.isPrimary ? styles.primaryBtn : styles.secondaryBtn)} flex-center-all relative unselect-undrag c-pointer `;
 
     return (
+
+        // Container
         <div
             onClick={props.onClick}
             className={mainClass}
@@ -19,10 +16,10 @@ export function GenericButton(props: {
             style={{
                 ...props.style
             }}>
+
+            {/* Label */}
             <div className="w-100 j-center">
-                <div className="generic-button-text">
-                    {props.label}
-                </div>
+                {props.label}
             </div>
         </div>
     )

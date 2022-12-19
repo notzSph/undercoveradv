@@ -1,55 +1,46 @@
 import React from 'react'
-import { GenericButton } from '../generic-button/genericButton';
+import { GenericPopupProps } from '../../utils/types.utils';
 import PopupTopbar from '../popup-topbar/popupTopbar';
 import styles from './genericPopup.module.scss'
 
 
+export default function GenericPopup(props: GenericPopupProps) {
 
-export interface GenericSectionProps { id: string, hasSidebar: boolean, hasScroll: boolean, content?: any, sidebar?: any, buttons?: any }
+    // Styles
+    const popupWrapperClass = `${styles.genericPopup} ${(props.isActive ? '' : 'd-none ')} w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag `
+    const topbarWrapperClass = `${styles.topbarWrapper} w-100 flex-center-all`
+    const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
+    const contentClass = `${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} ${(props.hasScroll ? 'o-scroll ' : '')} f-column h-100 j-start a-start `
+    const sidebarClass = 'w-30 h-100 flex-center-all f-column f-wrap '
 
-export class GenericPopup extends React.Component<GenericSectionProps, { isPopupActive: boolean }> {
+    return (
 
-    content: HTMLElement | null = null;
-    sidebar: HTMLElement | null = null;
+        /* Container */
+        <section id={props.id} className={popupWrapperClass}>
 
-    constructor(props: GenericSectionProps) {
-        super(props);
-        this.state = {
-            isPopupActive: true,
-        }
-    }
+            {/* Topbar */}
+            <div id={(props.id + 'topBar')} className={topbarWrapperClass} >
+                <PopupTopbar />
+            </div>
 
-    render() {
-        const popupWrapperClass = `${styles.genericPopup} ${(this.state.isPopupActive ? '' : 'd-none ')} w-100 f-column j-start a-center o-hidden bg-notWhite unselect-undrag `
-        const topbarWrapperClass = `${styles.topbarWrapper} w-100 `
-        const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
-        const contentClass = 'f-column h-100 j-start a-start '
-            + (this.props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')
-            + (this.props.hasScroll ? 'o-scroll ' : '')
-        const sidebarClass = 'w-30 h-100 flex-center-all f-column f-wrap '
+            {/* Content Wrapper */}
+            <div id={(props.id + 'contentWrapper')} className={contentWrapperClass}>
 
-        return (
-
-            <section id={this.props.id} className={popupWrapperClass}>
-
-                {/* Topbar */}
-                <div id={(this.props.id + 'topBar')} className={topbarWrapperClass} >
-                    <PopupTopbar />
-                </div>
+                {/* Sidebar */}
+                {
+                    props.hasSidebar &&
+                    <div id={(props.id + 'hasSidebar')} className={sidebarClass}>
+                        {props.sidebar}
+                    </div>
+                }
 
                 {/* Content */}
-                <div id={(this.props.id + 'contentWrapper')} className={contentWrapperClass}>
-                    {
-                        this.props.hasSidebar &&
-                        <div id={(this.props.id + 'hasSidebar')} className={sidebarClass}>
-                            {this.props.sidebar}
-                        </div>
-                    }
-                    <div id={(this.props.id + 'content')} className={contentClass} style={{ height: '600px' }}>
-                        {this.props.content && this.props.content}
-                    </div>
+                <div id={(props.id + 'content')} className={contentClass} style={{ height: '600px' }}>
+                    {props.content && props.content}
                 </div>
-            </section >
-        )
-    }
+
+            </div>
+        </section >
+    )
+
 }
