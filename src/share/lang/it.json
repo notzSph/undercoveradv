@@ -4,8 +4,66 @@
         "description": "minchiasA"
     },
     "Services": {
-        "gianni": "ugp",
-        "merio": "porcodio"
+        "webDev": {
+            "title1": "Custom Website / WebApp",
+            "sub1": "È utile alla mia attività avere un sito web oggi?",
+            "desc1": "La risposta breve è che non c'è mai stato un momento migliore o più importante per investire in un sito web per la tua attività. Un sito Web offre una gamma di vantaggi che aumenta di valore anno dopo anno al pari di Internet stesso.",
+            "sub2": "Come posso esser assicurarmi che sia la scelta giusta?",
+            "desc2": "Qui a UndercoverADV ci piace fare le cose per bene, offriamo ai nostri clienti un pacchetto su misura in base alle loro esigenze specifiche. Ci assicuriamo che ogni progetto sia uno specchio dei valori fondamentali dell'azienda, altrimenti non sarà efficace.",
+            "sub3": "Che cosa si intende per Custom?",
+            "desc3": "Possiamo adattarci praticamente a tutto, possiamo spaziare da un tema Full Custom per Wordpress a un sito web più complesso basato su codice o una PWA (Progressive Web Application), in relazione alle tue esigenze.",
+            "title2": "CMS e WCMS",
+            "sub4": "Static & Dynamic Content Editing TO CHANGE",
+            "desc4": "A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila! TO CHANGE",
+            "sub5": "How Do I Know If It's The Right Fit TO CHANGE",
+            "desc5": "Here at UndercoverADV we like to do things the right way, we give our customers a tailor made package based on their specific needs. We make sure every project is a mirror of the business core values, otherwise it won't be effective. TO CHANGE",
+            "title3": "E-Commerce",
+            "sub6": "Perchè dovrei implementare un E-Commerce?",
+            "desc6": "Avere un negozio di e-commerce permette di raggiungere un pubblico più ampio. ridurre i costi operativi, e diversificare le tue vendite. Fare acquisti da casa è più conveniente per il consumatore, che oggigiorno richiede il digitale. Un altro vantaggio per la tua azienda è che otterrai dati importanti utili a migliorare il tuo servizio.",
+            "sub7": "Quale E-Commerce è la scelta corretta?",
+            "desc7": "Non tutti gli e-commerce sono uguali, un e-commerce perfetto per un'azienda B2B non si adatterà allo stesso modo per un'azienda B2C o D2C. Questo è il motivo per cui facciamo sempre un'analisi dettagliata sui business dei nostri clienti, in modo da ottenere un prodotto su misura che si adatti perfettamente al tuo marchio, al tuo servizio ed alle tue esigenze."
+        },
+        "uxDes": {
+            "title1": "App Prototyping",
+            "sub1": "What is an App Prototype?",
+            "desc1": "The short answer is that there has never been a better or more important time to invest in a website for your business. A website offers a wide variety of benefits, and most of these increase in value exponentially year over year, just like the Internet itself.",
+            "sub2": "Why do I need a Prototype of my App?",
+            "desc2": "Here at UndercoverADV we like to do things the right way, we give our customers a tailor made package based on their specific needs. We make sure every project is a mirror of the business core values, otherwise it won't be effective.",
+            "sub3": "How do we prototype your App?",
+            "desc3": "We can adapt to almost everything, so based on your need we can space from a Full Custom Theme for Wordpress to a more complex full-code-based website or PWA.",
+            "title2": "Website & WebApp Design",
+            "sub4": "Why can't I just go straight to the Developing Phase?",
+            "desc4": "A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila! TO CHANGE",
+            "sub5": "How does the process work?",
+            "desc5": "Here at UndercoverADV we like to do things the right way, we give our customers a tailor made package based on their specific needs. We make sure every project is a mirror of the business core values, otherwise it won't be effective. TO CHANGE",
+            "title3": "App Schema Design",
+            "sub6": "What is an App Schema?",
+            "desc6": "Having an eCommerce store can be used to reach a wider audience. cut down operational costs, bring you more customers, and diversify your sales. Shopping from home is more convenient for the consumer, and they are demanding digital nowadays. Another benefit for your business is you will gain data to improve your offering.",
+            "sub7": "Why do I need a Schema for my App?",
+            "desc7": "Not all the E-commerce are created equal, a perfect e-commerce for a B2B company won't fit the same for a B2C or a D2C company. That's the reason why we always analyse in depth our customers' business, so we make sure to give you a tailor made product that will fit perfectly with your brand and your service."
+        },
+        "visualDes": {
+            "title1": "Brand Identity",
+            "sub1": "Cos'è una Brand Identity?",
+            "desc1": "The short answer is that there has never been a better or more important time to invest in a website for your business. A website offers a wide variety of benefits, and most of these increase in value exponentially year over year, just like the Internet itself.",
+            "sub2": "Perchè è importante la Brand Identity?",
+            "desc2": "Here at UndercoverADV we like to do things the right way, we give our customers a tailor made package based on their specific needs. We make sure every project is a mirror of the business core values, otherwise it won't be effective.",
+            "sub3": "Come si costruisce una solida Brand Identity?",
+            "desc3": "We can adapt to almost everything, so based on your need we can space from a Full Custom Theme for Wordpress to a more complex full-code-based website or PWA.",
+            "title2": "Logo Design",
+            "sub4": "Come faccio a sapere se il mio Logo è efficace?",
+            "desc4": "A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila! TO CHANGE",
+            "sub5": "Mi piace il mio logo, lo si può migliorare senza cambiarlo?",
+            "desc5": "Here at UndercoverADV we like to do things the right way, we give our customers a tailor made package based on their specific needs. We make sure every project is a mirror of the business core values, otherwise it won't be effective. TO CHANGE",
+            "sub6": "Come può aiutarmi UndercoverADV?",
+            "desc6": "Having an eCommerce store can be used to reach a wider audience. cut down operational costs, bring you more customers, and diversify your sales. Shopping from home is more convenient for the consumer, and they are demanding digital nowadays. Another benefit for your business is you will gain data to improve your offering.",
+            "title3": "Corporate Design Kit",
+            "sub7": "Cos'è un Corporate Design Kit?",
+            "desc7": "Not all the E-commerce are created equal, a perfect e-commerce for a B2B company won't fit the same for a B2C or a D2C company. That's the reason why we always analyse in depth our customers' business, so we make sure to give you a tailor made product that will fit perfectly with your brand and your service.",
+            "sub8": "Cos'è incluso in un Corporate Design Kit??",
+            "desc8": "Not all the E-commerce are created equal, a perfect e-commerce for a B2B company won't fit the same for a B2C or a D2C company. That's the reason why we always analyse in depth our customers' business, so we make sure to give you a tailor made product that will fit perfectly with your brand and your service."
+        }
+      
     },
     "About": {
         "title": "Your Partner In Crime Since 2008",

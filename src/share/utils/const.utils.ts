@@ -3,52 +3,48 @@ export const undercoverBinLogo = '/assets/images/bin-logo.png';
 
 export const servicesTiles = [
     {
+        title: 'webDev.title1',
         children: [
             {
-                subhead: 'gianni',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub1',
+                description: 'webDev.desc1',
             },
             {
-                subhead: 'merio',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub2',
+                description: 'webDev.desc2',
             },
             {
-                subhead: 'gianni',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub3',
+                description: 'webDev.desc3',
             }
         ]
-            
+        
     },
     {
+        title: 'webDev.title2',
         children: [
             {
-                subhead: 'Minchia pino',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub4',
+                description: 'webDev.desc4',
             },
             {
-                subhead: 'Minchia pino',
-                description: 'Minchia pino',
-            },
-            {
-                subhead: 'Minchia pino',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub5',
+                description: 'webDev.desc5',
             }
+          
         ]
-            
+        
     },
     {
+        title: 'webDev.title3',
         children: [
             {
-                subhead: 'Minchia pino',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub6',
+                description: 'webDev.desc6',
             },
             {
-                subhead: 'Minchia pino',
-                description: 'Minchia pino',
-            },
-            {
-                subhead: 'Minchia pino',
-                description: 'Minchia pino',
+                subhead: 'webDev.sub7',
+                description: 'webDev.desc7',
             }
         ]
             

@@ -22,13 +22,13 @@ export default function ServicesPopup() {
                 content={
                     servicesTiles.map((section, is) => {
                         return (
-                            <GenericSection key={is} title={i18n('merio')}>
+                            <GenericSection key={is} title={i18n(section.title)}>
                                 {
                                     section.children.map((tile, it) => {
                                         return (
                                             <GenericTile key={it} id='services' isPortfolio={false}
-                                               subhead={tile.subhead}
-                                                description={tile.description}
+                                               subhead={i18n(tile.subhead)}
+                                                description={i18n(tile.description)}
                                             />
                                         )
                                     })}
