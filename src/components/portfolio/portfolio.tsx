@@ -1,5 +1,6 @@
-import GenericPopup  from '../../share/ui/generic-popup/genericPopup'
-import styles from './portfolio.module.scss'
+import GenericPopup from '../../share/ui/generic-popup/genericPopup'
+import GenericProject from '../../share/ui/generic-project/genericProject'
+import { brodosProject } from '../../share/utils/const.utils'
 
 export default function PortfolioPopup() {
     return (
@@ -11,7 +12,14 @@ export default function PortfolioPopup() {
                     </div>
                 }
                 content={
-                    <h1>Scazza minchia ueue</h1>
+                    <GenericProject id='brodos'
+                        image={brodosProject}
+                        title={'Brodos'}
+                        category={'web development'}
+                        button={{
+                            label: 'Visit Website',
+                            isPrimary: true
+                        }} />
                 }
             />
         </>

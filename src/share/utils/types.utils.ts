@@ -38,8 +38,8 @@ export interface GenericPopupProps {
 export interface GenericButtonProps {
     label: string,
     isPrimary?: boolean,
-    styles?: React.CSSProperties | undefined
-    onClick?: () => void,
+    styles?: React.CSSProperties | undefined,
+    onClick?: () => void
 }
 
 
@@ -53,28 +53,42 @@ export interface GenericButtonProps {
  *  
  */
 export interface GenericSectionProps  {
-    title?: string;
-    children: ReactNode | ReactNode[];
-    styles?: React.CSSProperties;
+    title?: string,
+    children: ReactNode | ReactNode[],
+    styles?: React.CSSProperties
 }
 
  
  /**  Generic Tile Props
  *  
- *  Tiles with Content's Subheads and Descriptions
+ *  Tile with Content's Subheads and Descriptions
  *  @param id ---> id ( e.g. Services )
  *  @param subhead ---> FAQ (e.g. Why Do I Need a Website? )
  *  @param descritpion ---> Answer (e.g. You need a website because it's cool )
- *  @param isPortfolio ---> Flag for portfolioPopup layout management
- *  @param category ---> Service Category only in portfolioPopup (e.g. UX / UI Development )
  *  @param styles ---> Inline styles management (Optional)
  *  
  */
 export interface GenericTileProps {
-    id: string;
-    subhead?: string;
-    description?: string;
-    isPortfolio: boolean;
-    category?: string;
+    id: string,
+    subhead?: string,
+    description?: string,
     styles?: React.CSSProperties | undefined
+}
+
+
+/**  Generic Project Props
+*  
+*  Generic Project Interface
+*  @param image ---> image url
+*  @param title ---> Project Name ( e.g. UndercoverADV )
+*  @param category ---> Project Category ( e.g. UX / UI Development )
+*  @param button ---> Generic Button ( e.g Visit Website ) 
+*  
+*/
+export interface GenericProjectProps {
+    id: string,
+    image: string,
+    title: string,
+    category: string,
+    button: GenericButtonProps;
 }

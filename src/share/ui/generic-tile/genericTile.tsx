@@ -1,10 +1,9 @@
 import { GenericTileProps } from '../../utils/types.utils';
-import styles from './genericTile.module.scss';
 
 export default function GenericTile(props: GenericTileProps) {
 
     // Styles
-    const genericTileWrapper = `${(props.isPortfolio ? 'f-row' : 'f-column')} w-100 o-hidden `
+    const genericTileWrapper = `w-100 f-column o-hidden `
 
     return (
         <>
@@ -18,12 +17,6 @@ export default function GenericTile(props: GenericTileProps) {
                     <h4 id={props.id + 'subhead'}>{props.subhead}</h4>
                 }
 
-                {/* Category */}
-                {
-                    props.category &&
-                    <h5 id={props.id + 'category'}>{props.category}</h5>
-                }
-                
                 {/* Description */}
                 {
                     props.description &&
