@@ -1,0 +1,19 @@
+{
+    "Index": {
+        "title": "minchiasio",
+        "description": "minchiasA"
+    },
+    "Services": {
+        "gianni": "ugp",
+        "merio": "porcodio"
+    },
+    "StrictTypes": {
+        "title": "Your Partner In Crime Since 2008",
+        "nested": {
+            "hello": "1. We Credaaa in Human Centered Design",
+            "another": {
+                "level": "We are all humans at the end of the day, hence why focusing our strategy on people and not just the product sounds natural and logic to us, don't you think so?"
+            }
+        }
+    }
+}
