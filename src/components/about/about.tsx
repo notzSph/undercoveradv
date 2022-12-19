@@ -25,7 +25,7 @@ export default function AboutPopup() {
                                         {
                                             section.children.map((tile, it) => {
                                                 return (
-                                                    <GenericTile key={it} id='about' isPortfolio={false}
+                                                    <GenericTile key={it} id='about'
                                                         subhead={i18n(tile.subhead)}
                                                         description={i18n(tile.description)}
                                                     />

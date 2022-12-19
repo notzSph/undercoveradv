@@ -27,7 +27,7 @@ export default function ServicesPopup() {
                                 {
                                     section.children.map((tile, it) => {
                                         return (
-                                            <GenericTile key={it} id='services' isPortfolio={false}
+                                            <GenericTile key={it} id='services'
                                                subhead={i18n(tile.subhead)}
                                                 description={i18n(tile.description)}
                                             />
