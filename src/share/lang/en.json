@@ -4,16 +4,20 @@
         "description": "minchiasA"
     },
     "Services": {
-        "gianni": "ugp",
+        "gianni": "ugooooo",
         "merio": "porcodio"
     },
-    "StrictTypes": {
+    "About": {
         "title": "Your Partner In Crime Since 2008",
-        "nested": {
-            "hello": "1. We Credaaa in Human Centered Design",
-            "another": {
-                "level": "We are all humans at the end of the day, hence why focusing our strategy on people and not just the product sounds natural and logic to us, don't you think so?"
-            }
-        }
+        "sub1": "1. We Believe in Human-Centered Design",
+        "desc1": "We are all humans at the end of the day, hence why focusing our strategy on people and not just the product sounds natural and logic to us, don't you think so?",
+        "sub2": "2. Our World is Digital and Without Barriers",
+        "desc2": "We are based in Italy, but thanks to the power of technology we are scattered around the globe, some of us around Italy, others in the U.K., India and Greece and yet we still manage to communicate efficiently on a daily basis.",
+        "sub3": "3. Agile Is Not Just An Adjective",
+        "desc3": "Agile is also the methodology we love to adopt to develop all our projects. This allows us to keep a high standard while doing things in the shortest possible time. We develop our ideas to an MVP level, run tests on it, collect feedback and adapt the workflow on them. This cycle is the core principle of the Agile Methodology, which we happily embrace.",
+        "sub4": "4. Agnostic Driven Is The Way",
+        "desc4": "The only thing we know is that in future the number of connections between different digital touch points will exponentially grow. We are here to help you to be ready for the future.",
+        "sub5": "5. It's All About Honest Communication",
+        "desc5": "If you work with us you know what it means to open transparent discussions. Otherwise what kind of partner in crime would we be?"
     }
 }

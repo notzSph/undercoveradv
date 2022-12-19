@@ -7,13 +7,17 @@
         "gianni": "ugp",
         "merio": "porcodio"
     },
-    "StrictTypes": {
+    "About": {
         "title": "Your Partner In Crime Since 2008",
-        "nested": {
-            "hello": "1. We Credaaa in Human Centered Design",
-            "another": {
-                "level": "We are all humans at the end of the day, hence why focusing our strategy on people and not just the product sounds natural and logic to us, don't you think so?"
-            }
-        }
+        "sub1": "1. Crediamo nel Design Human-Centered",
+        "desc1": "Siamo umani dopotutto, quindi concentrare la nostra strategia sulle persone e non solo sul prodotto ci sembra logico e naturale, non credi?",
+        "sub2": "2. Il nostro mondo è Digitale e Senza Barriere",
+        "desc2": "Abbiamo sede in Italia, ma grazie al potere della tecnologia siamo sparsi in tutto il mondo, alcuni nel Regno Unito, in India e in Grecia, eppure riusciamo comunque a comunicare in modo efficace ed efficiente su base giornaliera.",
+        "sub3": "3. Agile non è solo un aggettivo",
+        "desc3": "Agile è anche la metodologia che adottiamo per sviluppare tutti i nostri progetti. Questo ci permette di mantenere uno standard elevato in tempi ristretti. Sviluppiamo le nostre idee a livello di MVP, eseguiamo test raccogliendo feedback su cui adattiamo il flusso di lavoro. Questo ciclo è il principio fondamentale della Agile Methodology, che abbracciamo felicemente.",
+        "sub4": "4. Essere Agnostic Driven è una priorità",
+        "desc4": "L'unica cosa che sappiamo è che in futuro il numero di connessioni tra diversi punti di contatto digitali crescerà esponenzialmente. Progettare sistemi che possano interagire con diverse tecnologie assicura una libertà di sviluppo maggiore sul lungo periodo.",
+        "sub5": "5. Si basa tutto su una comunicazione trasparente",
+        "desc5": "Il nostro lavoro è costruito su un rapporto onesto e sincero con il cliente. Altrimenti che partner in crime saremmo?"
     }
 }
