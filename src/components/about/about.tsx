@@ -1,6 +1,6 @@
 import { GetStaticPropsContext } from 'next'
 import { useTranslations } from 'use-intl'
-import { GenericPopup } from "../../share/ui/generic-popup/genericPopup";
+import GenericPopup  from "../../share/ui/generic-popup/genericPopup";
 import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTile from "../../share/ui/generic-tile/genericTile";
 import { aboutTiles } from '../../share/utils/const.utils';
@@ -13,7 +13,7 @@ export default function AboutPopup() {
 
     return (
         <>
-            <GenericPopup id='about' hasSidebar={false} hasScroll={true}
+            <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={true}
                 content={
                     <div className='w-100 f-column flex-center-all'>
                          <h1>{i18n('title')}</h1> 

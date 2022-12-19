@@ -1,6 +1,6 @@
 import { GetStaticPropsContext } from 'next'
 import { useTranslations } from 'use-intl'
-import { GenericPopup } from '../../share/ui/generic-popup/genericPopup';
+import  GenericPopup  from '../../share/ui/generic-popup/genericPopup';
 import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTile from '../../share/ui/generic-tile/genericTile';
 import { servicesTiles } from '../../share/utils/const.utils';
@@ -15,7 +15,7 @@ export default function ServicesPopup() {
     
     return (
         <>
-            <GenericPopup id='services' hasSidebar={true} hasScroll={true}
+            <GenericPopup id='services' hasSidebar={true} hasScroll={true} isActive= {true}
                 sidebar={
                     <div>WEWE</div>
                 }
