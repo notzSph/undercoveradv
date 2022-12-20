@@ -13,7 +13,7 @@ export default function AboutPopup() {
 
     return (
         <>
-            <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={true}
+            <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={false}
                 content={
                     <div className='w-100 f-column flex-center-all'>
                         <h1>{i18n('title')}</h1>

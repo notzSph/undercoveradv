@@ -16,7 +16,7 @@ export default function ServicesPopup() {
     
     return (
         <>
-            <GenericPopup id='services' hasSidebar={true} hasScroll={true} isActive= {true}
+            <GenericPopup id='services' hasSidebar={true} hasScroll={true} isActive={false}
                 sidebar={
                     <div>WEWE</div>
                 }

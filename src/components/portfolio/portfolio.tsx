@@ -5,7 +5,7 @@ import { brodosProject } from '../../share/utils/const.utils'
 export default function PortfolioPopup() {
     return (
         <>
-            <GenericPopup id='portfolio' hasSidebar={true} hasScroll={false} isActive={true}
+            <GenericPopup id='portfolio' hasSidebar={true} hasScroll={false} isActive={false}
                 sidebar={
                     <div>
                         Minchia zio
