@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../share/styles/index.module.scss'
 import { GetStaticPropsContext } from 'next';
-import Desktop from '../desktop/desktop';
+import Desktop from '../components/desktop/desktop';
 
 
 

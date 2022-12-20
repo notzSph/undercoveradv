@@ -1,10 +1,10 @@
-import AboutPopup from "../components/about/about";
-import BinPopup from "../components/bin/bin";
-import PortfolioPopup from "../components/portfolio/portfolio";
-import ServicesPopup from "../components/services/services";
-import SystemPopup from "../components/system/system";
-import FolderTile from "../share/ui/folder-tile/folderTile";
-import { hiBandFolders, loBandFolders, midBandFolders } from "../share/utils/const.utils";
+import AboutPopup from "../about/about";
+import BinPopup from "../bin/bin";
+import PortfolioPopup from "../portfolio/portfolio";
+import ServicesPopup from "../services/services";
+import SystemPopup from "../system/system";
+import FolderTile from "../../share/ui/folder-tile/folderTile";
+import { hiBandFolders, loBandFolders, midBandFolders } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
 
 export default function Desktop() {
