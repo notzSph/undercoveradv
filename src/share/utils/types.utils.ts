@@ -13,6 +13,7 @@ import { ReactNode } from "react";
  *  @param styles ---> Inline styles management (Optional)
  *  
  */
+
 export interface GenericPopupProps {
     id: string,
     hasSidebar: boolean,
@@ -35,6 +36,7 @@ export interface GenericPopupProps {
  *  @param onClick ---> onClick Function (e.g. { goToBlank('https://undercoveradv.com') })
  *  
  */
+
 export interface GenericButtonProps {
     label: string,
     isPrimary?: boolean,
@@ -52,6 +54,7 @@ export interface GenericButtonProps {
  *  @param styles ---> Inline styles management (Optional)
  *  
  */
+
 export interface GenericSectionProps  {
     title?: string,
     children: ReactNode | ReactNode[],
@@ -68,6 +71,7 @@ export interface GenericSectionProps  {
  *  @param styles ---> Inline styles management (Optional)
  *  
  */
+
 export interface GenericTileProps {
     id: string,
     subhead?: string,
@@ -85,10 +89,29 @@ export interface GenericTileProps {
 *  @param button ---> Generic Button ( e.g Visit Website ) 
 *  
 */
+
 export interface GenericProjectProps {
     id: string,
     image: string,
     title: string,
     category: string,
     button: GenericButtonProps;
+}
+
+
+/**  Folder Tile Props
+*  
+*  Folder Tile Interface
+*  @param id ---> id ( e.g. System )
+*  @param icon ---> Folder Icon Url
+*  @param name ---> Folder Name ( e.g. System )
+*  @param styles ---> Inline styles management (Optional)
+*  
+*/
+
+export interface FolderTileProps {
+    id: string,
+    icon: string,
+    name: string,
+    styles?: React.CSSProperties | undefined
 }

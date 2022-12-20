@@ -2,10 +2,11 @@
 /**
  * Assets Import (Images & SVG)
  */
-export const undercoverLogo = '/assets/images/undrcover-logo.png';
-export const undercoverBinLogo = '/assets/images/bin-logo.png';
 export const windowBtnBlack = '/assets/svg/btn-black.svg';
 export const windowBtnWhite = '/assets/svg/btn-white.svg';
+export const folderIcon = '/assets/svg/folder.svg';
+export const undercoverLogo = '/assets/images/undrcover-logo.png';
+export const undercoverBinLogo = '/assets/images/bin-logo.png';
 export const brodosProject = '/assets/images/brodos.png';
 
 /**
@@ -18,6 +19,7 @@ export const brodosProject = '/assets/images/brodos.png';
  *  @param descritpion ---> Answer ( e.g. You need a website because it's cool )
  *  
  */
+
 export const servicesTiles = [
     {
         title: 'webDev.title1',
@@ -104,3 +106,54 @@ export const aboutTiles = [
 
     },
 ]
+
+
+/**
+ *  { POSITION } Band Folder
+ *  
+ *  High / Mid / Low Bands 
+ *  @param id ---> id (e.g. System )
+ *  @param icon ---> Folder Icon Url
+ *  @param name ---> Folder Name (e.g. System )
+ * 
+ */
+
+export const hiBandFolders = [
+    {
+        id: 'sub1',
+        icon: undercoverLogo,
+        name: 'sssss',
+    },
+    {
+        id: 'sub1',
+        icon: folderIcon,
+        name: 'yeess',
+    },
+]
+
+export const midBandFolders = [
+    {
+        id: 'sub1',
+        icon: folderIcon,
+        name: 'sssss',
+    },
+    {
+        id: 'sub1',
+        icon: undercoverBinLogo,
+        name: 'sssss',
+    },
+]
+
+export const loBandFolders = [
+    {
+        id: 'sub1',
+        icon: folderIcon,
+        name: 'aaaass',
+    },
+    {
+        id: 'sub1',
+        icon: folderIcon,
+        name: 'sssss',
+    },
+]
+
