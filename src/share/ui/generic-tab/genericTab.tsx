@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { GenericTabProps } from "../../utils/types.utils";
 import styles from "./genericTab.module.scss";
 
-export default function GenericTab() {
+export default function GenericTab(props: GenericTabProps) {
 
     const [toggleState, setToggleState] = useState(1);
 
