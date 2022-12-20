@@ -115,3 +115,22 @@ export interface FolderTileProps {
     name: string,
     styles?: React.CSSProperties | undefined
 }
+
+/**  Generic Tab Props
+*  
+*  Generic Tab Interface
+*  @param id ---> id ( e.g. System )
+*  @param icon ---> Tab Menù Icon Url
+*  @param title ---> Tab Name ( e.g. System )
+*  @param styles ---> Inline styles management (Optional)
+*  
+*/
+
+export interface GenericTabProps {
+    id: string,
+    index: number,
+    icon: string,
+    title: string,
+    content: any,
+    styles?: React.CSSProperties | undefined
+}

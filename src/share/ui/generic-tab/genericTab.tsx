@@ -12,8 +12,8 @@ export default function GenericTab() {
 
     return (
         <>
-            <div className="container">
-                <div className="blocTabs">
+            <div className="container w-100 f-row j-center">
+                <div className="blocTabs w-30">
                     <div
                         className={toggleState === 1 ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}
                         onClick={() => toggleTab(1)}
@@ -35,7 +35,7 @@ export default function GenericTab() {
                 </div>
 
 
-                <div className="contentTabs">
+                <div className="contentTabs w-70">
                     <div
                         className={toggleState === 1 ? `${styles.content} ${styles.activeContent}` : styles.content}
                     >
