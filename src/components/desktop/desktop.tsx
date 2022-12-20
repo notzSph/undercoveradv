@@ -6,6 +6,7 @@ import SystemPopup from "../system/system";
 import FolderTile from "../../share/ui/folder-tile/folderTile";
 import { hiBandFolders, loBandFolders, midBandFolders } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
+import GenericTab from "../../share/ui/generic-tab/genericTab";
 
 export default function Desktop() {
 
@@ -51,6 +52,7 @@ export default function Desktop() {
             <PortfolioPopup />
             <ServicesPopup />
 
+<GenericTab />
 
         </>
     )

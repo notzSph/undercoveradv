@@ -1,5 +1,6 @@
 import { GenericButton } from '../generic-button/genericButton';
 import { undercoverLogo, windowBtnBlack, windowBtnWhite } from '../../utils/const.utils';
+import { goToBlank } from '../../utils/functions.utils';
 
 
 export default function PopupTopbar() {
@@ -34,6 +35,7 @@ export default function PopupTopbar() {
                     <GenericButton
                         label='Contact Us'
                         isPrimary={true}
+                        onClick={() => { goToBlank('https://google.com') }}
                     />
                 </div>
             </div>
