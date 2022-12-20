@@ -1,13 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../share/styles/index.module.scss'
-import SystemPopup from '../components/system/system'
-import AboutPopup from '../components/about/about'
-import BinPopup from '../components/bin/bin'
-import PortfolioPopup from '../components/portfolio/portfolio'
-import ServicesPopup from '../components/services/services'
 import { GetStaticPropsContext } from 'next';
+import Desktop from '../desktop/desktop';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,12 +18,7 @@ export default function Home(isActive: boolean) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} f-column j-between a-center`}>
-
-        <SystemPopup />
-        <AboutPopup />
-        <BinPopup />
-        <PortfolioPopup />
-        <ServicesPopup />
+        <Desktop />
       </main>
     </>
   )
