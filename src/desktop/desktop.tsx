@@ -15,10 +15,10 @@ export default function Desktop() {
     return (
         <>
             {/* Main Container */}
-            <div className="w-100 vh-100 f-column a-center j-between p-5">
+            <div className="w-100 vh-100 f-column a-center j-between p-3">
 
                 {/* Hi Band Container */}
-                <div className={band} style={{ width: isLargeLayout ? '100%' : '100%' }}>
+                <div className={band} style={{ width: isLargeLayout ? '80%' : '100%' }}>
                     {hiBandFolders.map((folder) => {
                         return (
                             <FolderTile id={folder.id} icon={folder.icon} name={folder.name} />
@@ -36,7 +36,7 @@ export default function Desktop() {
                 </div>
 
                 {/* Lo Band Container */}
-                <div className={band} style={{ width: isLargeLayout ? '70%' : '100%' }}>
+                <div className={band} style={{ width: isLargeLayout ? '90%' : '100%' }}>
                     {loBandFolders.map((folder) => {
                         return (
                             <FolderTile id={folder.id} icon={folder.icon} name={folder.name} />

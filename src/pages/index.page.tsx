@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import styles from '../share/styles/index.module.scss'
 import { GetStaticPropsContext } from 'next';
 import Desktop from '../desktop/desktop';
 
-const inter = Inter({ subsets: ['latin'] })
 
 
 export default function Home(isActive: boolean) {

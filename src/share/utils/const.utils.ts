@@ -122,12 +122,12 @@ export const hiBandFolders = [
     {
         id: 'sub1',
         icon: undercoverLogo,
-        name: 'sssss',
+        name: 'System',
     },
     {
         id: 'sub1',
         icon: folderIcon,
-        name: 'yeess',
+        name: 'About Us',
     },
 ]
 
@@ -135,12 +135,12 @@ export const midBandFolders = [
     {
         id: 'sub1',
         icon: folderIcon,
-        name: 'sssss',
+        name: 'Services',
     },
     {
         id: 'sub1',
         icon: undercoverBinLogo,
-        name: 'sssss',
+        name: 'Portfolio',
     },
 ]
 
@@ -148,12 +148,12 @@ export const loBandFolders = [
     {
         id: 'sub1',
         icon: folderIcon,
-        name: 'aaaass',
+        name: 'Docs',
     },
     {
         id: 'sub1',
         icon: folderIcon,
-        name: 'sssss',
+        name: 'Bin',
     },
 ]
 
