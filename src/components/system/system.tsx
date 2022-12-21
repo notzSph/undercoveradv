@@ -2,10 +2,11 @@ import { GetStaticPropsContext } from "next";
 import { useTranslations } from "next-intl";
 import GenericPopup from "../../share/ui/generic-popup/genericPopup";
 import { undercoverLogo } from "../../share/utils/const.utils";
+import { PopupStateProps } from "../../share/utils/types.utils";
 import styles from './system.module.scss';
 
 
-export default function SystemPopup() {
+export default function SystemPopup(props: PopupStateProps) {
 
 
     // Internationalization
@@ -13,7 +14,7 @@ export default function SystemPopup() {
 
     return (
         <>
-            <GenericPopup id="system" hasScroll={true} hasSidebar={true} isActive={false}
+            <GenericPopup id="system" hasScroll={true} hasSidebar={true} isActive={props.isActive} onClose={props.onClose}
                 sidebar={
                     <div className='w-100 f-column flex-center-all ' style={{ height: '600px' }}>
                         <img src={undercoverLogo} alt='undrcvr_logo' className={`${styles.systemLogo} pb-5`} />

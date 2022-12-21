@@ -48,14 +48,13 @@ export default function Desktop() {
                     })}
                 </div>
             </div>
+            
             {/* Popups */}
-            <AboutPopup isActive={activePopup === 1} onClose={() => setActivePopup(undefined)} />
-            <SystemPopup  />
-            <BinPopup />
-            <PortfolioPopup />
+            <SystemPopup isActive={activePopup === 1} onClose={() => setActivePopup(undefined)}  />
+            <AboutPopup isActive={activePopup === 2} onClose={() => setActivePopup(undefined)} />
             <ServicesPopup isActive={activePopup === 3} onClose={() => setActivePopup(undefined)}/>
-
-
+            <PortfolioPopup isActive={activePopup === 4} onClose={() => setActivePopup(undefined)}/>
+            <BinPopup isActive={activePopup === 6} onClose={() => setActivePopup(undefined)} />
         </>
     )
 }

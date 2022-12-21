@@ -1,11 +1,12 @@
 import GenericPopup from '../../share/ui/generic-popup/genericPopup'
 import GenericProject from '../../share/ui/generic-project/genericProject'
 import { brodosProject } from '../../share/utils/const.utils'
+import { PopupStateProps } from '../../share/utils/types.utils'
 
-export default function PortfolioPopup() {
+export default function PortfolioPopup(props: PopupStateProps) {
     return (
         <>
-            <GenericPopup id='portfolio' hasSidebar={true} hasScroll={false} isActive={false}
+            <GenericPopup id='portfolio' hasSidebar={true} hasScroll={false} isActive={props.isActive} onClose={props.onClose}
                 sidebar={
                     <div>
                         Minchia zio

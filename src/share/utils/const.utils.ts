@@ -218,12 +218,12 @@ export const aboutTiles = [
 
 export const hiBandFolders = [
     {
-        id: 2,
+        id: 1,
         icon: undercoverLogo,
         name: 'System',
     },
     {
-        id: 1,
+        id: 2,
         icon: folderIcon,
         name: 'About Us',
     },
@@ -236,7 +236,7 @@ export const midBandFolders = [
         name: 'Services',
     },
     {
-        id: 6,
+        id: 4,
         icon: undercoverBinLogo,
         name: 'Portfolio',
     },
@@ -244,12 +244,12 @@ export const midBandFolders = [
 
 export const loBandFolders = [
     {
-        id: 1,
+        id: 5,
         icon: folderIcon,
         name: 'Docs',
     },
     {
-        id: 4,
+        id: 6,
         icon: folderIcon,
         name: 'Bin',
     },
