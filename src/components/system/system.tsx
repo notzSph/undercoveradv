@@ -14,7 +14,7 @@ export default function SystemPopup(props: PopupState) {
 
     return (
         <>
-            <GenericPopup id="system" hasScroll={true} hasSidebar={true} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id="System" hasSidebar={true} isActive={props.isActive} onClose={props.onClose}
                 sidebar={
                     <div className='w-100 f-column flex-center-all ' style={{ height: '600px' }}>
                         <img src={undercoverLogo} alt='undrcvr_logo' className={`${styles.systemLogo} pb-5`} />

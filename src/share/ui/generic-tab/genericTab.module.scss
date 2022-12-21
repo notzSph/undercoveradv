@@ -6,6 +6,7 @@
   
   .blocTabs {
     display: flex;
+    flex-direction: column;
   }
   .tabs {
     padding: 15px;

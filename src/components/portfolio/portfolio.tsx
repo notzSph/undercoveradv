@@ -73,9 +73,9 @@ const sections: TabSections = [
 export default function PortfolioPopup(props: PopupState) {
     return (
         <>
-            <GenericPopup id='portfolio' hasSidebar={false} hasScroll={false} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='Portfolio' hasSidebar={false}  isActive={props.isActive} onClose={props.onClose}
                 content={
-                    <GenericTabs
+                    <GenericTabs menuScroll={true} contentScroll={false}
                     sections={sections}
                     />
                 }

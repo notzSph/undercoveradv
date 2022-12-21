@@ -14,7 +14,7 @@ export default function AboutPopup(props: PopupState ) {
 
     return (
         <>
-            <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='About' hasSidebar={false} isActive={props.isActive} onClose={props.onClose}
                 content={
                     <div className='w-100 f-column flex-center-all'>
                         <h1>Your Partner in Crime since 2008</h1>

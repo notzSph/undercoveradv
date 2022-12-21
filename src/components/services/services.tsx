@@ -79,9 +79,9 @@ export default function ServicesPopup(props: PopupState) {
 
     return (
         <>
-            <GenericPopup id='services' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='Services' hasSidebar={false} isActive={props.isActive} onClose={props.onClose}
                 content={
-                    <GenericTabs
+                    <GenericTabs menuScroll={false} contentScroll={true}
                     sections={sections}
                     />
                 }

@@ -9,8 +9,8 @@ export default function GenericTabs(props: GenericTabsProps) {
 
     return (
         <>
-            <div className="container w-100 f-row j-center">
-                <div className="blocTabs w-30">
+            <div className="container w-100 f-row j-cente o-hidden">
+                <div className={`${styles.blocTabs} ${(props.menuScroll ? 'o-scroll' : 'o-hidden')} w-30`}>
                     {props.sections.map((section, i) => {
 
                         const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} f-row a-center`
@@ -29,7 +29,7 @@ export default function GenericTabs(props: GenericTabsProps) {
 
                 </div>
 
-                <div className={`${styles.contentTabs} w-70`}>
+                <div className={`${styles.contentTabs} ${(props.contentScroll ? 'o-scroll' : 'o-hidden')} w-70 `}>
                     {props.sections.map((section, i) => {
 
                         const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}`
