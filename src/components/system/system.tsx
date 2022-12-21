@@ -2,11 +2,11 @@ import { GetStaticPropsContext } from "next";
 import { useTranslations } from "next-intl";
 import GenericPopup from "../../share/ui/generic-popup/genericPopup";
 import { undercoverLogo } from "../../share/utils/const.utils";
-import { PopupStateProps } from "../../share/utils/types.utils";
+import { PopupState } from "../../share/utils/types.utils";
 import styles from './system.module.scss';
 
 
-export default function SystemPopup(props: PopupStateProps) {
+export default function SystemPopup(props: PopupState) {
 
 
     // Internationalization

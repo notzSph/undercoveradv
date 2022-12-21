@@ -4,7 +4,7 @@ import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTabs from '../../share/ui/generic-tab/genericTab';
 import GenericTile from '../../share/ui/generic-tile/genericTile';
 import { folderIcon, uxDesTiles, visualDesTiles, webDevTiles } from '../../share/utils/const.utils';
-import { PopupStateProps, TabSections } from '../../share/utils/types.utils';
+import { PopupState, TabSections } from '../../share/utils/types.utils';
 import styles from './services.module.scss';
 
 
@@ -74,7 +74,7 @@ const sections: TabSections = [
     },
 ]
 
-export default function ServicesPopup(props: PopupStateProps) {
+export default function ServicesPopup(props: PopupState) {
 
 
     return (

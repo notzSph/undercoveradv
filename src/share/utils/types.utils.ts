@@ -102,6 +102,7 @@ export interface GenericProjectProps {
 }
 
 
+
 /**  Folder Tile Props
 *  
 *  Folder Tile Interface
@@ -145,7 +146,7 @@ export interface TabSection {
 export type TabSections = TabSection[]
 
 
-export interface PopupStateProps {
+export interface PopupState {
     isActive: boolean;
     onClose?: () => void;
 }

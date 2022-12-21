@@ -2,9 +2,9 @@ import { GetStaticPropsContext } from 'next'
 import { useTranslations } from 'next-intl'
 import GenericPopup from '../../share/ui/generic-popup/genericPopup'
 import { undercoverBinLogo } from '../../share/utils/const.utils'
-import { PopupStateProps } from '../../share/utils/types.utils'
+import { PopupState } from '../../share/utils/types.utils'
 
-export default function BinPopup(props: PopupStateProps) {
+export default function BinPopup(props: PopupState) {
 
     // Internationalization
     const i18n = useTranslations('Bin')

@@ -1,6 +1,7 @@
 import { GenericProjectProps } from "../../utils/types.utils";
 import { GenericButton } from "../generic-button/genericButton";
 import styles from './genericProject.module.scss'
+
 export default function GenericProject(props: GenericProjectProps) {
 
     // Styles
@@ -12,7 +13,7 @@ export default function GenericProject(props: GenericProjectProps) {
             {/* Container */}
             <div id={props.id} className={genericProjectWrapper}>
 
-                <img id={props.id + props.title + 'image'} src={props.image} alt={props.title} className={styles.projectImage} style={{height:'80%'}}/>
+                <img id={props.id + props.title + 'image'} src={props.image} alt={props.title} className={styles.projectImage} style={{width:'650px'}}/>
 
                 {/* Infos */}
                 <div id={props.id + 'infoWrapper'} className={projectInfoWrapper} style={{height:'20%'}}>
@@ -24,6 +25,7 @@ export default function GenericProject(props: GenericProjectProps) {
                     <GenericButton
                         label={props.button.label}
                         isPrimary={props.button.isPrimary}
+                        onClick={props.button.onClick}
                     />
                 </div>
 

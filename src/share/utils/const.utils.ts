@@ -1,3 +1,5 @@
+import { goToBlank } from "./functions.utils";
+import { GenericProjectProps } from "./types.utils";
 
 /**
  * Assets Import (Images & SVG)
@@ -7,7 +9,16 @@ export const windowBtnWhite = '/assets/svg/btn-white.svg';
 export const folderIcon = '/assets/svg/folder.svg';
 export const undercoverLogo = '/assets/images/undrcover-logo.png';
 export const undercoverBinLogo = '/assets/images/bin-logo.png';
+
+// Projects
+export const astenseProject = '/assets/images/astense.png';
+export const bankProject = '/assets/images/crasti.png';
 export const brodosProject = '/assets/images/brodos.png';
+export const campisiProject = '/assets/images/campisiclinic.png';
+export const forartsProject = '/assets/images/forarts.png';
+export const lymphaticProject = '/assets/images/lymphatic.png';
+export const lymphedemaProject = '/assets/images/world-lymphedema-day.png';
+export const tfProject = '/assets/images/tradingfloor.png';
 
 /**
  *  Services Tiles
@@ -254,4 +265,95 @@ export const loBandFolders = [
         name: 'Bin',
     },
 ]
+export const brodos: GenericProjectProps = {
+    id: 'brodos',
+    image: brodosProject,
+    title: 'Brodos',
+    category: 'WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://brodosfamily.com')
+    }
+}
+export const bank: GenericProjectProps = {
+    id: 'bank',
+    image: bankProject,
+    title: 'Banca di Asti',
+    category: 'UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: false,
+        onClick: () => goToBlank('https://bancadiasti.it')
+    }
+}
 
+
+export const astense: GenericProjectProps = {
+    id: 'astense',
+    image: astenseProject,
+    title: 'Caffè Astense',
+    category: 'UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://astense.com')
+    }
+}
+
+export const campisi: GenericProjectProps = {
+    id: 'campisi',
+    image: campisiProject,
+    title: 'Campisi Clinic',
+    category: 'UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://campisiclinic.com')
+    }
+}
+export const lymphatic: GenericProjectProps = {
+    id: 'lymphatic',
+    image: lymphaticProject,
+    title: 'Lymphatic Surgery',
+    category: 'UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://chirurgiadeilinfatici.com/')
+    }
+}
+export const lymphedema: GenericProjectProps = {
+    id: 'lymphedema',
+    image: lymphedemaProject,
+    title: 'World Lymphedema Day',
+    category: 'VISUAL - UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://chirurgiadeilinfatici.com/')
+    }
+}
+export const forarts: GenericProjectProps = {
+    id: 'forarts',
+    image: forartsProject,
+    title: 'ForArts',
+    category: 'VISUAL - UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://forarts.it/')
+    }
+}
+
+export const tf: GenericProjectProps = {
+    id: 'tf',
+    image: tfProject,
+    title: 'Trading Floor',
+    category: 'BRAND IDENTITY - UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://tradingfloor.online/')
+    }
+}
