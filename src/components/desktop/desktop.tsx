@@ -23,32 +23,32 @@ export default function Desktop() {
 
                 {/* Hi Band Container */}
                 <div className={band} style={{ width: isLargeLayout ? '80%' : '100%' }}>
-                    {hiBandFolders.map((folder) => {
+                    {hiBandFolders.map((folder, i) => {
                         return (
-                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)}/>
+                            <FolderTile key={i} id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)}/>
                         )
                     })}
                 </div>
 
                 {/* Mid Band Container */}
                 <div className={band} style={{ width: isLargeLayout ? '60%' : '100%' }}>
-                    {midBandFolders.map((folder) => {
+                    {midBandFolders.map((folder, i) => {
                         return (
-                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)}/>
+                            <FolderTile key={i} id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)}/>
                         )
                     })}
                 </div>
 
                 {/* Lo Band Container */}
                 <div className={band} style={{ width: isLargeLayout ? '90%' : '100%' }}>
-                    {loBandFolders.map((folder) => {
+                    {loBandFolders.map((folder, i) => {
                         return (
-                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)} />
+                            <FolderTile key={i} id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)} />
                         )
                     })}
                 </div>
             </div>
-            
+
             {/* Popups */}
             <SystemPopup isActive={activePopup === 1} onClose={() => setActivePopup(undefined)}  />
             <AboutPopup isActive={activePopup === 2} onClose={() => setActivePopup(undefined)} />

@@ -19,7 +19,6 @@ export default function GenericTabs(props: GenericTabsProps) {
                             <div id={section.id} key={i}
                                 className={tabClass}
                                 onClick={() => toggleTab(i)}>
-
                                 <img src={section.icon} alt={section.title} style={{ width: '50px', marginLeft: '5px' }} />
                                 <h4 className="ml-4">{section.title}</h4>
 

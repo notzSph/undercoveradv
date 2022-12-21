@@ -11,15 +11,13 @@ import styles from './about.module.scss'
 
 export default function AboutPopup(props: PopupStateProps ) {
 
-    // Internationalization
-    const i18n = useTranslations('About');
 
     return (
         <>
             <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose}
                 content={
                     <div className='w-100 f-column flex-center-all'>
-                        <h1>{i18n('title')}</h1>
+                        <h1>Your Partner in Crime since 2008</h1>
                         <div>"We work with people, we're not just a one night stand"</div>
                         {
                             aboutTiles.map((section, is) => {
@@ -29,8 +27,8 @@ export default function AboutPopup(props: PopupStateProps ) {
                                             section.children.map((tile, it) => {
                                                 return (
                                                     <GenericTile translateKey='About' key={it} id='about'
-                                                        subhead={i18n(tile.subhead)}
-                                                        description={i18n(tile.description)}
+                                                        subhead={tile.subhead}
+                                                        description={tile.description}
                                                     />
                                                 )
                                             })}
