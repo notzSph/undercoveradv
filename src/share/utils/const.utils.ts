@@ -20,7 +20,7 @@ export const brodosProject = '/assets/images/brodos.png';
  *  
  */
 
-export const servicesTiles = [
+export const webDevTiles = [
     {
         title: 'webDev.title1',
         children: [
@@ -64,6 +64,104 @@ export const servicesTiles = [
             {
                 subhead: 'webDev.sub7',
                 description: 'webDev.desc7',
+            }
+        ]
+
+    }
+];
+export const uxDesTiles = [
+    {
+        title: 'uxDes.title1',
+        children: [
+            {
+                subhead: 'uxDes.sub1',
+                description: 'uxDes.desc1',
+            },
+            {
+                subhead: 'uxDes.sub2',
+                description: 'uxDes.desc2',
+            },
+            {
+                subhead: 'uxDes.sub3',
+                description: 'uxDes.desc3',
+            }
+        ]
+
+    },
+    {
+        title: 'uxDes.title2',
+        children: [
+            {
+                subhead: 'uxDes.sub4',
+                description: 'uxDes.desc4',
+            },
+            {
+                subhead: 'uxDes.sub5',
+                description: 'uxDes.desc5',
+            }
+
+        ]
+
+    },
+    {
+        title: 'uxDes.title3',
+        children: [
+            {
+                subhead: 'uxDes.sub6',
+                description: 'uxDes.desc6',
+            },
+            {
+                subhead: 'uxDes.sub7',
+                description: 'uxDes.desc7',
+            }
+        ]
+
+    }
+];
+export const visualDesTiles = [
+    {
+        title: 'visualDes.title1',
+        children: [
+            {
+                subhead: 'visualDes.sub1',
+                description: 'visualDes.desc1',
+            },
+            {
+                subhead: 'visualDes.sub2',
+                description: 'visualDes.desc2',
+            },
+            {
+                subhead: 'visualDes.sub3',
+                description: 'visualDes.desc3',
+            }
+        ]
+
+    },
+    {
+        title: 'visualDes.title2',
+        children: [
+            {
+                subhead: 'visualDes.sub4',
+                description: 'visualDes.desc4',
+            },
+            {
+                subhead: 'visualDes.sub5',
+                description: 'visualDes.desc5',
+            }
+
+        ]
+
+    },
+    {
+        title: 'visualDes.title3',
+        children: [
+            {
+                subhead: 'visualDes.sub6',
+                description: 'visualDes.desc6',
+            },
+            {
+                subhead: 'visualDes.sub7',
+                description: 'visualDes.desc7',
             }
         ]
 
@@ -120,12 +218,12 @@ export const aboutTiles = [
 
 export const hiBandFolders = [
     {
-        id: 'sub1',
+        id: 2,
         icon: undercoverLogo,
         name: 'System',
     },
     {
-        id: 'sub1',
+        id: 1,
         icon: folderIcon,
         name: 'About Us',
     },
@@ -133,12 +231,12 @@ export const hiBandFolders = [
 
 export const midBandFolders = [
     {
-        id: 'sub1',
+        id: 3,
         icon: folderIcon,
         name: 'Services',
     },
     {
-        id: 'sub1',
+        id: 6,
         icon: undercoverBinLogo,
         name: 'Portfolio',
     },
@@ -146,12 +244,12 @@ export const midBandFolders = [
 
 export const loBandFolders = [
     {
-        id: 'sub1',
+        id: 1,
         icon: folderIcon,
         name: 'Docs',
     },
     {
-        id: 'sub1',
+        id: 4,
         icon: folderIcon,
         name: 'Bin',
     },

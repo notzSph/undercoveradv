@@ -23,6 +23,7 @@ export interface GenericPopupProps {
     content?: any,
     buttons?: any,
     styles?: React.CSSProperties | undefined
+    onClose?: () => void
 }
 
 
@@ -58,6 +59,7 @@ export interface GenericButtonProps {
 export interface GenericSectionProps  {
     title?: string,
     children: ReactNode | ReactNode[],
+    translateKey: string,
     styles?: React.CSSProperties
 }
 
@@ -76,6 +78,7 @@ export interface GenericTileProps {
     id: string,
     subhead?: string,
     description?: string,
+    translateKey: string,
     styles?: React.CSSProperties | undefined
 }
 
@@ -110,10 +113,11 @@ export interface GenericProjectProps {
 */
 
 export interface FolderTileProps {
-    id: string,
+    id: number,
     icon: string,
     name: string,
     styles?: React.CSSProperties | undefined
+    onClick?: () => void
 }
 
 /**  Generic Tab Props
@@ -126,11 +130,16 @@ export interface FolderTileProps {
 *  
 */
 
-export interface GenericTabProps {
+export interface GenericTabsProps {
+    sections: TabSections,
+}
+
+export interface TabSection {
     id: string,
-    index: number,
-    icon: string,
     title: string,
-    content: any,
+    icon: string,
+    content: ReactNode | ReactNode[],
     styles?: React.CSSProperties | undefined
 }
+
+export type TabSections = TabSection[]

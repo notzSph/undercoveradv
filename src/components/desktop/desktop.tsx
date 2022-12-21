@@ -6,12 +6,15 @@ import SystemPopup from "../system/system";
 import FolderTile from "../../share/ui/folder-tile/folderTile";
 import { hiBandFolders, loBandFolders, midBandFolders } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
-import GenericTab from "../../share/ui/generic-tab/genericTab";
+import { useState } from "react";
 
 export default function Desktop() {
 
     const band = `${styles.band} flex-center-all `;
     const isLargeLayout: boolean = true;
+
+    const [ activePopup, setActivePopup ] = useState<number | undefined>() 
+
 
     return (
         <>
@@ -40,19 +43,18 @@ export default function Desktop() {
                 <div className={band} style={{ width: isLargeLayout ? '90%' : '100%' }}>
                     {loBandFolders.map((folder) => {
                         return (
-                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} />
+                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)} />
                         )
                     })}
                 </div>
             </div>
             {/* Popups */}
+            <AboutPopup isActive={activePopup === 1} onClose={() => setActivePopup(undefined)} />
             <SystemPopup />
-            <AboutPopup />
             <BinPopup />
             <PortfolioPopup />
             <ServicesPopup />
 
-<GenericTab />
 
         </>
     )

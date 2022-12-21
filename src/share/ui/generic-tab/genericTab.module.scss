@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as var;
+
 .container {
     height: 300px;
   }
@@ -16,9 +18,6 @@
     outline: none;
     border: none;
   }
-  .tabs:not(:last-child){
-    border-right: 1px solid rgba(0, 0, 0, 0.274);
-  }
   
   .activeTabs  {
     background: white;
@@ -34,14 +33,13 @@
     transform: translateX(-50%);
     width: calc(100% + 2px);
     height: 5px;
-    background: rgb(88, 147, 241);
   }
   
   .contentTabs {
     flex-grow : 1;
   }
   .content {
-    background: white;
+    border-left: var.$popupBorder;
     padding: 20px;
     width: 100%;
     height: 100%;

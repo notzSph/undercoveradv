@@ -2,8 +2,11 @@ import { GenericButton } from '../generic-button/genericButton';
 import { undercoverLogo, windowBtnBlack, windowBtnWhite } from '../../utils/const.utils';
 import { goToBlank } from '../../utils/functions.utils';
 
+export interface TopbarProps {
+    onClose?: () => void
+}
 
-export default function PopupTopbar() {
+export default function PopupTopbar(props: TopbarProps) {
 
     return (
         <>
@@ -12,7 +15,7 @@ export default function PopupTopbar() {
 
                 {/* Window Buttons */}
                 <div className='w-30 h-100 j-start a-center o-hidden '>
-                    <img src={windowBtnBlack} style={{ width: '30px' }} className='a-center c-pointer ' />
+                    <img src={windowBtnBlack} style={{ width: '30px' }} className='a-center c-pointer ' onClick={props.onClose} />
                     <img src={windowBtnWhite} style={{ width: '30px' }} className='a-center c-pointer ml-3 ' />
                     <img src={windowBtnWhite} style={{ width: '30px' }} className='a-center c-pointer ml-3 ' />
                 </div>

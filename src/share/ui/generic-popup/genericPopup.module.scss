@@ -2,6 +2,20 @@
 
 $popupHeight: 600px;
 
+.popupWrapper,
+.dismissArea {
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.popupWrapper.inactive {
+  pointer-events: none;
+}
+
 .genericPopup {
   height: $popupHeight;
   min-height: $popupHeight;
@@ -9,6 +23,18 @@ $popupHeight: 600px;
   border-radius: var.$largeRadius;
   box-shadow: var.$popupShadow;
   border: var.$popupBorder;
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: center;
+  transition: opacity var.$transitionTimeLow ease-out, transform var.$transitionTimeLow ease-in;
+  pointer-events: all;
+  z-index: 20;
+}
+
+.genericPopup.inactive {
+  opacity: 0;
+  transform: scale(0.75);
+  pointer-events: none;
 }
 
 .topbarWrapper {

@@ -1,71 +1,49 @@
 import { useState } from "react";
-import { GenericTabProps } from "../../utils/types.utils";
+import { GenericTabsProps as GenericTabsProps } from "../../utils/types.utils";
 import styles from "./genericTab.module.scss";
 
-export default function GenericTab(props: GenericTabProps) {
+export default function GenericTabs(props: GenericTabsProps) {
 
-    const [toggleState, setToggleState] = useState(1);
+    const [toggleState, toggleTab] = useState(0);
 
-    const toggleTab = (index: number) => {
-        setToggleState(index);
-        console.log(index);
-    };
-
+    
     return (
         <>
             <div className="container w-100 f-row j-center">
                 <div className="blocTabs w-30">
-                    <div
-                        className={toggleState === 1 ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}
-                        onClick={() => toggleTab(1)}
-                    >
-                        Dio
-                    </div>
-                    <div
-                        className={toggleState === 2 ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}
-                        onClick={() => toggleTab(2)}
-                    >
-                        La Madonna
-                    </div>
-                    <div
-                        className={toggleState === 3 ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}
-                        onClick={() => toggleTab(3)}
-                    >
-                        Jesoo
-                    </div>
+                    {props.sections.map((section, i) => {
+                        
+                        const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} f-row a-center`
+                        return (
+                            <div id={section.id} key={i}
+                                className={tabClass}
+                                onClick={() => toggleTab(i)}>
+
+                                <img src={section.icon} alt={section.title} style={{ width: '50px', marginLeft: '5px' }} />
+                                <h4 className="ml-4">{section.title}</h4>
+
+                            </div>
+                        )
+                    })}
+
+
                 </div>
 
-
                 <div className="contentTabs w-70">
-                    <div
-                        className={toggleState === 1 ? `${styles.content} ${styles.activeContent}` : styles.content}
-                    >
-                        <h2>Dio Content</h2>
-                        <hr />
-                        <p>
-                            Dio il grandissimo porco di dio
-                        </p>
-                    </div>
+                    {props.sections.map((section, i) => {
 
-                    <div
-                        className={toggleState === 2 ? `${styles.content} ${styles.activeContent}` : styles.content}
-                        >
-                        <h2>La Madonna Content</h2>
-                        <hr />
-                        <p>
-                        La madonna grandissima porca di dio
-                        </p>
-                    </div>
-
-                    <div
-                        className={toggleState === 3 ? `${styles.content} ${styles.activeContent}` : styles.content}
-                        >
-                        <h2>Jesoo Content</h2>
-                        <hr />
-                        <p>
-                       Jesoo grandissimo porco di dio
-                        </p>
-                    </div>
+const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}`
+                        return (
+                            <>
+                                {
+                                    toggleState === i &&
+                                    <div id={section.id} key={i} className={tabContentClass}>
+                                        {section.content}
+                                    </div>
+                                }
+                            </>
+                        )
+                    })}
                 </div>
             </div>
         </>

@@ -6,14 +6,19 @@ import GenericTile from "../../share/ui/generic-tile/genericTile";
 import { aboutTiles } from '../../share/utils/const.utils';
 import styles from './about.module.scss'
 
-export default function AboutPopup() {
+export interface PopupStateProps {
+    isActive: boolean;
+    onClose?: () => void;
+}
+
+export default function AboutPopup(props: PopupStateProps ) {
 
     // Internationalization
     const i18n = useTranslations('About');
 
     return (
         <>
-            <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={false}
+            <GenericPopup id='about' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose}
                 content={
                     <div className='w-100 f-column flex-center-all'>
                         <h1>{i18n('title')}</h1>
@@ -21,11 +26,11 @@ export default function AboutPopup() {
                         {
                             aboutTiles.map((section, is) => {
                                 return (
-                                    <GenericSection key={is}>
+                                    <GenericSection translateKey='About' key={is}>
                                         {
                                             section.children.map((tile, it) => {
                                                 return (
-                                                    <GenericTile key={it} id='about'
+                                                    <GenericTile translateKey='About' key={it} id='about'
                                                         subhead={i18n(tile.subhead)}
                                                         description={i18n(tile.description)}
                                                     />
