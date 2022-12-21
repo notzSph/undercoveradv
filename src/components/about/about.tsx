@@ -4,12 +4,10 @@ import GenericPopup from "../../share/ui/generic-popup/genericPopup";
 import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTile from "../../share/ui/generic-tile/genericTile";
 import { aboutTiles } from '../../share/utils/const.utils';
+import { PopupStateProps } from '../../share/utils/types.utils';
 import styles from './about.module.scss'
 
-export interface PopupStateProps {
-    isActive: boolean;
-    onClose?: () => void;
-}
+
 
 export default function AboutPopup(props: PopupStateProps ) {
 

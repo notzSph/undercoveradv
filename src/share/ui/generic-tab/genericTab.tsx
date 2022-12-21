@@ -14,6 +14,7 @@ export default function GenericTabs(props: GenericTabsProps) {
                     {props.sections.map((section, i) => {
                         
                         const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} f-row a-center`
+
                         return (
                             <div id={section.id} key={i}
                                 className={tabClass}
@@ -33,6 +34,7 @@ export default function GenericTabs(props: GenericTabsProps) {
                     {props.sections.map((section, i) => {
 
 const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}`
+
                         return (
                             <>
                                 {

@@ -143,3 +143,9 @@ export interface TabSection {
 }
 
 export type TabSections = TabSection[]
+
+
+export interface PopupStateProps {
+    isActive: boolean;
+    onClose?: () => void;
+}

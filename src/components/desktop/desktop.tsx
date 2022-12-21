@@ -25,7 +25,7 @@ export default function Desktop() {
                 <div className={band} style={{ width: isLargeLayout ? '80%' : '100%' }}>
                     {hiBandFolders.map((folder) => {
                         return (
-                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} />
+                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)}/>
                         )
                     })}
                 </div>
@@ -34,7 +34,7 @@ export default function Desktop() {
                 <div className={band} style={{ width: isLargeLayout ? '60%' : '100%' }}>
                     {midBandFolders.map((folder) => {
                         return (
-                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} />
+                            <FolderTile id={folder.id} icon={folder.icon} name={folder.name} onClick={() => setActivePopup(folder.id)}/>
                         )
                     })}
                 </div>
@@ -50,10 +50,10 @@ export default function Desktop() {
             </div>
             {/* Popups */}
             <AboutPopup isActive={activePopup === 1} onClose={() => setActivePopup(undefined)} />
-            <SystemPopup />
+            <SystemPopup  />
             <BinPopup />
             <PortfolioPopup />
-            <ServicesPopup />
+            <ServicesPopup isActive={activePopup === 3} onClose={() => setActivePopup(undefined)}/>
 
 
         </>
