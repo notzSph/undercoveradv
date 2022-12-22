@@ -1,6 +1,6 @@
 @use "../../styles/variables.scss" as var;
 
-$popupHeight: 600px;
+
 
 .popupWrapper,
 .dismissArea {
@@ -17,9 +17,9 @@ $popupHeight: 600px;
 }
 
 .genericPopup {
-  height: $popupHeight;
-  min-height: $popupHeight;
-  max-height: $popupHeight;
+  height: var.$popupHeight;
+  min-height: var.$popupHeight;
+  max-height: var.$popupHeight;
   border-radius: var.$largeRadius;
   box-shadow: var.$popupShadow;
   border: var.$popupBorder;
@@ -38,9 +38,9 @@ $popupHeight: 600px;
 }
 
 .topbarWrapper {
-  height: 15%;
-  max-height: 15%;
-  min-height: 15%;
+  height: var.$topbarHeight;
+  max-height: var.$topbarHeight;
+  min-height: var.$topbarHeight;
   border-bottom: var.$popupBorder;
 }
 
@@ -51,5 +51,5 @@ $popupHeight: 600px;
 }
 
 .contentClass {
-  border-left: 8px var.$genericBorder;
+  border-left: var.$popupBorder;
 }

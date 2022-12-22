@@ -8,10 +8,10 @@ export default function GenericPopup(props: GenericPopupProps) {
 
     // Styles
     const popupWrapperClass = `${styles.popupWrapper} ${(props.isActive ? '' : styles.inactive)} flex-center-all absolute `
-    const popupClass = `${styles.genericPopup} ${(props.isActive ? '' : styles.inactive)} w-70 f-column j-start a-center absolute o-hidden bg-notWhite unselect-undrag `
+    const popupClass = `${styles.genericPopup} ${(props.isActive ? '' : styles.inactive)} w-70 f-column j-start a-center absolute o-hidden bg-moonGrey unselect-undrag `
     const topbarWrapperClass = `${styles.topbarWrapper} w-100 flex-center-all`
     const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
-    const contentClass = `${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} f-column h-100 j-start a-start `
+    const contentClass = `${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} ${(props.hasScroll? 'o-scroll' : '')} f-column h-100 j-start a-start `
     const sidebarClass = 'w-30 h-100 flex-center-all f-column f-wrap '
     const stopReturn = useCallback((e: any) => {
         console.log('child ', e, e.nativeEvent)
