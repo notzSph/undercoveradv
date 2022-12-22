@@ -1,0 +1,9 @@
+@use "./variables.scss" as var;
+
+.tileSubhead {
+    font-family: var.$openSans;
+    font-size: var.$fsMid;
+    font-weight: var.$fw700;
+}
+
+

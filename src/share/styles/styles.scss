@@ -11,34 +11,29 @@
 
 // Displays & Overflows
 .d-none {
-    display: none !important; 
+    display: none !important;
 }
 .o-hidden {
-    overflow: hidden; 
+    overflow: hidden;
 }
 .o-scroll {
-    overflow: scroll; 
+    overflow: scroll;
 }
 
 // Cursors
 .c-pointer {
-    cursor: pointer
- }
+    cursor: pointer;
+}
 
 // Positions
- .relative {
-     position: relative;
-    }
-    
-    .absolute {
-        position: absolute;
-    }
-    
-    .fixed {
-        position: fixed;
-    }
+.relative {
+    position: relative;
+}
 
-    
+.absolute {
+    position: absolute;
+}
+
 // Unselect & Undrag
 .unselect-undrag {
     -webkit-user-select: none;
@@ -62,4 +57,4 @@
     /* Internet Explorer/Edge */
     user-select: none;
     outline: 0;
-  }
+}

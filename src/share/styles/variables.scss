@@ -1,3 +1,7 @@
+// Components Heights
+$popupHeight: 600px;
+$topbarHeight: calc(#{$popupHeight} * 0.15);
+
 // Border Radius
 $microRadius: 2px;
 $tinyRadius: 4px;
@@ -25,19 +29,28 @@ $notBlack: rgb(38, 38, 38);
 $white10: rgba(255, 255, 255, 0.1);
 $white25: rgba(255, 255, 255, 0.25);
 $white50: rgba(255, 255, 255, 0.5);
-$white75: rgba(255, 255, 255, 0.75);
+$white75: rgba(245, 245, 245, 0.75);
 $white: white;
 $notWhite: rgb(240, 240, 240);
+
+$lightGrey: #434343;
+$metalGrey: #232526;
+$moonGrey: #122c2e;
+$spaceGrey: #0a061a;
+$spaceGradientActive: linear-gradient($spaceGrey,  $moonGrey, $spaceGrey,);
+$spaceGradientInactive: linear-gradient($spaceGrey,  $metalGrey, $spaceGrey,);
+
+
 
 $cyan: #07edca;
 $activeCyan: #00dbb9;
 $magenta: #f505f2;
 $activeMagenta: #f505f2;
 
-$popupShadow: 12px 12px 0 1px $notBlack;
+$popupShadow: 4px 4px 0 0px $notBlack;
 $buttonShadow: 3px 3px 0 0;
-$genericBorder: solid $notBlack;
-$popupBorder: 9px solid $notBlack;
+$genericBorder: solid $notWhite;
+$popupBorder: 7px solid $moonGrey;
 
 // Fonts
 $openSans: 'Open Sans';
@@ -48,19 +61,17 @@ $fw100: 100;
 $fw200: 241;
 $fw400: 371;
 $fw500: 524;
-$fw600: 670;
+$fw700: 720;
 $fw800: 806;
 
 // Font Sizes
-$fsMIN: 10px;
-$fsXXS: 12px;
-$fsXS: 14px;
-$fsSmall: 16px;
-$fsMid: 19px;
-$fsLarge: 22px;
-$fsXL: 28px;
-$fsXXL: 34px;
-$fsMAX: 55px;
+$fsMIN: 0.579rem;
+$fsXS: 0.694rem;
+$fsSmall: 0.833rem;
+$fsMid: 1rem;
+$fsLarge: 1.2rem;
+$fsXL: 1.44rem;
+$fsMAX: 1.728rem;
 
 // Margins & Paddings
 $microMargin: 2px;
