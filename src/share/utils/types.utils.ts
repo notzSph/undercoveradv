@@ -16,6 +16,7 @@ import { ReactNode } from "react";
 export interface GenericPopupProps {
     id: string,
     hasSidebar: boolean,
+    hasScroll?: boolean,
     isActive?: boolean,
     sidebar?: any,
     content?: any,
