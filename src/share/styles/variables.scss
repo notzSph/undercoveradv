@@ -47,22 +47,23 @@ $activeCyan: #00dbb9;
 $magenta: #f505f2;
 $activeMagenta: #f505f2;
 
-$popupShadow: 4px 4px 0 0px $notBlack;
+$popupShadow: 5px 5px 0 0px $notBlack;
 $buttonShadow: 3px 3px 0 0;
-$genericBorder: solid $notWhite;
+$genericBorder: solid $notBlack;
 $popupBorder: 7px solid $moonGrey;
 
 // Fonts
 $openSans: 'Open Sans';
 $varela: 'Varela Round';
+$sora: 'Sora';
 
 // Font Weights
-$fw100: 100;
 $fw200: 241;
-$fw400: 371;
+$fw300: 320;
+$fw400: 471;
 $fw500: 524;
+$fw600: 651;
 $fw700: 720;
-$fw800: 806;
 
 // Font Sizes
 $fsMIN: 0.579rem;

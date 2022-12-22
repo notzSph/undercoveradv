@@ -20,8 +20,8 @@ body {
 }
 
 body {
-  color: white;
-  background: black;
+  color: black;
+  background: var.$notWhite;
   font-family: var.$varela;
 }
 h1,
@@ -29,19 +29,18 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
 }
 h1 {
-  font-family: var.$openSans;
+  font-family: var.$sora;
   font-size: var.$fsMAX;
 }
 h2 {
-  font-family: var.$openSans;
   font-size: var.$fsXL;
 }
 h3 {
+  font-family: var.$varela;
   font-size: var.$fsLarge;
 }
 
@@ -50,6 +49,8 @@ h4 {
 }
 
 h5 {
+  font-family: var.$sora;
+  font-weight: var.$fw400;
   font-size: var.$fsSmall;
 }
 
@@ -58,8 +59,16 @@ h6 {
 }
 
 p {
+  font-family: var.$varela;
   font-size: var.$fsSmall;
+  margin: 0;
   line-height: 1.25rem;
+}
+
+span {
+  font-family: var.$sora;
+  font-weight: var.$fw500;
+  font-size: var.$fsLarge;
 }
 
 @media (prefers-color-scheme: dark) {
