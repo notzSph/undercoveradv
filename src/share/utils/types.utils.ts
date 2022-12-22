@@ -18,6 +18,7 @@ export interface GenericPopupProps {
     hasSidebar: boolean,
     hasScroll?: boolean,
     isActive?: boolean,
+    isFullScreen: boolean,
     sidebar?: any,
     content?: any,
     buttons?: any,
@@ -111,6 +112,9 @@ export interface GenericProjectProps {
 *  @param icon ---> Folder Icon Url
 *  @param name ---> Folder Name ( e.g. System )
 *  @param styles ---> Inline styles management (Optional)
+*  @param styles ---> Inline styles management (Optional)
+*  @param top ---> Top Value For Position Absolute Class (Optional)
+*  @param left ---> Left Value For Position Absolute Class (Optional)
 *  
 */
 
@@ -118,7 +122,9 @@ export interface FolderTileProps {
     id: number,
     icon: string,
     name: string,
-    styles?: React.CSSProperties | undefined
+    style?: React.CSSProperties | undefined
+    left?: string,
+    top?: string,
     onClick?: () => void
 }
 
@@ -173,4 +179,5 @@ export interface PopupState {
 export interface TopbarProps {
     title: string;
     onClose?: () => void
+    onFullscreen?: () => void
 }

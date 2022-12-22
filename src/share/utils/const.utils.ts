@@ -4,6 +4,9 @@ import { GenericProjectProps } from "./types.utils";
 /**
  * Assets Import (Images & SVG)
  */
+export const windowBtnRed = '/assets/svg/btn-red.svg';
+export const windowBtnYellow = '/assets/svg/btn-yellow.svg';
+export const windowBtnGreen = '/assets/svg/btn-green.svg';
 export const windowBtnBlack = '/assets/svg/btn-black.svg';
 export const windowBtnWhite = '/assets/svg/btn-white.svg';
 export const folderIcon = '/assets/svg/folder.svg';
@@ -227,43 +230,55 @@ export const aboutTiles = [
  * 
  */
 
-export const hiBandFolders = [
+export const folderTiles = [
     {
         id: 1,
         icon: undercoverLogo,
-        name: 'System',
+        name: 'SYSTEM',
+        top: '8vh',
+        left: '23vw',
     },
     {
         id: 2,
         icon: folderIcon,
-        name: 'About Us',
+        name: 'SERVICES',
+        top: '16vh',
+        left: '60vw',
     },
-]
-
-export const midBandFolders = [
     {
         id: 3,
         icon: folderIcon,
-        name: 'Services',
+        name: 'ABOUT US',
+        top: '42vh',
+        left: '13vw',
     },
     {
         id: 4,
         icon: undercoverBinLogo,
-        name: 'Portfolio',
+        name: 'PORTFOLIO',
+        top: '46vh',
+        left: '75vw',
     },
-]
-
-export const loBandFolders = [
     {
         id: 5,
         icon: folderIcon,
-        name: 'Docs',
+        name: 'DOCS',
+        top: '70vh',
+        left: '33vw',
     },
     {
         id: 6,
         icon: folderIcon,
-        name: 'Bin',
+        name: 'BIN',
+        top: '76vh',
+        left: '63vw',
     },
+]
+
+export const midBandFolders = [
+]
+
+export const loBandFolders = [
 ]
 export const brodos: GenericProjectProps = {
     id: 'brodos',

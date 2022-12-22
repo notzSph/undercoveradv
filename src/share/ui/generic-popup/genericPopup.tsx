@@ -8,7 +8,7 @@ export default function GenericPopup(props: GenericPopupProps) {
 
     // Styles
     const popupWrapperClass = `${styles.popupWrapper} ${(props.isActive ? '' : styles.inactive)} flex-center-all absolute `
-    const popupClass = `${styles.genericPopup} ${(props.isActive ? '' : styles.inactive)} w-70 f-column j-start a-center absolute o-hidden bg-moonGrey unselect-undrag `
+    const popupClass = `${styles.genericPopup} ${(props.isActive ? '' : styles.inactive)} w-70 f-column j-start a-center absolute o-hidden bg-notWhite unselect-undrag `
     const topbarWrapperClass = `${styles.topbarWrapper} w-100 flex-center-all`
     const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
     const contentClass = `${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} ${(props.hasScroll? 'o-scroll' : '')} f-column h-100 j-start a-start `
@@ -17,11 +17,22 @@ export default function GenericPopup(props: GenericPopupProps) {
         console.log('child ', e, e.nativeEvent)
         e.nativeEvent.stopPropagation()
     }, [])
-
+    
     const startCloseProcess = useCallback(() => {
         console.log('wrapper ')
         if (props.onClose) props.onClose()
     }, [props.onClose])
+
+    
+    // TODO Fix function
+    function onGoFullScreen(isFullScreen: boolean) {
+        if (!isFullScreen) {
+            document.exitFullscreen();
+        } else {
+            document.getElementById(props.id)?.requestFullscreen();
+        }
+        isFullScreen = !isFullScreen;
+      }
 
 
     return (
@@ -33,7 +44,7 @@ export default function GenericPopup(props: GenericPopupProps) {
 
                 {/* Topbar */}
                 <div id={(props.id + 'topBar')} className={topbarWrapperClass} onClick={stopReturn} >
-                    <PopupTopbar onClose={props.onClose} title={props.id} />
+                    <PopupTopbar onClose={props.onClose} title={props.id} onFullscreen={() => onGoFullScreen(true)} />
                 </div>
 
                 {/* Content Wrapper */}

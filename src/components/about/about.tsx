@@ -14,7 +14,7 @@ export default function AboutPopup(props: PopupState) {
 const aboutWrapperClass = `w-100 f-column flex-center-all p-5 `
     return (
         <>
-            <GenericPopup id='About' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='About' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose} isFullScreen={true}
                 content={
                     <div className={aboutWrapperClass}>
                         <h1 className='pt-5 pb-4'>Your Partner in Crime since 2008</h1>
