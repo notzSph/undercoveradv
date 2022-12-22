@@ -7,23 +7,25 @@ export default function GenericTabs(props: GenericTabsProps) {
     const [toggleState, toggleTab] = useState(0);
 
 
-    const menuClass = `${(props.menuScroll ? 'o-scroll' : 'o-hidden')} f-column w-30 bg-spaceGrey `
+    const menuClass = `${(props.menuScroll ? 'o-scroll' : 'o-hidden')} f-column w-30 `
+    const titleClass = `${styles.tabTitle} ml-4 `
+    const tabContentClass = `${styles.tabContent} h-100 `
 
 
     return (
         <>
-            <div className="container w-100 f-row o-hidden">
+            <div className="container w-100 h-100 f-row o-hidden">
                 <div className={menuClass}>
                     {props.sections.map((section, i) => {
 
-                        const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} f-row a-center relative c-pointer `
+                        const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs} ${styles.menuTabs} ${styles.activeMenu}` : `${styles.tabs} ${styles.menuTabs}`} f-row a-center relative c-pointer `
 
                         return (
                             <div id={section.id} key={i}
                                 className={tabClass}
                                 onClick={() => toggleTab(i)}>
                                 <img src={section.icon} alt={section.title} style={{ width: '50px', marginLeft: '5px' }} />
-                                <h5 className="ml-4">{section.title}</h5>
+                                <h5 className={titleClass}>{section.title}</h5>
 
                             </div>
                         )
@@ -35,7 +37,7 @@ export default function GenericTabs(props: GenericTabsProps) {
                 <div className={`${styles.contentTabs} ${(props.contentScroll ? 'o-scroll' : 'o-hidden')} w-70 `}>
                     {props.sections.map((section, i) => {
 
-                        const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs}`
+                        const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} h-100`
 
                         return (
                             <>

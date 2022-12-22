@@ -7,52 +7,32 @@
   .tabs {
     padding: 15px;
     box-sizing: content-box;
-    background: var.$spaceGrey;
     opacity: 0.6;
-    transition: opacity var.$transitionTimeLow ease-out, transform var.$transitionTimeLow ease-in;
-    transform-origin: left;
-    scale: 1;
+    transition: opacity var.$transitionTimeLow ease-out;
   }
   
-  .activeTabs  {
-    background-color: var.$spaceGrey;
-    opacity: 1;
+  .menuTabs {
+    scale: 1;
+    transform-origin: left;
+    transition: transform var.$transitionTimeLow ease-in;
+  }
+
+  .activeMenu {
     scale: 1.025;
   }
   
-  .activeTabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 5px;
+  .activeTabs  {
+    opacity: 1;
   }
   
   .contentTabs {
     border-left: var.$popupBorder;
   }
-  .content {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: none;
+  
+  .tabTitle {
+    font-family: var.$varela;
   }
-  .content h2 {
-    padding: 0px 0 5px 0px;
-  }
-  .content hr {
-    width: 100px;
-    height: 2px;
-    background: #222;
-    margin-bottom: 5px;
-  }
-  .content p {
-    width: 100%;
-    height: 100%;
-  }
-  .activeContent {
-    display: block;
+  
+  .contentTabs {
+    border-left: var.$popupBorder;
   }
