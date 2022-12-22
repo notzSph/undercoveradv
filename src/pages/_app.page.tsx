@@ -14,6 +14,8 @@ import '../share/styles/flex.scss'
 import '../share/styles/margin-padding.scss'
 /* Colors */
 import '../share/styles/colors.scss'
+/* Common Text */
+import '../share/styles/common-text.scss'
 
 
 export default function App({ Component, pageProps }: AppProps) {

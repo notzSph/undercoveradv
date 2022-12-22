@@ -7,20 +7,23 @@ export default function GenericTabs(props: GenericTabsProps) {
     const [toggleState, toggleTab] = useState(0);
 
 
+    const menuClass = `${(props.menuScroll ? 'o-scroll' : 'o-hidden')} f-column w-30 bg-spaceGrey `
+
+
     return (
         <>
-            <div className="container w-100 f-row j-cente o-hidden">
-                <div className={`${styles.blocTabs} ${(props.menuScroll ? 'o-scroll' : 'o-hidden')} w-30`}>
+            <div className="container w-100 f-row o-hidden">
+                <div className={menuClass}>
                     {props.sections.map((section, i) => {
 
-                        const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} f-row a-center`
+                        const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} f-row a-center relative c-pointer `
 
                         return (
                             <div id={section.id} key={i}
                                 className={tabClass}
                                 onClick={() => toggleTab(i)}>
                                 <img src={section.icon} alt={section.title} style={{ width: '50px', marginLeft: '5px' }} />
-                                <h4 className="ml-4">{section.title}</h4>
+                                <h5 className="ml-4">{section.title}</h5>
 
                             </div>
                         )
