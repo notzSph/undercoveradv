@@ -9,32 +9,34 @@ import styles from './about.module.scss'
 
 
 
-export default function AboutPopup(props: PopupState ) {
+export default function AboutPopup(props: PopupState) {
 
-
+const aboutWrapperClass = `w-100 f-column flex-center-all p-5 `
     return (
         <>
-            <GenericPopup id='About' hasSidebar={false} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='About' hasSidebar={false} hasScroll={true} isActive={props.isActive} onClose={props.onClose}
                 content={
-                    <div className='w-100 f-column flex-center-all'>
-                        <h1>Your Partner in Crime since 2008</h1>
-                        <div>"We work with people, we're not just a one night stand"</div>
-                        {
-                            aboutTiles.map((section, is) => {
-                                return (
-                                    <GenericSection translateKey='About' key={is}>
-                                        {
-                                            section.children.map((tile, it) => {
-                                                return (
-                                                    <GenericTile translateKey='About' key={it} id='about'
-                                                        subhead={tile.subhead}
-                                                        description={tile.description}
-                                                    />
-                                                )
-                                            })}
-                                    </GenericSection>
-                                )
-                            })}
+                    <div className={aboutWrapperClass}>
+                        <h1 className='pt-5 pb-4'>Your Partner in Crime since 2008</h1>
+                        <div className={`${styles.claim} pb-5`}>"We work with people, we're not just a one night stand"</div>
+                            {
+
+                                aboutTiles.map((section, is) => {
+                                    return (
+                                        <GenericSection translateKey='About' key={is}>
+                                            {
+                                                section.children.map((tile, it) => {
+                                                    return (
+                                                        <GenericTile translateKey='About' key={it} id='about'
+                                                            subhead={tile.subhead}
+                                                            description={tile.description}
+                                                        />
+                                                    )
+                                                })}
+                                        </GenericSection>
+                                    )
+                                })
+                            }
                     </div>
                 }
             />

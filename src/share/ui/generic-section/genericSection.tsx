@@ -8,11 +8,11 @@ export default function GenericSection(props: GenericSectionProps) {
     return (
 
         /* Container */
-        <section style={props.styles}>
+        <section className='p-5' style={props.styles}>
             {/* Title */}
             {
                 props.title &&
-                <h2>{i18n(props.title)}</h2>
+                <h1 className='pb-5'>{i18n(props.title)}</h1>
             }
 
             {/* Children ( Subhead & Description ) */}

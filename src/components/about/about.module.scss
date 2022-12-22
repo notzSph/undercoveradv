@@ -1,0 +1,12 @@
+@use '../../share/styles/variables.scss' as var;
+
+.title {
+margin-top: var.$largeMargin;
+}
+
+.claim {
+    font-family: var.$openSans;
+    font-size: var.$fsMid;
+    font-style: italic;
+    text-align: center;
+}
