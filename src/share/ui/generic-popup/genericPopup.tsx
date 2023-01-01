@@ -17,7 +17,7 @@ export default function GenericPopup(props: GenericPopupProps) {
     const topbarWrapperClass = `${styles.topbarWrapper} w-100 flex-center-all`
     const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
     const contentClass = `f-column h-100 ${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} ${(props.hasScroll ? 'o-scroll' : '')} ${(props.isSystem ? 'flex-center-all' : 'j-start a-start')} `
-    const sidebarClass = `${(isLargeLayout ? 'w-30' : 'w-50')} h-100 flex-center-all f-column f-wrap `
+    const sidebarClass = `${(isLargeLayout ? 'w-30' : 'w-40')} h-100 flex-center-all f-column f-wrap `
     const stopReturn = useCallback((e: any) => {
         console.log('child ', e, e.nativeEvent)
         e.nativeEvent.stopPropagation()
