@@ -11,7 +11,7 @@ export default function BinPopup(props: PopupState) {
 
     return (
         <>
-            <GenericPopup id='Bin' hasSidebar={false} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='Bin' hasSidebar={false} isActive={props.isActive} onClose={props.onClose} isFullScreen={false}
                 content={
                     <div className='w-100 h-100 f-column flex-center-all ' style={{opacity: '0.6'}}>
                         <img src={undercoverBinLogo} className='pb-5' style={{ width: '250px' }} />

@@ -1,4 +1,5 @@
 @use './variables.scss' as var;
+@use './breakpoints.scss' as brk;
 
 :root {
   max-width: 100vw !important;
@@ -75,4 +76,21 @@ span {
   html {
     color-scheme: dark;
   }
+}
+
+
+@media only screen and (min-width: brk.$mqTablet) and (max-width: brk.$mqTabletMax) {
+  
+  h1 {
+    font-size: var.$fsLarge;
+  }
+  
+  li {
+    font-size: var.$fsMid;
+  }
+
+  h4 {
+    font-size: var.$fsSmall;
+  }
+  
 }

@@ -221,7 +221,7 @@ export const aboutTiles = [
 
 
 /**
- *  { POSITION } Band Folder
+ *  Folder Tiles
  *  
  *  High / Mid / Low Bands 
  *  @param id ---> id (e.g. System )
@@ -275,11 +275,6 @@ export const folderTiles = [
     },
 ]
 
-export const midBandFolders = [
-]
-
-export const loBandFolders = [
-]
 export const brodos: GenericProjectProps = {
     id: 'brodos',
     image: brodosProject,

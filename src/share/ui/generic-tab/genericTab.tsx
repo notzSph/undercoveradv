@@ -14,12 +14,13 @@ export default function GenericTabs(props: GenericTabsProps) {
     const menuClass = `${(isLargeLayout? 'w-30 f-column ' : 'w-100 f-row j-between ')} ${(props.menuScroll ? 'o-scroll ' : 'o-hidden ')} `
     const titleClass = `${styles.tabTitle} ml-4 `
     const tabContainerClass = `${styles.container} ${(isLargeLayout ? 'f-row' : 'f-column')} w-100 h-100 o-hidden `
+    const tabContentClass = `${styles.contentTabs} ${(isLargeLayout? 'w-70 ' : 'w-100 ')} ${(props.contentScroll ? 'o-scroll' : 'o-hidden')}`
 
 
     return (
         <>
             <div className={tabContainerClass}>
-                <div className={menuClass} style={{minHeight: isLargeLayout ? 'auto' : '80px'}}>
+                <div className={menuClass} style={{minHeight: isLargeLayout ? 'auto' : '15%'}}>
                     {props.sections.map((section, i) => {
 
                         const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs} ${styles.menuTabs} ${styles.activeMenu}` : `${styles.tabs} ${styles.menuTabs}`} f-row a-center relative c-pointer `
@@ -38,7 +39,7 @@ export default function GenericTabs(props: GenericTabsProps) {
 
                 </div>
 
-                <div className={`${styles.contentTabs} ${(isLargeLayout? 'w-70 ' : 'w-100 ')} ${(props.contentScroll ? 'o-scroll' : 'o-hidden')} `}>
+                <div className={tabContentClass} style={{minHeight: isLargeLayout ? 'auto' : '85%'}}>
                     {props.sections.map((section, i) => {
 
                         const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} h-100`

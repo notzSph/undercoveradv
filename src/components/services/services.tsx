@@ -1,4 +1,5 @@
 import { GetStaticPropsContext } from 'next';
+import { useLayout } from '../../hooks/useLayout.hook';
 import GenericPopup from '../../share/ui/generic-popup/genericPopup';
 import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTabs from '../../share/ui/generic-tab/genericTab';
@@ -76,12 +77,14 @@ const sections: TabSections = [
 
 export default function ServicesPopup(props: PopupState) {
 
+    
+    const { isLargeLayout, isTablet, isMobile } = useLayout();
 
     return (
         <>
-            <GenericPopup id='Services' hasSidebar={false} isActive={props.isActive} onClose={props.onClose}
+            <GenericPopup id='Services' hasSidebar={false} isActive={props.isActive} onClose={props.onClose} isFullScreen={false}
                 content={
-                    <GenericTabs menuScroll={false} contentScroll={true}
+                    <GenericTabs menuScroll={true} contentScroll={true}
                     sections={sections}
                     />
                 }

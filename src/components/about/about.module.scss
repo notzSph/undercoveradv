@@ -1,7 +1,9 @@
-@use '../../share/styles/variables.scss' as var;
+@use "../../share/styles/variables.scss" as var;
+@use "../../share/styles/breakpoints.scss" as brk;
 
 .title {
-margin-top: var.$largeMargin;
+    margin-top: var.$largeMargin;
+    text-align: center;
 }
 
 .claim {
@@ -9,4 +11,10 @@ margin-top: var.$largeMargin;
     font-size: var.$fsMid;
     font-style: italic;
     text-align: center;
+}
+
+@media only screen and (max-width: brk.$mqTabletMax) {
+    .claim {
+        font-size: var.$fsSmall;
+    }
 }
