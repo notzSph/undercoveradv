@@ -18,6 +18,7 @@ export interface GenericPopupProps {
     hasSidebar: boolean,
     hasScroll?: boolean,
     isActive?: boolean,
+    isSystem?: boolean,
     isFullScreen: boolean,
     sidebar?: any,
     content?: any,
@@ -180,4 +181,10 @@ export interface TopbarProps {
     title: string;
     onClose?: () => void
     onFullscreen?: () => void
+}
+
+export interface Layout {
+  isLargeLayout: boolean;
+  isTablet: boolean;
+  isMobile: boolean;
 }
