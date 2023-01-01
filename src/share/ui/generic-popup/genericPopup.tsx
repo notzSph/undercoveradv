@@ -1,50 +1,68 @@
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react';
 import { GenericPopupProps } from '../../utils/types.utils';
 import PopupTopbar from '../popup-topbar/popupTopbar';
-import styles from './genericPopup.module.scss'
+import styles from './genericPopup.module.scss';
+import { useLayout } from '../../../hooks/useLayout.hook';
+import { useFullscreenListener } from '../../../hooks/useFullscreenChange.hook';
+
 
 
 export default function GenericPopup(props: GenericPopupProps) {
+    
+    const { isLargeLayout, isTablet, isMobile } = useLayout();
 
     // Styles
     const popupWrapperClass = `${styles.popupWrapper} ${(props.isActive ? '' : styles.inactive)} flex-center-all absolute `
     const popupClass = `${styles.genericPopup} ${(props.isActive ? '' : styles.inactive)} w-70 f-column j-start a-center absolute o-hidden bg-notWhite unselect-undrag `
     const topbarWrapperClass = `${styles.topbarWrapper} w-100 flex-center-all`
-    const contentWrapperClass = `${styles.contentWrapper} f-row w-100 `
-    const contentClass = `${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} ${(props.hasScroll? 'o-scroll' : '')} f-column h-100 j-start a-start `
-    const sidebarClass = 'w-30 h-100 flex-center-all f-column f-wrap '
+    const contentWrapperClass = `${styles.contentWrapper} ${(isLargeLayout ? 'f-row' : 'f-column')} w-100 `
+    const contentClass = `f-column h-100 ${(props.hasSidebar ? `${styles.contentClass} w-70 ` : 'w-100 ')} ${(props.hasScroll ? 'o-scroll' : '')} ${(props.isSystem ? 'flex-center-all' : 'j-start a-start')} `
+    const sidebarClass = `${(isLargeLayout ? 'w-30' : 'w-100')} h-100 flex-center-all f-column f-wrap `
     const stopReturn = useCallback((e: any) => {
         console.log('child ', e, e.nativeEvent)
         e.nativeEvent.stopPropagation()
     }, [])
-    
-    const startCloseProcess = useCallback(() => {
-        console.log('wrapper ')
-        if (props.onClose) props.onClose()
-    }, [props.onClose])
 
-    
-    // TODO Fix function
-    function onGoFullScreen(isFullScreen: boolean) {
-        if (!isFullScreen) {
-            document.exitFullscreen();
-        } else {
+
+    console.log('values: ', isLargeLayout, isMobile, isTablet)
+
+
+    const fullscreenStatus = useFullscreenListener(props.id)
+
+
+    const toggleFullScreen = useCallback(() => {
+        console.log('toggle ', fullscreenStatus)
+        const fs = !fullscreenStatus
+        if (fs) {
             document.getElementById(props.id)?.requestFullscreen();
+        } else {
+            if (document.fullscreenElement) window.document.exitFullscreen();
         }
-        isFullScreen = !isFullScreen;
-      }
+    }, [fullscreenStatus])
+
+
+    const close = useCallback(() => {
+        console.log('close ', fullscreenStatus)
+
+        if (fullscreenStatus) toggleFullScreen()
+
+        setTimeout(() => {
+            if (props.onClose) props.onClose()
+        }, fullscreenStatus ? 350 : 0)
+    }, [fullscreenStatus])
+
 
 
     return (
 
         /* Container */
         <div className={popupWrapperClass} >
-            <div className={styles.dismissArea + ' absolute'} onClick={startCloseProcess}></div>
+            <div className={styles.dismissArea + ' absolute'} onClick={close}></div>
             <section id={props.id} className={popupClass} onClick={stopReturn}>
 
                 {/* Topbar */}
                 <div id={(props.id + 'topBar')} className={topbarWrapperClass} onClick={stopReturn} >
-                    <PopupTopbar onClose={props.onClose} title={props.id} onFullscreen={() => onGoFullScreen(true)} />
+                    <PopupTopbar onClose={close} title={props.id} onFullscreen={() => toggleFullScreen()} />
                 </div>
 
                 {/* Content Wrapper */}

@@ -1,4 +1,5 @@
 @use '../../styles/variables.scss' as var;
+@use '../../styles/breakpoints.scss' as brk;
 
 .container {
     height: 300px;
@@ -27,12 +28,18 @@
   
   .contentTabs {
     border-left: var.$popupBorder;
+    border-top: none;
   }
   
   .tabTitle {
     font-family: var.$varela;
   }
   
-  .contentTabs {
-    border-left: var.$popupBorder;
+  
+  @media only screen and (max-width: brk.$mqTabletMax) {
+    
+    .contentTabs {
+      border-left: none;
+      border-top: var.$popupBorder;
+    }
   }

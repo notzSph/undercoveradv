@@ -1,27 +1,31 @@
 import { useState } from "react";
+import { useLayout } from "../../../hooks/useLayout.hook";
 import { GenericTabsProps as GenericTabsProps } from "../../utils/types.utils";
 import styles from "./genericTab.module.scss";
 
 export default function GenericTabs(props: GenericTabsProps) {
 
+    const { isLargeLayout, isTablet, isMobile } = useLayout();
+
+
     const [toggleState, toggleTab] = useState(0);
 
 
-    const menuClass = `${(props.menuScroll ? 'o-scroll' : 'o-hidden')} f-column w-30 `
+    const menuClass = `${(isLargeLayout? 'w-30 f-column ' : 'w-100 f-row j-between ')} ${(props.menuScroll ? 'o-scroll ' : 'o-hidden ')} `
     const titleClass = `${styles.tabTitle} ml-4 `
-    const tabContentClass = `${styles.tabContent} h-100 `
+    const tabContainerClass = `${styles.container} ${(isLargeLayout ? 'f-row' : 'f-column')} w-100 h-100 o-hidden `
 
 
     return (
         <>
-            <div className="container w-100 h-100 f-row o-hidden">
-                <div className={menuClass}>
+            <div className={tabContainerClass}>
+                <div className={menuClass} style={{minHeight: isLargeLayout ? 'auto' : '80px'}}>
                     {props.sections.map((section, i) => {
 
                         const tabClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs} ${styles.menuTabs} ${styles.activeMenu}` : `${styles.tabs} ${styles.menuTabs}`} f-row a-center relative c-pointer `
 
                         return (
-                            <div id={section.id} key={i}
+                            <div id={section.id} key={'left' + i}
                                 className={tabClass}
                                 onClick={() => toggleTab(i)}>
                                 <img src={section.icon} alt={section.title} style={{ width: '50px', marginLeft: '5px' }} />
@@ -34,7 +38,7 @@ export default function GenericTabs(props: GenericTabsProps) {
 
                 </div>
 
-                <div className={`${styles.contentTabs} ${(props.contentScroll ? 'o-scroll' : 'o-hidden')} w-70 `}>
+                <div className={`${styles.contentTabs} ${(isLargeLayout? 'w-70 ' : 'w-100 ')} ${(props.contentScroll ? 'o-scroll' : 'o-hidden')} `}>
                     {props.sections.map((section, i) => {
 
                         const tabContentClass = `${toggleState === i ? `${styles.tabs} ${styles.activeTabs}` : styles.tabs} h-100`
@@ -43,7 +47,7 @@ export default function GenericTabs(props: GenericTabsProps) {
                             <>
                                 {
                                     toggleState === i &&
-                                    <div id={section.id} key={i} className={tabContentClass}>
+                                    <div id={section.id} key={'right' + i} className={tabContentClass}>
                                         {section.content}
                                     </div>
                                 }

@@ -16,9 +16,13 @@ import '../share/styles/margin-padding.scss'
 import '../share/styles/colors.scss'
 /* Common Text */
 import '../share/styles/common-text.scss'
+import { useLayoutListener } from '../hooks/useLayout.hook'
 
 
 export default function App({ Component, pageProps }: AppProps) {
+
+  useLayoutListener();
+
   return (
     <>
     <NextIntlProvider messages={pageProps.messages}>
