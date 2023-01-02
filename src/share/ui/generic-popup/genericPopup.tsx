@@ -77,7 +77,7 @@ export default function GenericPopup(props: GenericPopupProps) {
                     }
 
                     {/* Content */}
-                    <div id={(props.id + 'content')} className={contentClass} style={{ height: '600px' }}>
+                    <div id={(props.id + 'content')} className={contentClass} style={{ height: (isLargeLayout ? '60vh' : '80vh') }}>
                         {props.content && props.content}
                     </div>
 

@@ -4,7 +4,7 @@ import PortfolioPopup from "../portfolio/portfolio";
 import ServicesPopup from "../services/services";
 import SystemPopup from "../system/system";
 import FolderTile from "../../share/ui/folder-tile/folderTile";
-import { folderTiles, loBandFolders, midBandFolders } from "../../share/utils/const.utils";
+import { folderTiles } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
 import { useState } from "react";
 import { isPropertySignature } from "typescript";

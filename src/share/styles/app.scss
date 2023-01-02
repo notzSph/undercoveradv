@@ -22,7 +22,7 @@ body {
 
 body {
   color: black;
-  background: var.$notWhite;
+  background: var.$mainBackground;
   font-family: var.$varela;
 }
 h1,
@@ -56,7 +56,7 @@ h5 {
 }
 
 h6 {
-  font-size: var.$fsXS;
+  font-size: var.$fsMid;
 }
 
 p {

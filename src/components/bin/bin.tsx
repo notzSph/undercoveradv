@@ -13,7 +13,7 @@ export default function BinPopup(props: PopupState) {
         <>
             <GenericPopup id='Bin' hasSidebar={false} isActive={props.isActive} onClose={props.onClose} isFullScreen={false}
                 content={
-                    <div className='w-100 h-100 f-column flex-center-all ' style={{opacity: '0.6'}}>
+                    <div className='w-100 h-100 f-column flex-center-all ' >
                         <img src={undercoverBinLogo} className='pb-5' style={{ width: '250px' }} />
                         <h2 className='pb-4'>{i18n('claim')}</h2>
                         <h4>{i18n('quote')}</h4>

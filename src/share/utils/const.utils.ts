@@ -1,6 +1,7 @@
 import { goToBlank } from "./functions.utils";
 import { GenericProjectProps } from "./types.utils";
 
+
 /**
  * Assets Import (Images & SVG)
  */
@@ -9,7 +10,12 @@ export const windowBtnYellow = '/assets/svg/btn-yellow.svg';
 export const windowBtnGreen = '/assets/svg/btn-green.svg';
 export const windowBtnBlack = '/assets/svg/btn-black.svg';
 export const windowBtnWhite = '/assets/svg/btn-white.svg';
+export const cyanFolderIcon = '/assets/svg/folder-cyan.svg';
+export const greenFolderIcon = '/assets/svg/folder-green.svg';
+export const magentaFolderIcon = '/assets/svg/folder-magenta.svg';
+export const yellowFolderIcon = '/assets/svg/folder-yellow.svg';
 export const folderIcon = '/assets/svg/folder.svg';
+export const binIcon = '/assets/svg/bin.svg';
 export const undercoverLogo = '/assets/images/undrcover-logo.png';
 export const undercoverBinLogo = '/assets/images/bin-logo.png';
 
@@ -240,35 +246,35 @@ export const folderTiles = [
     },
     {
         id: 2,
-        icon: folderIcon,
+        icon: magentaFolderIcon,
         name: 'SERVICES',
         top: '16vh',
         left: '60vw',
     },
     {
         id: 3,
-        icon: folderIcon,
+        icon: cyanFolderIcon,
         name: 'ABOUT US',
         top: '42vh',
         left: '13vw',
     },
     {
         id: 4,
-        icon: undercoverBinLogo,
+        icon: greenFolderIcon,
         name: 'PORTFOLIO',
         top: '46vh',
         left: '75vw',
     },
     {
         id: 5,
-        icon: folderIcon,
+        icon: yellowFolderIcon,
         name: 'DOCS',
         top: '70vh',
         left: '33vw',
     },
     {
         id: 6,
-        icon: folderIcon,
+        icon: binIcon,
         name: 'BIN',
         top: '76vh',
         left: '63vw',

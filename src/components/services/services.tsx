@@ -4,7 +4,7 @@ import GenericPopup from '../../share/ui/generic-popup/genericPopup';
 import GenericSection from '../../share/ui/generic-section/genericSection';
 import GenericTabs from '../../share/ui/generic-tab/genericTab';
 import GenericTile from '../../share/ui/generic-tile/genericTile';
-import { folderIcon, uxDesTiles, visualDesTiles, webDevTiles } from '../../share/utils/const.utils';
+import { cyanFolderIcon, magentaFolderIcon, uxDesTiles, visualDesTiles, webDevTiles, yellowFolderIcon } from '../../share/utils/const.utils';
 import { PopupState, TabSections } from '../../share/utils/types.utils';
 import styles from './services.module.scss';
 
@@ -13,7 +13,7 @@ const sections: TabSections = [
     {
         id: 'uxui',
         title: 'UX/UI Design',
-        icon: folderIcon,
+        icon: magentaFolderIcon,
         content: uxDesTiles.map((section, is) => {
             return (
                 <GenericSection key={is} translateKey={'Services'} title={section.title}>
@@ -34,7 +34,7 @@ const sections: TabSections = [
     {
         id: 'visual',
         title: 'Visual Design',
-        icon: folderIcon,
+        icon: cyanFolderIcon,
         content: visualDesTiles.map((section, is) => {
             return (
                 <GenericSection key={is} translateKey={'Services'} title={section.title}>
@@ -55,7 +55,7 @@ const sections: TabSections = [
     {
         id: 'dev',
         title: 'Web Development',
-        icon: folderIcon,
+        icon: yellowFolderIcon,
         content: webDevTiles.map((section, is) => {
             return (
                 <GenericSection key={is} translateKey={'Services'} title={section.title}>
