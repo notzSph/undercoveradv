@@ -4,7 +4,7 @@ import { Layout } from '../share/utils/types.utils';
 
 const layout = new BehaviorSubject<Layout>({
   isLargeLayout: false,
-  isMobile: false,
+  isMobile: true,
   isTablet: false,
 })
 
@@ -15,8 +15,8 @@ export function useLayoutListener(): void {
     const handleResize = () => {
       layout.next({
         isLargeLayout: window.innerWidth >= 1024,
-        isMobile: window.innerWidth >= 768 && window.innerWidth < 1024,
-        isTablet: window.innerWidth < 768,
+        isTablet: window.innerWidth >= 768 && window.innerWidth < 1024,
+        isMobile: window.innerWidth < 768,
       })
     };
     window.addEventListener('resize', handleResize);

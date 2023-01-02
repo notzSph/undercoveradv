@@ -1,4 +1,5 @@
 @use "../../styles/variables.scss" as var;
+@use "../../styles/breakpoints.scss" as brk;
 
 
 
@@ -53,4 +54,12 @@
 
 .contentClass {
   border-left: var.$popupBorder;
+}
+
+
+@media only screen and (min-width: brk.$mqPhone) and (max-width: brk.$mqPhoneMax) {
+  
+  .contentClass {
+    border-left: none;
+  }
 }

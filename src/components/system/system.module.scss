@@ -1,7 +1,16 @@
-@use '../../share/styles/variables.scss' as var;
+@use "../../share/styles/variables.scss" as var;
+@use "../../share/styles/breakpoints.scss" as brk;
 
 .systemLogo {
     width: 200px;
     min-width: 200px;
     max-width: 200px;
+}
+
+@media only screen and (min-width: brk.$mqPhone) and (max-width: brk.$mqPhoneMax) {
+    .systemLogo {
+        width: 150px;
+        min-width: 150px;
+        max-width: 150px;
+    }
 }

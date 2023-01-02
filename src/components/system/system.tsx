@@ -9,26 +9,34 @@ import styles from './system.module.scss';
 
 export default function SystemPopup(props: PopupState) {
 
-    const { isLargeLayout } = useLayout()
+    const { isLargeLayout, isMobile } = useLayout()
     // Internationalization
     const i18n = useTranslations('System')
+
+    const systemContentWrapperClass = `f-column ${(isMobile ? 'a-center j-start' : 'a-start')} pl-2`
+    const systemSidebarWrapperClass = `w-100 f-column ${(isMobile ? 'pt-5 j-start a-center' : 'flex-center-all')} `
 
     return (
         <>
             <GenericPopup id="System" hasSidebar={true} isActive={props.isActive} onClose={props.onClose} isFullScreen={false} isSystem={true}
                 sidebar={
-                    <div className='w-100 f-column flex-center-all ' style={{ height: isLargeLayout ? '600px' : '' }}>
-                        <img src={undercoverLogo} alt='undrcvr_logo' className={`${styles.systemLogo} pb-5`} />
-                        <h2 className='pb-5'>UndercoverADV</h2>
-                        <h4 className='pb-4'>Your Parnter in Crime</h4>
-                        <h6>Since 2008</h6>
+                    <div className={systemSidebarWrapperClass} style={{ height: isLargeLayout ? '600px' : '' }}>
+                        <img src={undercoverLogo} alt='undrcvr_logo' className={`${styles.systemLogo} ${(isMobile ? 'pb-3' : 'pb-5')}`} />
+                        <h2 className={(isMobile ? 'pb-3' : 'pb-5')}>UndercoverADV</h2>
+
+                        <h4 className={(isMobile ? 'pb-2' : 'pb-4')} style={{fontWeight: isMobile ? '500' : ''}}>Your Parnter in Crime</h4>
+                        <h6 className={(isMobile ? 'pb-4' : '')} style={{fontWeight: isMobile ? '500' : ''}}>Since 2008</h6>
                     </div>
                 }
                 content={
-                    <div className="f-column a-start pl-2">
-
-                        <h1 className='pb-4' style={{fontSize: isLargeLayout? '' : '1.44rem'}}>{i18n('brand')}</h1>
-                        <h3 className='pb-5'>{i18n('version')}</h3>
+                    <div className={systemContentWrapperClass}>
+                        <>
+                            {
+                                !isMobile &&
+                                <h1 className={(isMobile ? 'pb-2' : 'pb-4')} style={{ fontSize: (isMobile ? '1.2rem' : (isLargeLayout ? '' : '1.44rem')) }}>{i18n('brand')}</h1>
+                            }
+                        </>
+                        <h3 className={(isMobile ? 'pb-4' : 'pb-5')}>{i18n('version')}</h3>
                         <ul className='ml-5'>
                             <li className='pb-4' dangerouslySetInnerHTML={{ __html: i18n.raw('release') }} />
                             <li className='pb-4' dangerouslySetInnerHTML={{ __html: i18n.raw('location') }} />

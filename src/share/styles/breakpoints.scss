@@ -9,21 +9,9 @@
 *   - $mq{DEVICE_TYPE}Max ---> Max Device Threshold.
 */
 
-// Phone Micro 
-$mqMicro: 300px;
-$mqMicroMax: 359px;
-
-// Phone Mini
-$mqMini: 360px;
-$mqMiniMax: 410px;
-
 // Phone
-$mqPhone: 411px;
-$mqPhoneMax: 599px;
-
-// Tablet Small
-$mqSmallTablet: 600px;
-$mqSmallTabletMax: 767px;
+$mqPhone: 300px;
+$mqPhoneMax: 767px;
 
 // Tablet
 $mqTablet: 768px;

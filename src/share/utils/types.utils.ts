@@ -124,8 +124,8 @@ export interface FolderTileProps {
     icon: string,
     name: string,
     style?: React.CSSProperties | undefined
-    left?: string,
     top?: string,
+    left?: string,
     onClick?: () => void
 }
 

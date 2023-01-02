@@ -248,14 +248,14 @@ export const folderTiles = [
         id: 2,
         icon: magentaFolderIcon,
         name: 'SERVICES',
-        top: '16vh',
-        left: '60vw',
+        top: '18vh',
+        left: '78vw',
     },
     {
         id: 3,
         icon: cyanFolderIcon,
         name: 'ABOUT US',
-        top: '42vh',
+        top: '35vh',
         left: '13vw',
     },
     {
@@ -263,21 +263,21 @@ export const folderTiles = [
         icon: greenFolderIcon,
         name: 'PORTFOLIO',
         top: '46vh',
-        left: '75vw',
+        left: '67vw',
     },
     {
         id: 5,
         icon: yellowFolderIcon,
         name: 'DOCS',
         top: '70vh',
-        left: '33vw',
+        left: '23vw',
     },
     {
         id: 6,
         icon: binIcon,
         name: 'BIN',
         top: '76vh',
-        left: '63vw',
+        left: '85vw',
     },
 ]
 

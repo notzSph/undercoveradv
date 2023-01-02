@@ -18,7 +18,7 @@ export default function GenericSection(props: GenericSectionProps) {
             {/* Title */}
             {
                 props.title &&
-                <h1 className='pb-5'>{i18n(props.title)}</h1>
+                <h1 className='pb-5' style={{fontSize: isMobile ? '1.4rem' : ''}}>{i18n(props.title)}</h1>
             }
 
             {/* Children ( Subhead & Description ) */}

@@ -8,11 +8,13 @@ import { folderTiles } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
 import { useState } from "react";
 import { isPropertySignature } from "typescript";
+import { useLayout } from "../../hooks/useLayout.hook";
 
 export default function Desktop() {
 
+    const { isLargeLayout, isTablet, isMobile } = useLayout()
+
     const band = `${styles.band} flex-center-all `;
-    const isLargeLayout: boolean = true;
 
     const [activePopup, setActivePopup] = useState<number | undefined>()
 
@@ -30,7 +32,7 @@ export default function Desktop() {
                                 onClick={() => setActivePopup(folder.id)}
                                 style={{
                                     top: folder.top,
-                                    left: folder.left
+                                    left: isMobile ? 'calc(' + folder.left + ' / 1.3)' : folder.left
                                 }}
                             />
                         )

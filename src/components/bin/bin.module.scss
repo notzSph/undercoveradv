@@ -1,0 +1,18 @@
+@use "../../share/styles/variables.scss" as var;
+@use "../../share/styles/breakpoints.scss" as brk;
+
+@media only screen and (min-width: brk.$mqPhone) and (max-width: brk.$mqPhoneMax) {
+   
+    .binClaim {
+        font-size: var.$fsXL;
+        text-align: center;
+        font-weight: var.$fw500;
+      }
+   
+    .binQuote {
+      font-size: var.$fsXS;
+      font-weight: var.$fw300;
+      text-align: center;
+      padding: 0 var.$mediumMargin;
+    }
+  }

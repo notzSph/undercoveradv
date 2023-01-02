@@ -88,9 +88,24 @@ span {
   li {
     font-size: var.$fsMid;
   }
-
+  
   h4 {
     font-size: var.$fsSmall;
   }
+  
+}
+@media only screen and (min-width: brk.$mqPhone) and (max-width: brk.$mqPhoneMax) {
+  h1 {
+    font-size: var.$fsMid;
+  }
+
+  h2 {
+    font-weight: var.$fw500;
+  }
+ 
+  li {
+    font-size: var.$fsSmall;
+  }
+
   
 }
