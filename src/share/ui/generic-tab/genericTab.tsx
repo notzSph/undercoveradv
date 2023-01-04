@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 import { useLayout } from "../../../hooks/useLayout.hook";
 import { GenericTabsProps as GenericTabsProps } from "../../utils/types.utils";
@@ -29,7 +30,7 @@ export default function GenericTabs(props: GenericTabsProps) {
                             <div id={section.id} key={'left' + i}
                                 className={tabClass}
                                 onClick={() => toggleTab(i)}>
-                                <img src={section.icon} alt={section.title} style={{ width: '50px', marginLeft: '5px' }} />
+                                <Image src={section.icon} alt={section.title} width={50} height={50} />
                                 <h5 className={titleClass}>{section.title}</h5>
 
                             </div>

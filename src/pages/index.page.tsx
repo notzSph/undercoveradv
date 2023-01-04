@@ -5,7 +5,7 @@ import Desktop from '../components/desktop/desktop';
 
 
 
-export default function Home(isActive: boolean) { // Useless Param
+export default function Home() {
 
   return (
     <>

@@ -22,7 +22,7 @@ const aboutWrapperClass = `w-100 f-column flex-center-all ${(isLargeLayout ? 'p-
                 content={
                     <div className={aboutWrapperClass}>
                         <h1 className='pt-5 pb-4' style={{textAlign: 'center'}}>Your Partner in Crime since 2008</h1>
-                        <div className={`${styles.claim} pb-5`}>"We work with people, we're not just a one night stand"</div>
+                        <div className={`${styles.claim} pb-5`}>&quot;We work with people, we&apos;re not just a one night stand&quot;</div>
                             {
 
                                 aboutTiles.map((section, is) => {
