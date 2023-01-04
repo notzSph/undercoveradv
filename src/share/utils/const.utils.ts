@@ -16,8 +16,8 @@ export const magentaFolderIcon = '/assets/svg/folder-magenta.svg';
 export const yellowFolderIcon = '/assets/svg/folder-yellow.svg';
 export const folderIcon = '/assets/svg/folder.svg';
 export const binIcon = '/assets/svg/bin.svg';
-export const undercoverLogo = '/assets/images/undrcover-logo.png';
-export const undercoverBinLogo = '/assets/images/bin-logo.png';
+export const undercoverLogo = '/assets/svg/undrcover-logo.svg';
+export const undercoverBinLogo = '/assets/svg/bin-logo.svg';
 
 // Projects
 export const astenseProject = '/assets/images/astense.png';
