@@ -3,8 +3,6 @@
 
 // Components Heights
 $popupHeight: 600px;
-$topbarHeight: calc(#{$popupHeight} * 0.15);
-
 
 .popupWrapper,
 .dismissArea {
@@ -35,6 +33,20 @@ $topbarHeight: calc(#{$popupHeight} * 0.15);
   pointer-events: all;
   z-index: 20;
 }
+.genericPopup:fullscreen {
+  
+  .topbarWrapper {
+    height: 10%;
+    max-height: 10%;
+    min-height: 10%;
+  }
+
+  .contentWrapper {
+    height: 90%;
+    max-height: 90%;
+    min-height: 90%;
+  }
+}
 
 .genericPopup.inactive {
   opacity: 0;
@@ -43,13 +55,12 @@ $topbarHeight: calc(#{$popupHeight} * 0.15);
 }
 
 .topbarWrapper {
-  height: $topbarHeight;
-  max-height: $topbarHeight;
-  min-height: $topbarHeight;
+  height: 15%;
+  max-height: 15%;
+  min-height: 15%;
   border-bottom: var.$popupBorder;
   background: var.$paleYellow;
 }
-
 .contentWrapper {
   height: 85%;
   max-height: 85%;
@@ -57,12 +68,10 @@ $topbarHeight: calc(#{$popupHeight} * 0.15);
 }
 
 .contentClass {
-    border-left: var.$popupBorder;
+  border-left: var.$popupBorder;
 }
 
-
 @media only screen and (min-width: brk.$mqPhone) and (max-width: brk.$mqPhoneMax) {
-  
   .contentClass {
     border-left: none;
   }

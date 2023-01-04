@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback } from 'react';
 import { GenericPopupProps } from '../../utils/types.utils';
 import PopupTopbar from '../popup-topbar/popupTopbar';
 import styles from './genericPopup.module.scss';
@@ -8,7 +8,7 @@ import { useFullscreenListener } from '../../../hooks/useFullscreenChange.hook';
 
 
 export default function GenericPopup(props: GenericPopupProps) {
-    
+
     const { isLargeLayout, isTablet, isMobile } = useLayout();
 
     // Styles
@@ -34,11 +34,15 @@ export default function GenericPopup(props: GenericPopupProps) {
         console.log('toggle ', fullscreenStatus)
         const fs = !fullscreenStatus
         if (fs) {
-            document.getElementById(props.id)?.requestFullscreen();
+
+            // Check if User Browser supports RequestFullscreen()
+            if ((Element as any).prototype?.requestFullscreen) {
+                document.getElementById(props.id)?.requestFullscreen()
+            };
         } else {
             if (document.fullscreenElement) window.document.exitFullscreen();
         }
-    }, [fullscreenStatus])
+    }, [fullscreenStatus, props.id])
 
 
     const close = useCallback(() => {
@@ -46,11 +50,11 @@ export default function GenericPopup(props: GenericPopupProps) {
 
         if (fullscreenStatus) toggleFullScreen()
 
+        // Set Timeout to smooth popup close animation transition 
         setTimeout(() => {
             if (props.onClose) props.onClose()
         }, fullscreenStatus ? 350 : 0)
-    }, [fullscreenStatus])
-
+    }, [fullscreenStatus, props, toggleFullScreen])
 
 
     return (
