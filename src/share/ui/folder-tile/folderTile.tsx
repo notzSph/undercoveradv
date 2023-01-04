@@ -1,6 +1,7 @@
 import { FolderTileProps } from "../../utils/types.utils";
 
 
+// UN CURSOR POINTER NON GLIELO DIAMO A STE POVERE FOLDER? CHE SISTEMA OPERATIVO USI? ahah
 export default function FolderTile(props: FolderTileProps) {
 
 
