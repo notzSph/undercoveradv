@@ -14,14 +14,13 @@
     scale: 1;
     transform-origin: left;
     transition: transform var.$transitionTimeLow ease-in;
-    background: var.$popupBackground;
+    background: var.$salmon;
   }
   
   .activeMenu {
     scale: 1.025;
-    background: var.$activeElementBackground;
+    background: var.$crispySalmon;
   }
-  
 
   .contentTabsWrapper {
     border-left: var.$popupBorder;

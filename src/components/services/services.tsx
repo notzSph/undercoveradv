@@ -6,7 +6,6 @@ import GenericTabs from '../../share/ui/generic-tab/genericTab';
 import GenericTile from '../../share/ui/generic-tile/genericTile';
 import { cyanFolderIcon, magentaFolderIcon, uxDesTiles, visualDesTiles, webDevTiles, yellowFolderIcon } from '../../share/utils/const.utils';
 import { PopupState, TabSections } from '../../share/utils/types.utils';
-import styles from './services.module.scss';
 
 
 const sections: TabSections = [

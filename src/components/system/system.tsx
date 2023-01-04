@@ -5,7 +5,6 @@ import { useLayout } from "../../hooks/useLayout.hook";
 import GenericPopup from "../../share/ui/generic-popup/genericPopup";
 import { undercoverLogo } from "../../share/utils/const.utils";
 import { PopupState } from "../../share/utils/types.utils";
-import styles from './system.module.scss';
 
 
 export default function SystemPopup(props: PopupState) {
@@ -22,11 +21,11 @@ export default function SystemPopup(props: PopupState) {
             <GenericPopup id="System" hasSidebar={true} isActive={props.isActive} onClose={props.onClose} isFullScreen={false} isSystem={true}
                 sidebar={
                     <div className={systemSidebarWrapperClass} style={{ height: isLargeLayout ? '600px' : '' }}>
-                        <Image src={undercoverLogo} alt='undrcvr_logo' width={200} height={175}  className={`${(isMobile ? 'pb-3' : 'pb-5')}`} />
+                        <Image src={undercoverLogo} alt='undrcvr_logo' width={200} height={175} className={`${(isMobile ? 'pb-3' : 'pb-5')}`} />
                         <h2 className={(isMobile ? 'pb-3' : 'pb-5')}>UndercoverADV</h2>
 
-                        <h4 className={(isMobile ? 'pb-2' : 'pb-4')} style={{fontWeight: isMobile ? '500' : ''}}>Your Parnter in Crime</h4>
-                        <h6 className={(isMobile ? 'pb-4' : '')} style={{fontWeight: isMobile ? '500' : ''}}>Since 2008</h6>
+                        <h4 className={(isMobile ? 'pb-2' : 'pb-4')} style={{ fontWeight: isMobile ? '500' : '' }}>Your Parnter in Crime</h4>
+                        <h6 className={(isMobile ? 'pb-4' : '')} style={{ fontWeight: isMobile ? '500' : '' }}>Since 2008</h6>
                     </div>
                 }
                 content={

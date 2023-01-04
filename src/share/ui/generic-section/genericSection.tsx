@@ -4,7 +4,7 @@ import { GenericSectionProps } from "../../utils/types.utils";
 
 export default function GenericSection(props: GenericSectionProps) {
 
-    const { isLargeLayout, isTablet, isMobile } = useLayout();
+    const { isLargeLayout, isMobile } = useLayout();
 
     const i18n = useTranslations(props.translateKey);
 

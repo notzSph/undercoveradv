@@ -1,5 +1,4 @@
 import { GetStaticPropsContext } from 'next'
-import { useTranslations } from 'use-intl'
 import { useLayout } from '../../hooks/useLayout.hook';
 import GenericPopup from "../../share/ui/generic-popup/genericPopup";
 import GenericSection from '../../share/ui/generic-section/genericSection';
@@ -12,7 +11,7 @@ import styles from './about.module.scss'
 
 export default function AboutPopup(props: PopupState) {
 
-    const { isLargeLayout, isTablet, isMobile } = useLayout();
+    const { isLargeLayout } = useLayout();
 
 
 const aboutWrapperClass = `w-100 f-column flex-center-all ${(isLargeLayout ? 'p-5' :'p-3')} `

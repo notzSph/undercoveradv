@@ -7,14 +7,12 @@ import FolderTile from "../../share/ui/folder-tile/folderTile";
 import { folderTiles } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
 import { useState } from "react";
-import { isPropertySignature } from "typescript";
 import { useLayout } from "../../hooks/useLayout.hook";
 
 export default function Desktop() {
 
-    const { isLargeLayout, isTablet, isMobile } = useLayout()
+    const { isMobile } = useLayout()
 
-    const band = `${styles.band} flex-center-all `;
 
     const [activePopup, setActivePopup] = useState<number | undefined>()
 

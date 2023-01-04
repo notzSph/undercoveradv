@@ -17,17 +17,9 @@ $mqPhoneMax: 767px;
 $mqTablet: 768px;
 $mqTabletMax: 1023px;
 
-// PC Small
-$mqSmallPc: 1024px;
-$mqSmallPcMax: 1300px;
+// Desktop
+$mqDesktop: 1024px;
+$mqDesktopMax: 2159px;
 
-// PC Medium
-$mqMediumPc: 1301px;
-$mqMediumPcMax: 1919px;
-
-// PC
-$mqPc: 1920px;
-$mqPcMax: 3939px;
-
-// PC Wide
-$mqWidePc: 3940px;
+// Wide Desktop ( 21:9 / 32:9 )
+$mqWideDesktop: 2160px;

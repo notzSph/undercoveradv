@@ -21,10 +21,13 @@ body {
 }
 
 body {
-  color: black;
-  background: var.$mainBackground;
+  color: var.$notBlack;
+  background: var.$violet;
   font-family: var.$varela;
 }
+
+
+
 h1,
 h2,
 h3,
@@ -72,10 +75,10 @@ span {
   font-size: var.$fsLarge;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.tileSubhead {
+  font-family: var.$openSans;
+  font-size: var.$fsMid;
+  font-weight: var.$fw700;
 }
 
 
@@ -108,4 +111,11 @@ span {
   }
 
   
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
 }

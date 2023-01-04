@@ -1,6 +1,9 @@
 @use "../../styles/variables.scss" as var;
 @use "../../styles/breakpoints.scss" as brk;
 
+// Components Heights
+$popupHeight: 600px;
+$topbarHeight: calc(#{$popupHeight} * 0.15);
 
 
 .popupWrapper,
@@ -18,11 +21,11 @@
 }
 
 .genericPopup {
-  height: var.$popupHeight;
-  min-height: var.$popupHeight;
-  max-height: var.$popupHeight;
+  height: $popupHeight;
+  min-height: $popupHeight;
+  max-height: $popupHeight;
   border-radius: var.$largeRadius;
-  background: var.$popupBackground;
+  background: var.$salmon;
   box-shadow: var.$popupShadow;
   border: var.$popupBorder;
   opacity: 1;
@@ -40,11 +43,11 @@
 }
 
 .topbarWrapper {
-  height: var.$topbarHeight;
-  max-height: var.$topbarHeight;
-  min-height: var.$topbarHeight;
+  height: $topbarHeight;
+  max-height: $topbarHeight;
+  min-height: $topbarHeight;
   border-bottom: var.$popupBorder;
-  background: var.$topbarBackground;
+  background: var.$paleYellow;
 }
 
 .contentWrapper {

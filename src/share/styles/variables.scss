@@ -1,50 +1,25 @@
-// Components Heights
-$popupHeight: 600px;
-$topbarHeight: calc(#{$popupHeight} * 0.15);
+
 
 // Border Radius
-$microRadius: 2px;
 $tinyRadius: 4px;
-$smallRadius: 8px;
-$mediumRadius: 15px;
 $largeRadius: 35px;
-$infiniteRadius: 100000px;
 
 // Transitions
-$transitionTimeInstant: 0.14s;
 $transitionTimeLow: 0.3s;
-$transitionTimeMid: 0.5s;
-$transitionTimeLong: 0.9s;
 
 // Colors
 $transparent: rgba(255, 255, 255, 0);
 
-$black10: rgba(0, 0, 0, 0.1);
-$black25: rgba(0, 0, 0, 0.25);
-$black50: rgba(0, 0, 0, 0.5);
-$black75: rgba(0, 0, 0, 0.75);
 $black: black;
 $notBlack: rgb(38, 38, 38);
 
-$white10: rgba(255, 255, 255, 0.1);
-$white25: rgba(255, 255, 255, 0.25);
-$white50: rgba(255, 255, 255, 0.5);
-$white75: rgba(245, 245, 245, 0.75);
 $white: white;
 $notWhite: rgb(240, 240, 240);
 
-$lightGrey: #434343;
-$metalGrey: #232526;
-$moonGrey: #122c2e;
-$spaceGrey: #0a061a;
-$spaceGradientActive: linear-gradient($spaceGrey,  $moonGrey, $spaceGrey,);
-$spaceGradientInactive: linear-gradient($spaceGrey,  $metalGrey, $spaceGrey,);
-$mainBackground: #a18dee;
-$popupBackground: #f3c6a3;
-$activeElementBackground: #ffb075;
-$topbarBackground:#fcd6a6;
-
-
+$violet: #a18dee;
+$salmon: #f3c6a3;
+$crispySalmon: #ffb075;
+$paleYellow:#fcd6a6;
 
 $cyan: #07edca;
 $activeCyan: #00dbb9;
@@ -54,7 +29,7 @@ $activeMagenta: #f505f2;
 $popupShadow: 5px 5px 0 0px $notBlack;
 $buttonShadow: 3px 3px 0 0;
 $genericBorder: solid $notBlack;
-$popupBorder: 7px solid $moonGrey;
+$popupBorder: 7px solid $notBlack;
 
 // Fonts
 $openSans: 'Open Sans';
@@ -62,11 +37,9 @@ $varela: 'Varela Round';
 $sora: 'Sora';
 
 // Font Weights
-$fw200: 241;
 $fw300: 320;
 $fw400: 471;
 $fw500: 524;
-$fw600: 651;
 $fw700: 720;
 
 // Font Sizes
@@ -85,5 +58,3 @@ $smallMargin: 8px;
 $mediumMargin: 15px;
 $largeMargin: 25px;
 $veryLargeMargin: 50px;
-$ultraLargeMargin: 100px;
-$maxMargin: 200px;

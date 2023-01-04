@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useLayout } from "../../../hooks/useLayout.hook";
 import { GenericProjectProps } from "../../utils/types.utils";
 import { GenericButton } from "../generic-button/genericButton";
-import styles from './genericProject.module.scss'
 
 export default function GenericProject(props: GenericProjectProps) {
 
@@ -16,7 +15,7 @@ export default function GenericProject(props: GenericProjectProps) {
             {/* Container */}
             <div id={props.id} className={genericProjectWrapper}>
 
-                <Image id={props.id + props.title + 'image'} src={props.image} alt={props.title} width={440} height={220} className={styles.projectImage}  />
+                <Image id={props.id + props.title + 'image'} src={props.image} alt={props.title} width={440} height={283}  />
 
                 {/* Infos */}
                 <div id={props.id + 'infoWrapper'} className={projectInfoWrapper}>

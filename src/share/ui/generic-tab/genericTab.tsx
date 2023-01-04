@@ -6,7 +6,7 @@ import styles from "./genericTab.module.scss";
 
 export default function GenericTabs(props: GenericTabsProps) {
 
-    const { isLargeLayout, isTablet, isMobile } = useLayout();
+    const { isLargeLayout } = useLayout();
 
 
     const [toggleState, toggleTab] = useState(0);
