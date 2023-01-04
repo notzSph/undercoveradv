@@ -44,6 +44,7 @@
   max-height: var.$topbarHeight;
   min-height: var.$topbarHeight;
   border-bottom: var.$popupBorder;
+  background: var.$topbarBackground;
 }
 
 .contentWrapper {
@@ -53,7 +54,7 @@
 }
 
 .contentClass {
-  border-left: var.$popupBorder;
+    border-left: var.$popupBorder;
 }
 
 

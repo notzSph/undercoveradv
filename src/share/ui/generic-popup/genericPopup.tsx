@@ -17,7 +17,7 @@ export default function GenericPopup(props: GenericPopupProps) {
     const topbarWrapperClass = `${styles.topbarWrapper} w-100 flex-center-all`
     const contentWrapperClass = `${styles.contentWrapper} ${(isMobile ? 'f-column j-start a-center' : 'f-row')} w-100 `
     const sidebarClass = `${(isLargeLayout ? 'w-30' : '')} ${(isTablet ? 'w-40' : '')} ${(isMobile ? 'w-100' : 'h-100')}  flex-center-all f-column f-wrap `
-    const contentClass = `f-column ${(props.hasSidebar ? `${styles.contentClass} ${(isLargeLayout ? 'w-70' : '')} ${(isTablet ? 'w-60' : '')} ${(isMobile ? 'w-100' : 'h-100')}  ` : 'w-100 h-100')} ${(props.hasScroll ? 'o-scroll' : '')} ${(props.isSystem ? (isMobile ? 'j-start a-center' : 'flex-center-all') : 'j-start a-start')} `
+    const contentClass = `f-column ${(props.hasSidebar ? `${styles.contentClass} ${(isLargeLayout ? 'w-70' : '')} ${(isTablet ? 'w-60' : '')} ${(isMobile ? 'w-100' : 'h-100')}  ` : 'w-100 h-100')} ${(props.hasScroll ? 'o-scroll' : '')} ${(props.isSystem ? (isMobile ? 'j-start a-center' : 'flex-center-all') : 'j-start a-start')}`
     const stopReturn = useCallback((e: any) => {
         console.log('child ', e, e.nativeEvent)
         e.nativeEvent.stopPropagation()

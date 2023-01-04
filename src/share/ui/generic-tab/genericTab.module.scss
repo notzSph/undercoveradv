@@ -8,25 +8,22 @@
   .tabs {
     padding: var.$mediumMargin;
     box-sizing: content-box;
-    opacity: 0.6;
-    transition: opacity var.$transitionTimeLow ease-out;
   }
   
   .menuTabs {
     scale: 1;
     transform-origin: left;
     transition: transform var.$transitionTimeLow ease-in;
+    background: var.$popupBackground;
   }
   
   .activeMenu {
     scale: 1.025;
+    background: var.$activeElementBackground;
   }
   
-  .activeTabs  {
-    opacity: 1;
-  }
-  
-  .contentTabs {
+
+  .contentTabsWrapper {
     border-left: var.$popupBorder;
     border-top: none;
   }
@@ -38,7 +35,7 @@
   
   @media only screen and (max-width: brk.$mqTabletMax) {
     
-    .contentTabs {
+    .contentTabsWrapper {
       border-left: none;
       border-top: var.$popupBorder;
     }
