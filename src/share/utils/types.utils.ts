@@ -27,6 +27,33 @@ export interface GenericPopupProps {
     onClose?: () => void
 }
 
+/**  Popup State
+*  
+*  Popup State Animation Manager
+*  @param isActive ---> Open Popup Style
+*  @param onClose ---> Popup Close Animation
+*  
+*/
+export interface PopupState {
+    isActive: boolean;
+    onClose?: () => void;
+}
+
+
+/**  Topbar Props
+*  
+*  Topbar Interface
+*  @param title ---> Popup Title ( e.g. Portgfolio )
+*  @param onClose ---> Popup Close Animation
+*  @param onFullscreen ---> Request Fullscreen Mode
+*  
+*/
+export interface TopbarProps {
+    title: string;
+    onClose?: () => void
+    onFullscreen?: () => void
+}
+
 
 /**
  *  Generic Button Props
@@ -106,28 +133,7 @@ export interface GenericProjectProps {
 
 
 
-/**  Folder Tile Props
-*  
-*  Folder Tile Interface
-*  @param id ---> id ( e.g. System )
-*  @param icon ---> Folder Icon Url
-*  @param name ---> Folder Name ( e.g. System )
-*  @param styles ---> Inline styles management (Optional)
-*  @param styles ---> Inline styles management (Optional)
-*  @param top ---> Top Value For Position Absolute Class (Optional)
-*  @param left ---> Left Value For Position Absolute Class (Optional)
-*  
-*/
 
-export interface FolderTileProps {
-    id: number,
-    icon: string,
-    name: string,
-    style?: React.CSSProperties | undefined
-    top?: string,
-    left?: string,
-    onClick?: () => void
-}
 
 /**  Generic Tab Props
 *  
@@ -165,26 +171,40 @@ export interface TabSection {
 export type TabSections = TabSection[]
 
 
-/**  Popup State
+/**  Layout
 *  
-*  Popup State Animation Manager
-*  @param isActive ---> Open Popup Style
-*  @param onClose ---> Popup Close Animation
+*  Layout State Manager
+*  @param isLargeLayout ---> Desktop Layout Flag
+*  @param isTablet  ---> Tablet Layout Flag
+*  @param isMobile  ---> Mobile Layout Flag
 *  
 */
-export interface PopupState {
-    isActive: boolean;
-    onClose?: () => void;
-}
-
-export interface TopbarProps {
-    title: string;
-    onClose?: () => void
-    onFullscreen?: () => void
-}
-
 export interface Layout {
   isLargeLayout: boolean;
   isTablet: boolean;
   isMobile: boolean;
+}
+
+
+/**  Folder Tile Props
+*  
+*  Folder Tile Interface
+*  @param id ---> id ( e.g. System )
+*  @param icon ---> Folder Icon Url
+*  @param name ---> Folder Name ( e.g. System )
+*  @param styles ---> Inline styles management (Optional)
+*  @param styles ---> Inline styles management (Optional)
+*  @param top ---> Top Value For Position Absolute Class (Optional)
+*  @param left ---> Left Value For Position Absolute Class (Optional)
+*  
+*/
+
+export interface FolderTileProps {
+    id: number,
+    icon: string,
+    name: string,
+    style?: React.CSSProperties | undefined
+    top?: string,
+    left?: string,
+    onClick?: () => void
 }
