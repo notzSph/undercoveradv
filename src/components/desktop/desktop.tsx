@@ -5,7 +5,6 @@ import ServicesPopup from "../services/services";
 import SystemPopup from "../system/system";
 import FolderTile from "../../share/ui/folder-tile/folderTile";
 import { folderTiles } from "../../share/utils/const.utils";
-import styles from './desktop.module.scss'
 import { useState } from "react";
 import { useLayout } from "../../hooks/useLayout.hook";
 import ContactUsPopup from "../contactUs/contactUs";

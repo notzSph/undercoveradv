@@ -10,6 +10,7 @@ export default function ContactUsPopup(props: PopupState) {
     const { isLargeLayout, isMobile } = useLayout()
     const systemSidebarWrapperClass = `w-100 f-column ${(isMobile ? 'pt-4 j-start a-center' : 'flex-center-all')} `
     const sidebarTitleClass = `${styles.sidebarTitle} ${(isMobile ? 'pb-3' : 'pb-5')}`
+    const formWrapperClass = `${(isMobile ? 'w-90 px-2' : (isLargeLayout ? 'w-40' : 'w-60'))} h-100 f-column flex-center-all `
     return (
         <>
             <GenericPopup id='Contact Us' hasSidebar={true} isActive={props.isActive} onClose={props.onClose} isFullScreen={false} styles={{ alignItems: 'center', justifyContent: 'center' }}
@@ -26,7 +27,7 @@ export default function ContactUsPopup(props: PopupState) {
                 }
                 content={
                     <div className="w-100  flex-center-all h-100">
-                        <div className="w-40 h-100 f-column flex-center-all ">
+                        <div className={formWrapperClass}>
                             <GenericForm />
                         </div>
                     </div>

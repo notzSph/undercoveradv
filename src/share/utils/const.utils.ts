@@ -268,7 +268,7 @@ export const folderTiles = [
     {
         id: 5,
         icon: yellowFolderIcon,
-        name: 'DOCS',
+        name: 'CONTACT US',
         top: '70vh',
         left: '23vw',
     },
