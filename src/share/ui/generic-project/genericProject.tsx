@@ -19,7 +19,6 @@ export default function GenericProject(props: GenericProjectProps) {
                 <div className={imageWrapper}>
                     <Image id={props.id + props.title + 'image'} src={props.image} alt={props.title} width={isLargeLayout ? 604 : (isTablet ? 420 : 320)} height={isLargeLayout ? 400 : (isTablet ? 278 : 211)} />
                 </div>
-
                 {/* Infos */}
                 <div id={props.id + 'infoWrapper'} className={projectInfoWrapper}>
 
