@@ -1,0 +1,8 @@
+@use "../../share/styles/variables.scss" as var;
+@use "../../share/styles/breakpoints.scss" as brk;
+
+@media only screen and (min-width: brk.$mqDesktop) and (max-width: 1120px) {
+    .sidebarTitle {
+        font-size: 1.2rem;
+    }
+}
