@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
 /**
  *  Generic Popup Props
@@ -70,7 +70,8 @@ export interface GenericButtonProps {
     label: string,
     isPrimary?: boolean,
     styles?: React.CSSProperties | undefined,
-    onClick?: () => void
+    onClick?: () => void,
+    type?: "button" | "submit" | "reset" | undefined
 }
 
 
@@ -208,3 +209,11 @@ export interface FolderTileProps {
     left?: string,
     onClick?: () => void
 }
+
+export interface GenericFormProps {
+    translateKey?: string,
+    fullName: string,
+    email: string,
+    subject: string,
+    message: string,
+  }
