@@ -9,7 +9,9 @@ export function GenericButton(props: GenericButtonProps) {
     return (
 
         // Container
-        <div
+
+        <button
+            type={props.type}
             onClick={props.onClick}
             className={mainClass}
             aria-label={props.label}
@@ -21,6 +23,6 @@ export function GenericButton(props: GenericButtonProps) {
             <div className="w-100 j-center">
                 {props.label}
             </div>
-        </div>
+        </button>
     )
 }

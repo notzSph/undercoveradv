@@ -8,6 +8,7 @@ import { folderTiles } from "../../share/utils/const.utils";
 import styles from './desktop.module.scss'
 import { useState } from "react";
 import { useLayout } from "../../hooks/useLayout.hook";
+import ContactUsPopup from "../contactUs/contactUs";
 
 export default function Desktop() {
 
@@ -43,6 +44,7 @@ export default function Desktop() {
             <ServicesPopup isActive={activePopup === 2} onClose={() => setActivePopup(undefined)} />
             <AboutPopup isActive={activePopup === 3} onClose={() => setActivePopup(undefined)} />
             <PortfolioPopup isActive={activePopup === 4} onClose={() => setActivePopup(undefined)} />
+            <ContactUsPopup isActive={activePopup === 5} onClose={() => setActivePopup(undefined)} />
             <BinPopup isActive={activePopup === 6} onClose={() => setActivePopup(undefined)} />
         </>
     )
