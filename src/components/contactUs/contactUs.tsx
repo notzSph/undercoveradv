@@ -13,7 +13,7 @@ export default function ContactUsPopup(props: PopupState) {
     const formWrapperClass = `${(isMobile ? 'w-90 px-2' : (isLargeLayout ? 'w-40' : 'w-60'))} h-100 f-column flex-center-all `
     return (
         <>
-            <GenericPopup id='Contact Us' hasSidebar={true} isActive={props.isActive} onClose={props.onClose} isFullScreen={false} styles={{ alignItems: 'center', justifyContent: 'center' }}
+            <GenericPopup id='Contacts' hasSidebar={true} isActive={props.isActive} onClose={props.onClose} isFullScreen={false} styles={{ alignItems: 'center', justifyContent: 'center' }}
 
                 sidebar={
                     !isMobile &&
