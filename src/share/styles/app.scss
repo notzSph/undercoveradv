@@ -106,8 +106,10 @@ textarea {
   font-family: var.$sora;
   font-weight: var.$fw300;
   font-size: var.$fsSmall;
-  background: var.$crispySalmon;
+  background: var.$paleViolet;
   color: var.$notBlack;
+  border: 3px var.$genericBorder;
+  box-shadow: var.$inputShadow;
   border-radius: var.$tinyRadius;
 }
 

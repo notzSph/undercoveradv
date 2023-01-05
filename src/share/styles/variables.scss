@@ -16,6 +16,7 @@ $notBlack: rgb(38, 38, 38);
 $white: white;
 $notWhite: rgb(240, 240, 240);
 
+$paleViolet: #fbe5e1;
 $violet: #a18dee;
 $salmon: #f3c6a3;
 $crispySalmon: #ffb075;
@@ -27,7 +28,8 @@ $magenta: #f505f2;
 $activeMagenta: #f505f2;
 
 $popupShadow: 5px 5px 0 0px $notBlack;
-$buttonShadow: 3px 3px 0 0;
+$buttonShadow: 3px 3px 0 0 ;
+$inputShadow: 2px 2px 0 0 $notBlack;
 $genericBorder: solid $notBlack;
 $popupBorder: 7px solid $notBlack;
 

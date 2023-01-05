@@ -54,20 +54,20 @@ export default function GenericForm() {
         <>
             <form className={formContainerClass} onSubmit={handleSubmit}>
                 <div className={fieldWrapperClass}>
-                    <label className={labelClass} htmlFor="fullName">Name</label>
+                    <label className={labelClass} htmlFor="fullName">Name *</label>
                     <input className={inputClass} type="text" id="fullName" name="fullName" placeholder='John Doe' required  />
 
-                    <label className={labelClass} htmlFor="email">Email</label>
+                    <label className={labelClass} htmlFor="email">Email *</label>
                     <input className={inputClass} type="text" id="email" name="email" placeholder='johndoe@example.com' required />
 
-                    <label className={labelClass} htmlFor="subject">Subject</label>
-                    <input className={inputClass} type="text" id="subject" name="subject" placeholder='Price Quotation Request' required />
+                    <label className={labelClass} htmlFor="subject">Subject *</label>
+                    <input className={inputClass} type="text" id="subject" name="subject" placeholder='How can we help you?' required />
 
-                    <label className={labelClass} htmlFor="message">Message</label>
-                    <textarea className={inputClass} id="message" name="message"  placeholder='Write here your request into details. '></textarea>
+                    <label className={labelClass} htmlFor="message">Message *</label>
+                    <textarea className={inputClass} id="message" name="message"  placeholder='What can can we do to help you?' required/>
                 </div>
 
-                <GenericButton label={'Submit'} isPrimary={true} type={"submit"} styles={{ fontSize: '0.9rem' }} />
+                <GenericButton label={'Submit'} isPrimary={true} type={"submit"} styles={{ fontWeight: '500' }} />
             </form>
         </>
     )
