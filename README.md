@@ -8,8 +8,12 @@ First, Install Node Modules via:
 npm i
 ```
 
+Then, create your own branch via:
+```
+git checkout -b <BranchName>
+```
 
-Then, run the development server:
+Last, run the development server via:
 
 ```
 npm start
