@@ -69,6 +69,10 @@ export const webDevTiles = [
             {
                 subhead: 'webDev.sub5',
                 description: 'webDev.desc5',
+            },
+            {
+                subhead: 'webDev.sub6',
+                description: 'webDev.desc6',
             }
 
         ]
