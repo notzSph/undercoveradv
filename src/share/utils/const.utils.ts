@@ -28,6 +28,8 @@ export const forartsProject = '/assets/images/forarts.png';
 export const lymphaticProject = '/assets/images/lymphatic.png';
 export const lymphedemaProject = '/assets/images/world-lymphedema-day.png';
 export const tfProject = '/assets/images/tradingfloor.png';
+export const nikeProject = '/assets/images/nike.png';
+export const aiciProject = '/assets/images/aici.png';
 
 /**
  *  Services Tiles
@@ -375,5 +377,29 @@ export const tf: GenericProjectProps = {
         label: 'Visit Website',
         isPrimary: true,
         onClick: () => goToBlank('https://tradingfloor.online/')
+    }
+}
+
+export const nike: GenericProjectProps = {
+    id: 'nike',
+    image: nikeProject,
+    title: 'Nike Contest',
+    category: 'UX/UI DESIGN',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://nike.com/')
+    }
+}
+
+export const aici: GenericProjectProps = {
+    id: 'aici',
+    image: nikeProject,
+    title: 'A.I.C.I.',
+    category: 'UX/UI - WEB DEVELOPMENT',
+    button: {
+        label: 'Visit Website',
+        isPrimary: true,
+        onClick: () => goToBlank('https://nike.com/')
     }
 }

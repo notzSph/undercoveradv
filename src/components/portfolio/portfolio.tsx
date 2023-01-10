@@ -1,7 +1,7 @@
 import GenericPopup from '../../share/ui/generic-popup/genericPopup'
 import GenericProject from '../../share/ui/generic-project/genericProject'
 import GenericTabs from '../../share/ui/generic-tab/genericTab'
-import { astense, bank, brodos, campisi, cyanFolderIcon, folderIcon, forarts, greenFolderIcon, lymphatic, lymphedema, magentaFolderIcon, tf, yellowFolderIcon } from '../../share/utils/const.utils'
+import { aici, astense, bank, brodos, campisi, cyanFolderIcon, folderIcon, forarts, greenFolderIcon, lymphatic, lymphedema, magentaFolderIcon, nike, tf, yellowFolderIcon } from '../../share/utils/const.utils'
 import { PopupState, TabSections } from '../../share/utils/types.utils'
 
 
@@ -55,16 +55,16 @@ const sections: TabSections = [
         content:<GenericProject  id={lymphedema.id} image={lymphedema.image} title={lymphedema.title} category={lymphedema.category} button={lymphedema.button} />
     },
     {
-        id: brodos.id,
-        title: brodos.title,
-        icon: folderIcon,
-        content:<GenericProject  id={brodos.id} image={brodos.image} title={brodos.title} category={brodos.category} button={brodos.button} />
+        id: nike.id,
+        title: nike.title,
+        icon: yellowFolderIcon,
+        content:<GenericProject  id={nike.id} image={nike.image} title={nike.title} category={nike.category} button={nike.button} />
     },
     {
-        id: brodos.id,
-        title: brodos.title,
-        icon: folderIcon,
-        content:<GenericProject  id={brodos.id} image={brodos.image} title={brodos.title} category={brodos.category} button={brodos.button} />
+        id: aici.id,
+        title: aici.title,
+        icon: magentaFolderIcon,
+        content:<GenericProject  id={aici.id} image={aici.image} title={aici.title} category={aici.category} button={aici.button} />
     },
   
 ]
