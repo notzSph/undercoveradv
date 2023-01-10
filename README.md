@@ -19,4 +19,4 @@ Last, run the development server via:
 npm start
 ```
 
-Open [http://localhost:3000] with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result.
