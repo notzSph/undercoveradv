@@ -73,7 +73,7 @@ export default function GenericForm() {
                 </div>
                 <div className={checkboxClass}>
                     <input style={{ width: '20px' }} type="checkbox" id="policy" name="policy" required />
-                    <label style={{ marginLeft: '15px', fontSize: '0.75rem', paddingTop: '0' }} className={labelClass} htmlFor="policy">Ho Letto e Accetto l'Informativa sulla privacy</label>
+                    <label style={{ marginLeft: '15px', fontSize: '0.75rem', paddingTop: '0' }} className={labelClass} htmlFor="policy">Ho Letto e Accetto l&apos;Informativa sulla privacy</label>
                 </div>
 
                 <GenericButton label={'Submit'} isPrimary={true} type={"submit"} styles={{ fontWeight: '500' }} />
