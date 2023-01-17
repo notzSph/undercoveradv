@@ -7,7 +7,7 @@ import styles from './genericForm.module.scss'
 
 export default function GenericForm() {
 
-    const { isLargeLayout, isMobile } = useLayout()
+    const { isMobile } = useLayout()
 
     // Handles submit event on form submit.
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -21,7 +21,7 @@ export default function GenericForm() {
             subject: event.currentTarget.subject.value,
             message: event.currentTarget.message.value,
         }
-
+        
         // Send the data to the server in JSON format.
         const JSONdata = JSON.stringify(data)
 
