@@ -9,8 +9,6 @@ import styles from './bin.module.scss'
 
 export default function BinPopup(props: PopupState) {
 
-    const { isLargeLayout, isMobile } = useLayout()
-
     // Internationalization
     const i18n = useTranslations('Bin')
     const claimClass = `${styles.binClaim} pb-4 `

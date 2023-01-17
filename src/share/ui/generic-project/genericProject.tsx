@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useLayout } from "../../../hooks/useLayout.hook";
 import { GenericProjectProps } from "../../utils/types.utils";
 import { GenericButton } from "../generic-button/genericButton";
-import styles from './genericProject.module.scss'
 
 export default function GenericProject(props: GenericProjectProps) {
 
@@ -11,7 +10,7 @@ export default function GenericProject(props: GenericProjectProps) {
     // Styles
     const genericProjectWrapper = `w-100 h-100 f-column ${isMobile? 'flex-center-all' : 'j-start a-center'} `
     const projectInfoWrapper = `w-100 f-row j-between a-center px-5 `
-    const imageWrapper = `${styles.imageWrapper} px-5 `
+    const imageWrapper = `px-5 `
     return (
         <>
             {/* Container */}

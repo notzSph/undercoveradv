@@ -1,6 +1,6 @@
 import GenericPopup from '../../share/ui/generic-popup/genericPopup'
 import GenericProject from '../../share/ui/generic-project/genericProject'
-import GenericTabs from '../../share/ui/generic-tab/genericTab'
+import GenericTab from '../../share/ui/generic-tab/genericTab'
 import { aici, astense, bank, brodos, campisi, cyanFolderIcon, folderIcon, forarts, greenFolderIcon, lymphatic, lymphedema, magentaFolderIcon, nike, tf, yellowFolderIcon } from '../../share/utils/const.utils'
 import { PopupState, TabSections } from '../../share/utils/types.utils'
 
@@ -75,7 +75,7 @@ export default function PortfolioPopup(props: PopupState) {
         <>
             <GenericPopup id='Portfolio' hasSidebar={false}  isActive={props.isActive} onClose={props.onClose} isFullScreen={false}
                 content={
-                    <GenericTabs menuScroll={true} contentScroll={false}
+                    <GenericTab menuScroll={true} contentScroll={false}
                     sections={sections}
                     />
                 }

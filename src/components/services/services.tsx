@@ -2,7 +2,7 @@ import { GetStaticPropsContext } from 'next';
 import { useLayout } from '../../hooks/useLayout.hook';
 import GenericPopup from '../../share/ui/generic-popup/genericPopup';
 import GenericSection from '../../share/ui/generic-section/genericSection';
-import GenericTabs from '../../share/ui/generic-tab/genericTab';
+import GenericTab from '../../share/ui/generic-tab/genericTab';
 import GenericTile from '../../share/ui/generic-tile/genericTile';
 import { cyanFolderIcon, magentaFolderIcon, uxDesTiles, visualDesTiles, webDevTiles, yellowFolderIcon } from '../../share/utils/const.utils';
 import { PopupState, TabSections } from '../../share/utils/types.utils';
@@ -83,7 +83,7 @@ export default function ServicesPopup(props: PopupState) {
         <>
             <GenericPopup id='Services' hasSidebar={false} isActive={props.isActive} onClose={props.onClose} isFullScreen={false}
                 content={
-                    <GenericTabs menuScroll={true} contentScroll={true}
+                    <GenericTab menuScroll={true} contentScroll={true}
                     sections={sections}
                     />
                 }

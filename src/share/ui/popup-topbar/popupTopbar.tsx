@@ -6,9 +6,6 @@ import { TopbarProps } from '../../utils/types.utils';
 
 export default function PopupTopbar(props: TopbarProps) {
 
-  
-    
-
     return (
         <>
             {/* Container */}

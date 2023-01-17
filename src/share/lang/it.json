@@ -87,6 +87,13 @@
         "expertise": "<b>Esperienza</b>:14 Anni",
         "coreValue": "<b>Valore Core</b>: Design Human-Centered"
     },
+    "ContactUs": {
+        "name": "Nome",
+        "email": "Email",
+        "subject":"Oggetto",
+        "message": "Messaggio",
+        "privacy":"Ho Letto e Accetto l&apos;Informativa sulla privacy"
+    },
     "Bin": {
         "claim": "Il Cestino è vuoto.",
         "quote": "Siamo onesti, sceglieresti davvero un partner che casca nel vecchio trucco del cestino?"

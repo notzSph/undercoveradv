@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useLayout } from "../../../hooks/useLayout.hook";
-import { GenericTabsProps as GenericTabsProps } from "../../utils/types.utils";
+import { GenericTabProps as GenericTabProps } from "../../utils/types.utils";
 import styles from "./genericTab.module.scss";
 
-export default function GenericTabs(props: GenericTabsProps) {
+export default function GenericTab(props: GenericTabProps) {
 
     const { isLargeLayout } = useLayout();
 

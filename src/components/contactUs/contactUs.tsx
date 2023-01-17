@@ -4,7 +4,8 @@ import GenericForm from "../../share/ui/generic-form/genericForm";
 import GenericPopup from "../../share/ui/generic-popup/genericPopup";
 import { undercoverLogo } from "../../share/utils/const.utils";
 import { PopupState } from "../../share/utils/types.utils";
-import styles from './contactUs.module.scss'
+import styles from './contactUs.module.scss';
+
 export default function ContactUsPopup(props: PopupState) {
 
     const { isLargeLayout, isMobile } = useLayout()

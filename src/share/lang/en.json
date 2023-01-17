@@ -87,6 +87,13 @@
         "expertise": "<b>Expertise</b>: 14 Years",
         "coreValue": "<b>Core Value</b>: Human Centered Design"
     },
+    "ContactUs": {
+        "name": "Name",
+        "email": "Email",
+        "subject":"Subject",
+        "message": "Message",
+        "privacy": "I have read and accept the privacy policy"
+    },
     "Bin": {
         "claim": "Trash Bin is empty.",
         "quote": "Be honest, would you choose a partner that falls for the old bin trick?"

@@ -145,7 +145,7 @@ export interface GenericProjectProps {
 *  
 */
 
-export interface GenericTabsProps {
+export interface GenericTabProps {
     menuScroll: boolean,
     contentScroll: boolean,
     sections: TabSections,

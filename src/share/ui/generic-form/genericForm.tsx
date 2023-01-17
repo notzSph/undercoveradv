@@ -1,3 +1,5 @@
+import { GetStaticPropsContext } from 'next'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 import { useLayout } from '../../../hooks/useLayout.hook'
 import { GenericFormProps } from '../../utils/types.utils'
@@ -7,6 +9,10 @@ import styles from './genericForm.module.scss'
 
 export default function GenericForm() {
 
+    // Internationalization
+    const i18n = useTranslations('ContactUs')
+    
+    // Layouts
     const { isMobile } = useLayout()
 
     // Handles submit event on form submit.
@@ -59,26 +65,35 @@ export default function GenericForm() {
         <>
             <form className={formContainerClass} onSubmit={handleSubmit}>
                 <div className={fieldWrapperClass}>
-                    <label className={labelClass} htmlFor="fullName">Name *</label>
+                    <label className={labelClass} htmlFor="fullName">{i18n('name')} *</label>
                     <input className={inputClass} type="text" id="fullName" name="fullName" placeholder='John Doe' required />
 
-                    <label className={labelClass} htmlFor="email">Email *</label>
+                    <label className={labelClass} htmlFor="email">{i18n('email')} *</label>
                     <input className={inputClass} type="text" id="email" name="email" placeholder='johndoe@example.com' required />
 
-                    <label className={labelClass} htmlFor="subject">Subject *</label>
+                    <label className={labelClass} htmlFor="subject">{i18n('subject')} *</label>
                     <input className={inputClass} type="text" id="subject" name="subject" placeholder='How can we help you?' required />
 
-                    <label className={labelClass} htmlFor="message">Message *</label>
+                    <label className={labelClass} htmlFor="message">{i18n('message')} *</label>
                     <textarea className={textareaClass} id="message" name="message" placeholder='What can can we do to help you?' required />
                 </div>
                 <div className={checkboxClass}>
                     <input style={{ width: '20px' }} type="checkbox" id="policy" name="policy" required />
-                    <label style={{ marginLeft: '15px', fontSize: '0.75rem', paddingTop: '0' }} className={labelClass} htmlFor="policy">Ho Letto e Accetto l&apos;Informativa sulla privacy</label>
+                    <label style={{ marginLeft: '15px', fontSize: '0.75rem', paddingTop: '0' }} className={labelClass} htmlFor="policy">{i18n('privacy')}</label>
                 </div>
 
                 <GenericButton label={'Submit'} isPrimary={true} type={"submit"} styles={{ fontWeight: '500' }} />
             </form>
         </>
     )
+}
+
+// Internationalization
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+    return {
+        props: {
+            messages: (await import(`../../lang/${locale}.json`)).default,
+        }
+    }
 }
 
