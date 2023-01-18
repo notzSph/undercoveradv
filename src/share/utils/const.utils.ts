@@ -1,7 +1,6 @@
 import { goToBlank } from "./functions.utils";
 import { GenericProjectProps } from "./types.utils";
 
-
 /**
  * Assets Import (Images & SVG)
  */
