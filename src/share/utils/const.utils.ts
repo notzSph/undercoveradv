@@ -83,14 +83,15 @@ export const webDevTiles = [
     {
         title: 'webDev.title3',
         children: [
+
+            {
+                subhead: 'webDev.sub7',
+                description: 'webDev.desc7',
+            },
             {
                 subhead: 'webDev.sub6',
                 description: 'webDev.desc6',
             },
-            {
-                subhead: 'webDev.sub7',
-                description: 'webDev.desc7',
-            }
         ]
 
     }

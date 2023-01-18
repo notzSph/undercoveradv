@@ -1,14 +1,10 @@
 {
-    "Index": {
-        "title": "minchiasio",
-        "description": "minchiasA"
-    },
     "Services": {
         "webDev": {
             "title1": "Custom Website / WebApp",
             "sub1": "È utile alla mia attività avere un sito web oggi?",
             "desc1": "La risposta breve è che non c'è mai stato un momento migliore o più importante per investire in un sito web per la tua attività. Un sito Web offre una gamma di vantaggi che aumenta di valore anno dopo anno al pari di Internet stesso.",
-            "sub2": "Come posso esser assicurarmi che sia la scelta giusta?",
+            "sub2": "Come posso assicurarmi che sia la scelta giusta?",
             "desc2": "Qui a UndercoverADV ci piace fare le cose per bene, offriamo ai nostri clienti un pacchetto su misura in base alle loro esigenze specifiche. Ci assicuriamo che ogni progetto sia uno specchio dei valori fondamentali dell'azienda, altrimenti non sarà efficace.",
             "sub3": "Che cosa si intende per Custom?",
             "desc3": "Possiamo adattarci praticamente a tutto, possiamo spaziare da un tema Full Custom per Wordpress a un sito web più complesso basato su codice o una PWA (Progressive Web Application), in relazione alle tue esigenze.",
@@ -92,7 +88,7 @@
         "email": "Email",
         "subject":"Oggetto",
         "message": "Messaggio",
-        "privacy":"Ho Letto e Accetto l&apos;Informativa sulla privacy"
+        "privacy":"Ho Letto e Accetto l'Informativa sulla privacy"
     },
     "Bin": {
         "claim": "Il Cestino è vuoto.",
