@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import admin from 'firebase-admin';
+import db from "../../share/db/db";
 
 export default async function handler(
   req: NextApiRequest,
@@ -11,10 +11,10 @@ export default async function handler(
   const docName = `${body.fullName} From Submitted`;
 
 
-  admin.firestore().collection('form').doc(docName).set({
-    to: "edoardoglinac@gmail.com",
+  db.collection('form').doc(docName).set({
+    to: "hey@undercoveradv.com",
     message: {
-      subject: 'Form Succesfully Submitted',
+      subject: 'New Form Succesfully Submitted',
       html: `name: ${body.fullName} || email: ${body.email} || subject: ${body.subject} || message: ${body.message}`,
     },
   })
