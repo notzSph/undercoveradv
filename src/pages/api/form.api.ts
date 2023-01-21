@@ -8,7 +8,7 @@ export default async function handler(
 
 
   const body = req.body
-  const docName = `${body.fullName} From Submitted`;
+  const docName = `-> ${new Date().toISOString()} ${body.fullName} Form Submitted <-'`;
 
   // Get data submitted in request's body.
   console.log('body: ', body)
