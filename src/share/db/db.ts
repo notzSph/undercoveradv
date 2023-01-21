@@ -1,6 +1,5 @@
 import admin from 'firebase-admin';
 
-const db = admin.firestore()
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT || '{}')
 
 if (!admin.apps.length) {
@@ -12,5 +11,6 @@ if (!admin.apps.length) {
     console.log('Firebase admin initialization error', error.stack);
   }
 }
+const db = admin.firestore()
 export default db
 
