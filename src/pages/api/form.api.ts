@@ -10,15 +10,6 @@ export default async function handler(
   const body = req.body
   const docName = `${body.fullName} From Submitted`;
 
-
-  db.collection('form').doc(docName).set({
-    to: "hey@undercoveradv.com",
-    message: {
-      subject: 'New Form Succesfully Submitted',
-      html: `name: ${body.fullName} || email: ${body.email} || subject: ${body.subject} || message: ${body.message}`,
-    },
-  })
-
   // Get data submitted in request's body.
   console.log('body: ', body)
 
@@ -26,6 +17,14 @@ export default async function handler(
     // Sends a HTTP bad request error code
     return res.status(400).json({ data: 'Please Fill All Required Fields' })
   }
+
+  await db.collection('form').doc(docName).set({
+    to: "hey@undercoveradv.com",
+    message: {
+      subject: 'New Form Succesfully Submitted',
+      html: `name: ${body.fullName} || email: ${body.email} || subject: ${body.subject} || message: ${body.message}`,
+    },
+  })
 
   res.status(200).json({ data: `${body.fullName} ${body.email} ${body.subject} ${body.message}`, name: `${body.fullName}` })
 
